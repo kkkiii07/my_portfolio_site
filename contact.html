@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>viitor | お問い合わせ</title>
+  <!-- css -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:ital@0;1&family=Roboto:wght@100;900&family=Secular+One&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <h1>viitor</h1>
+      </a>
+
+      <label for="open-close">
+        <div>
+          <nav>
+            <input type="checkbox" id="open-close">
+            <div class="first">
+              <nav>
+                <span class="bb"></span>
+              </nav>
+            </div>
+            <ul id="menu">
+              <li><a href="index.html"><span>TOP</span></a></li>
+              <li><a href="items.html"><span>ITEMS</span></a></li>
+              <li><a href="access.html"><span>ACCESS</span></a></li>
+              <li><a href="contact.html"><span>CONTACT</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </label>
+      <nav class="pc_nav">
+        <ul>
+          <li><a href="index.html"><span>TOP</span></a></li>
+          <li><a href="items.html"><span>ITEMS</span></a></li>
+          <li><a href="access.html"><span>ACCESS</span></a></li>
+          <li><a href="contact.html"><span>CONTACT</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero_ex">
+    <div class="hero_ex_name">
+      <h2>CONTACT</h2>
+      <h3>お問い合わせ</h3>
+    </div>
+  </section>
+
+  <main class="main_ex container">
+    <!-- パンくずリスト -->
+    <div class="nav_pan">
+      <p><a href="index.html"><span class="pan_co">TOP</span></a></p>
+      <p class="pan_be"><span>CONTACT</span></p>
+    </div>
+
+    <h2>ご質問、ご相談など何でもお気軽にお問合わせ下さい。<br>その他ご不明な点ございましたら、お気軽にご連絡下さい。</h2>
+    <ul>
+      <li>お問合わせ内容によりましては複数営業日数をいただく場合がありますので、あらかじめご了承ください。</li>
+      <li>お電話など、Eメール以外の方法でご連絡させていただく場合もございます。</li>
+      <li>携帯やhotmail、gmail等はメールが届かない場合がありますので、ドメイン指定受信（@lala.com）の設定をお願い致します。<br
+          class="for_sp">それでもメールが届かない場合は、お手数ですがお電話（TEL:XX-XXXX-XXXX）にてご連絡下さい。</li>
+      <p class="ul_p">＊は必須項目です。</p>
+    </ul>
+
+    <article id="form">
+      <h3>お問い合わせフォーム</h3>
+      <form method="" action="">
+        <table>
+          <tr>
+            <th>
+              <label for="shimei">お名前 *</label>
+            </th>
+            <td>
+              <input type="text" id="shimei" placeholder="お名前" name="fullname" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <label for="shimei_kana">フリガナ *</label>
+            </th>
+            <td>
+              <input type="text" id="shimei_kana" placeholder="フリガナ" name="fullname" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <label for="mail">メールアドレス *</label>
+            </th>
+            <td>
+              <input type="email" id="mail" placeholder="メールアドレス" name="tayori" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <lebel for="mail_confirm">メールアドレス（確認） *</lebel>
+            </th>
+            <td>
+              <input type="email" id="mail_confirm" placeholder="メールアドレス（確認）" name="tayori_confirm" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>お問い合わせ項目（複数選択可）</th>
+            <td>
+              <input type="checkbox" id="content-1" name="merchandise" value="商品について">
+              <lebel for="content-1">商品について</lebel>
+              <input type="checkbox" id="content-2" name="marchandise" value="商品の卸について">
+              <lebel for="contet-2">商品の卸について</lebel>
+              <input type="checkbox" for="content-3" name="marchandise" value="その他のお問い合わせ">
+              <lebel for="content-3">その他のお問い合わせ</lebel>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <label for="t-area">ご質問・ご相談・等、
+                お気軽にお問い合わせ下さい</label>
+            </th>
+            <td>
+              <textarea id="t-area" name="message"></textarea>
+            </td>
+          </tr>
+
+          <!-- <tr>
+              <td colspan="2">
+                <input type="submit" value="送信">
+                <input type="reset" value="取消">
+              </td>
+            </tr> -->
+        </table>
+
+        <div class="bt_ex_all">
+          <!-- <div class="bt_ex"> -->
+          <button type="submit">送信</button>
+          <!-- <input type="submit" value="送信"> -->
+          <!-- </div> -->
+          <!-- <div class="bt_ex"> -->
+          <button type="submit">取消</button>
+          <!-- <input type="submit" value="取消"> -->
+          <!-- </div> -->
+        </div>
+
+
+        <!-- <div class="bt_ex">
+          <a href="#">送信</a>
+          <a href="#">取消</a>
+        </div> -->
+      </form>
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="ft_bg">
+      <p>
+        〒XXX-XXXX<br>
+        大阪府大阪市○○○○X丁目X-XX ○○ビル<br>
+        TEL: XX-XXXX-XXXX / FAX: XX-XXXX-XXXX
+      </p>
+      <p>
+        <small>&copy; 2022 viitor</small>
+      </p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
