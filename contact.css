@@ -206,6 +206,13 @@ button[type="submit"]:hover {
 button, input, select, textarea {
   width: 100%;
 }
+button, input, select, textarea {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
 
 
 
