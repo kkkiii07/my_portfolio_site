@@ -33,5 +33,25 @@
   targets.forEach(target => {
     observer.observe(target);
   })
+}
 
+{
+  const $switch = document.getElementById('switch');
+  const $main_nav = document.getElementById('main_nav');
+  const $ul = $main_nav.querySelectorAll('ul')[0];
+  const $li = $main_nav.querySelectorAll('li');
+  // console.log($main_nav.querySelectorAll('li'));
+
+  for (let i = 0; i < $li.length; i++) {
+      let b = (i + 1) * .3;
+      $li[i].style = 'transition: '+b+'s;';
+  }
+
+
+//  $switch.addEventListener('click', () => {
+//   $main_nav.classList.add('on');
+//   setTimeout (() => {
+//     $ul.classList.add('on');
+//   }, 1000);
+//  });
 }

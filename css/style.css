@@ -257,10 +257,20 @@ nav span.bb::after {
   transition: all 500ms 0s linear;
   transform: translate(-500px);
 }
+#open-close:checked~#menu li {
+  transition: all 500ms 0s linear;
+  transform: translate(0);
+  opacity: 1;
+}
 
 #open-close~#menu {
   transition: all 500ms 0s linear;
   transform: translate(500px);
+}
+#open-close~#menu li {
+  transition: all 500ms 0s linear;
+  transform: translate(500px);
+  opacity: 0;
 }
 
 ul#menu {
@@ -278,6 +288,7 @@ ul#menu {
 
 #menu li {
   letter-spacing: 1px;
+  transition: 3s;
 }
 
 #menu li+li {
@@ -299,6 +310,16 @@ nav #menu li a span:hover {
   padding-bottom: 5px;
 }
 
+
+/* #main_nav.on {
+  left: 0;
+}
+
+#main_nav ul.on,
+#main_nav li.on {
+  transform: translateX(0);
+  opacity: 1;
+} */
 
 .fuwa {
   opacity: 0;
