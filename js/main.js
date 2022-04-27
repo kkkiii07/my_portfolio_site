@@ -36,9 +36,9 @@
 }
 
 {
-  const $switch = document.getElementById('switch');
+  // const $switch = document.getElementById('switch');
   const $main_nav = document.getElementById('main_nav');
-  const $ul = $main_nav.querySelectorAll('ul')[0];
+  // const $ul = $main_nav.querySelectorAll('ul')[0];
   const $li = $main_nav.querySelectorAll('li');
   // console.log($main_nav.querySelectorAll('li'));
 

@@ -173,7 +173,6 @@ button {
   transition: 0.2s;
   text-align: center;
   border: 1px solid rgb(34, 26, 26);
-  background-color: rgba(255, 255, 255, 0.827);
 }
 
 button::after {
@@ -202,6 +201,17 @@ button:hover::after {
 
 button[type="submit"]:hover {
   color: #fff;
+}
+
+button, input, select, textarea {
+  width: 100%;
+}
+button, input, select, textarea {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  width: auto;
 }
 
 

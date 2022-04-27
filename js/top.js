@@ -83,5 +83,5 @@
     }
   }
   // clearInterval(intervalId);
-  setInterval(showTime, 3000);
+  setInterval(showTime, 4500);
 }
