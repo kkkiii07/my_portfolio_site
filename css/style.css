@@ -275,7 +275,7 @@ nav span.bb::after {
 
 ul#menu {
   /* margin-top: 35px; */
-  padding-top: 150px;
+  padding-top: 100px;
   list-style-type: none;
   position: fixed;
   top: 0;
@@ -565,7 +565,7 @@ nav #menu li a span:hover {
   background-position: center top;
   height: 320px;
   object-fit: cover;
-  padding: 60px 4%;
+  padding: 24px 4%;
 }
 
 .ft_bg p {
@@ -591,7 +591,27 @@ nav #menu li a span:hover {
   margin-bottom: 72px;
 }
 
+footer .icon_ft {
+  margin: 32px auto 0;
+}
 
+footer .icon_ft ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .icon_ft li {
+  margin: 0;
+}
+
+footer .icon_ft li + li {
+  margin-left: 32px;
+}
+
+footer .icon_ft img {
+  width: 35px;
+}
 
 
 /* =========================
@@ -737,6 +757,11 @@ nav #menu li a span:hover {
     display: block;
     line-height: 0;
   }
+
+  footer .icon_ft {
+    margin: 64px auto 0;
+  }
+
 
 
 }
