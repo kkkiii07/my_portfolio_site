@@ -603,6 +603,7 @@ footer .icon_ft ul {
 
 footer .icon_ft li {
   margin: 0;
+  list-style-type: none;
 }
 
 footer .icon_ft li + li {
