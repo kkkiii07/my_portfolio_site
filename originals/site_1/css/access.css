@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/* =========================
+	For Mobile and ALL
+============================ */
+
+/*
+  アクセス
+-----------------*/
+
+.hero_ex {
+  background-image: url(../images/main_access.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero_ex .hero_ex_name {
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+  font-size: 48px;
+  padding-top: 35%;
+}
+
+.hero_ex .hero_ex_name h2 {
+  font-family: 'Secular One', sans-serif;
+  font-size: 32px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 40px #150E0E;
+}
+
+.hero_ex .hero_ex_name h3 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 0 0 20px #150E0E;
+  letter-spacing: 1px;
+}
+
+.main_ex h2 {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 40px auto 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.main_ex p {
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  /* margin-top: 24px; */
+}
+
+.main_ex ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 4%;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 20px auto 40px;
+}
+
+.main_ex li + li {
+  margin-top: 10px;
+}
+
+.main_ex .ul_p {
+  text-align: right;
+  margin-top: 30px;
+}
+
+
+.location-info p {
+  margin-top: 20px;
+}
+
+.location-traffic {
+  margin-top: 48px;
+}
+
+.location-traffic h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.location-traffic h4::after {
+  content: "";
+  border-bottom: 1px solid #000;
+  display: block;
+  margin: 10px auto 20px;
+  opacity: .3;
+}
+
+/* .location-traffic h4.location-traffic_bb {
+  font-size: 20px;
+  font-weight: normal;
+} */
+
+.location-traffic ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 4%;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.location-traffic li + li {
+  margin-top: 10px;
+}
+
+.section-item h3 {
+  margin: 88px auto 40px;
+  font-family: 'Secular One', sans-serif;
+  font-size: 40px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.section-item h3 span {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.section-item h3::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid rgb(34, 26, 26);
+  width: 5%;
+  margin: 32px auto 40px;
+}
+  
+
+.location-info h3.sub-title span {
+  font-size: 2.25rem;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+
+article h3 {
+  font-weight: normal;
+  position: relative;
+}
+
+article h3::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid rgb(34, 26, 26);
+}
+
+.bt_ex {
+  display: block;
+  width: 100%;
+  max-width: 232px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  padding: 8px 0;
+  position: relative;
+  color: rgb(34, 26, 26);
+  border: 1px solid rgb(34, 26, 26);
+  text-align: center;
+  margin: 0 auto 32px;
+}
+
+.bt_ex_all {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 72px;
+}
+
+.bt_ex::after {
+  content: '';
+  display: block;
+  border-right: 1px solid rgb(34, 26, 26);
+  border-bottom: 1px solid rgb(34, 26, 26);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  bottom: 0;
+  right: 0;
+  margin: -7px;
+}
+
+.bt_ex:hover {
+  color: #fff;
+  background-color: rgb(34, 26, 26);
+  transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+	For Tablet and PC
+============================ */
+
+@media (min-width: 600px) {
+
+  .hero_ex {
+    background-position: center;
+    height: 100%;
+    height: 500px;
+    margin-top: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+	
+  .hero_ex .hero_ex_name {
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 100px;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+
+  .hero_ex .hero_ex_name h2  {
+    font-size: 40px;
+  }
+  
+  .hero_ex .hero_ex_name h3  {
+    font-size: 1.2rem;
+  }
+
+  .main_ex h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 100px auto 48px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .main_ex p {
+    font-size: 16px;
+  }
+
+  .main_ex ul {
+    padding-left: 4%;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px auto 88px;
+  }
+  
+  .main_ex li + li {
+    margin-top: 10px;
+  }
+  
+  .main_ex .ul_p {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  .location-traffic {
+    margin: 0 auto 80px;
+    max-width: 600px;
+  }
+
+  .location-info p {
+    margin: 20px auto 96px;
+  }
+
+  .location-traffic ul {
+    display: inline-block;
+  }
+
+  article .bt_ex_all {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto 128px;
+  }
+
+  article .bt_ex_all div + div {
+    margin-left: 16px;
+  }
+
+  .section-item h3 {
+    font-size: 48px;
+  }
+
+  .section-item h3::after {
+    width: 40px;
+  }
+
+  .location-traffic h4 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+
+}

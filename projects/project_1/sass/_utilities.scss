@@ -1,0 +1,19 @@
+// 変数
+$color-text: #222;
+$color-main: #20AEE5;
+$color-sub: #E1F0F8;
+$color-gray: #ccc;
+$color-main_bg: #f3fbfe;
+$color-attention: #FF9700;
+
+// sass関数
+@function spVw($px) {
+  @return min(#{$px}px, $px / 375 * 100vw);
+}
+
+// mixin
+@mixin mq($breakpoint : 769px) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}

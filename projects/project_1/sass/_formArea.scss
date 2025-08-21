@@ -1,0 +1,150 @@
+@use "_utilities";
+
+.cp-form {
+  background: #e1f4fc;
+  max-width: 750px;
+  margin: auto;
+
+  ::before,
+  ::after {
+    box-sizing: content-box;
+  }
+
+  .pcNone {
+    display: none;
+
+    @include utilities.mq {
+      display: block;
+    }
+  }
+
+  a {
+    color: #0070c0;
+    opacity: 1;
+    transition: .3s;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  button {
+    text-align: center;
+  }
+
+  label[for] {
+    cursor: auto;
+  }
+
+  input:focus-visible {
+    outline: 2px solid #000;
+  }
+
+  &.section-wrapper {
+    padding: 80px 0;
+    text-align: left;
+  }
+
+  &.section-wrapper {
+    padding: 40px 20px;
+  }
+
+  &.section-wrapper .inner {
+    max-width: 1120px;
+    margin: auto;
+  }
+
+  h2.section-title {
+    font-size: 32px;
+    color: #20aee5;
+    text-align: center;
+    margin: 0 40px 25px;
+  }
+
+  h2.section-title {
+    font-size: 24px;
+    margin: 0 auto 25px;
+  }
+
+  .lead-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .lead-text {
+    font-size: clamp(12px, calc(18 / 750 * 100vw), 18px);
+  }
+
+  &.section-wrapper {
+    padding: 80px 0;
+  }
+
+  &.section-wrapper {
+    padding: 40px 0;
+  }
+
+  &.section-wrapper .lead-text {
+    width: 851px;
+    margin: 0 auto;
+  }
+
+  &.section-wrapper .lead-text {
+    width: 100%;
+  }
+
+  &.section-wrapper .lead-text {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    line-height: normal;
+  }
+
+  .inner {
+    max-width: 1240px;
+    padding: 0 20px;
+  }
+
+  h2.blue {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .cp-form-box {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 60px 80px 80px;
+  }
+
+  #mktoForm_4055 {
+    margin-bottom: 0;
+  }
+
+  .cp-form-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  h2.blue {
+    font-size: clamp(12px, calc(46 / 750 * 100vw), 46px);
+    margin-bottom: min(calc(40 / 750 * 100vw), 40px);
+    line-height: 1.45;
+  }
+
+  .cp-form-box {
+    margin-top: 0;
+    padding: 60px 80px 80px;
+
+    @include utilities.mq {
+      padding: 30px 20px 30px;
+    }
+  }
+
+  #mktoForm_4053.mktoForm .mktoFormRow:nth-child(10),
+  #mktoForm_4054.mktoForm .mktoFormRow:nth-child(10),
+  #mktoForm_4055.mktoForm .mktoFormRow:nth-child(10) {
+    display: none;
+  }
+}

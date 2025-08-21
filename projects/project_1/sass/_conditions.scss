@@ -1,0 +1,214 @@
+// 顧客環境から切り貼りしたコードのため_main.scssとファイルを分けてます。
+// 他意はないので、_main.scssに統合しても問題ありません。
+
+@use "utilities";
+
+.conditions {
+  .accordion {
+    max-width: 1120px;
+    margin: auto;
+
+    .option {
+      position: relative;
+      margin-bottom: 30px;
+
+      @include utilities.mq {
+        margin-bottom: utilities.spVw(30);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .question-box {
+      display: block;
+      cursor: pointer;
+      font-size: clamp(12px, calc(24 / 750 * 100vw), 24px);
+      font-weight: 700;
+      padding: 1em;
+      color: #222;
+      background-color: #fafafa;
+      border: solid 1px #ccc;
+      border-radius: 8px;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      transition: all .3s;
+
+      // @include utilities.mq {
+      //   font-size: utilities.spVw(12);
+      //   border-radius: utilities.spVw(8);
+      // }
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        right: 1.25em;
+        top: 40%;
+        width: min(calc(3 / 750 * 100vw), 3px);
+        height: min(calc(24 / 750 * 100vw), 24px);
+        background-color: #222;
+        transition: all .3s;
+
+        // @include utilities.mq {
+        //   width: utilities.spVw(2);
+        // }
+      }
+
+      &::after {
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+    }
+
+    details[open] .question-box {
+      &::before {
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        right: 1.25em;
+        top: 40%;
+        width: min(calc(3 / 750 * 100vw), 3px);
+        height: min(calc(24 / 750 * 100vw), 24px);
+        background-color: #222;
+        transition: all .3s;
+
+        // @include utilities.mq {
+        //   width: utilities.spVw(2);
+        // }
+      }
+    }
+
+    .content {
+      font-size: clamp(12px, calc(18 / 750 * 100vw), 18px);
+
+      >.answer {
+        padding: 20px;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        gap: 12px;
+
+        @include utilities.mq {
+          padding: utilities.spVw(20);
+          gap: utilities.spVw(12);
+        }
+
+        .answer-title {
+          font-weight: 600;
+          max-width: min(calc(240 / 750 * 100vw), 240px);
+          width: 100%;
+        }
+
+        .answer-block {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          gap: 10px;
+
+          @include utilities.mq {
+            gap: utilities.spVw(10);
+          }
+        }
+
+        .answer-list li {
+          margin-bottom: 10px;
+
+          @include utilities.mq {
+            margin-bottom: utilities.spVw(10);
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          >p {
+            padding-left: 1em;
+            text-indent: -1em;
+
+            &.answer-index {
+              padding-left: 2em;
+              text-indent: -1em;
+            }
+          }
+        }
+      }
+
+      &:nth-child(n+2)>.answer {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .section-wrapper {
+    padding: 20px 0;
+    text-align: left;
+
+    @include utilities.mq {
+      padding: utilities.spVw(20) 0;
+    }
+
+    .inner {
+      max-width: 1120px;
+      margin: auto;
+    }
+
+    .lead-text {
+      margin: 0 auto;
+    }
+  }
+
+  :root {
+    --White-Blue-Height: 73.196px;
+  }
+
+  .cp-faq {
+    .blue {
+      font-weight: 600;
+    }
+
+    .inner {
+      .lead-text {
+        padding-bottom: 20px;
+        text-align: center;
+
+        @include utilities.mq {
+          padding-bottom: utilities.spVw(30);
+        }
+      }
+    }
+  }
+
+  h2.section-title {
+    font-size: clamp(12px, calc(46 / 750 * 100vw), 46px);
+    color: #20aee5;
+    text-align: center;
+    margin: auto;
+
+    // @include utilities.mq {
+    //   font-size: utilities.spVw(24);
+    // }
+  }
+
+  .lead-text {
+    margin-bottom: 40px;
+    font-size: clamp(12px, calc(20 / 750 * 100vw), 20px);
+    line-height: 26px;
+    text-align: center;
+
+    // @include utilities.mq {
+    //   margin-bottom: utilities.spVw(40);
+    //   font-size: utilities.spVw(10);
+    //   line-height: utilities.spVw(26);
+    // }
+  }
+}

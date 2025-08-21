@@ -1,0 +1,104 @@
+@use "utilities";
+
+.swiper {
+  position: relative;
+  width: 100%;
+  max-width: min(calc(662 / 750 * 100vw), 662px);
+  margin: min(calc(6 / 750 * 100vw), -6px) auto 0;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  width: 100% !important;
+  transition-timing-function: ease;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100% !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: min(calc(16 / 750 * 100vw), 16px) !important;
+  height: min(calc(30 / 750 * 100vw), 30px) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ページネーションのドット */
+.swiper-pagination-bullet {
+  width: min(calc(10 / 750 * 100vw), 10px) !important;
+  height: min(calc(10 / 750 * 100vw), 10px) !important;
+  background-color: #222 !important;
+  border-radius: 50%;
+  margin: 0 min(calc(10 / 750 * 100vw), 10px) !important;
+  opacity: 1 !important;
+  display: inline-block;
+  // transition: background-color 0.3s, width 0.3s, height 0.3s;
+}
+
+/* アクティブドット */
+.swiper-pagination-bullet-active {
+  background-color: #20aee5 !important;
+  width: min(calc(20 / 750 * 100vw), 20px) !important;
+  height: min(calc(20 / 750 * 100vw), 20px) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: min(calc(46 / 750 * 100vw), 46px) !important;
+  height: min(calc(65 / 750 * 100vw), 65px) !important;
+  background: transparent;
+  top: 59% !important;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  box-shadow: none;
+  border: none;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+  background-image: url('../image/slide_arrow.png');
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.swiper-button-next {
+  right: 0 !important;
+  background-image: url('../image/slide_arrow.png');
+}
+
+/* Swiperのデフォルト矢印テキストを非表示に */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+
+.swiper-wrapper-box {
+  display: none;
+
+  & .swiper_text {
+    font-size: clamp(12px, calc(34 / 750 * 100vw), 34px);
+    color: #20aee5;
+    font-weight: 500;
+    text-align: center;
+    padding-top: min(calc(25 / 750 * 100vw), 25px);
+  }
+
+  &+.swiper-wrapper-box {
+    margin-top: min(calc(18 / 750 * 100vw), -18px);
+  }
+}
