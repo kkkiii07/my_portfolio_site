@@ -1,0 +1,99 @@
+■PCフッタを下記のように修正してください。
+
+★修正対象ファイル
+
+その他
+/pcc/N/promo/fld04/6243/index.html
+/pcc/N/promo/fld04/6244/index.html
+/pcc/N/promo/fld04/6594/index.html
+/pcc/N/promo/fld04/6595/index.html
+/pcc/N/promo/fld04/6596/index.html
+/pcc/N/promo/fld04/6597/index.html　
+
+
+
+■修正記述
+<section class="pc_with">
+  <footer class="clearfix">
+    <nav class="co_fo_menu">
+      <div class="co_fo_menu_wrapper">
+        <ul class="clearfix" style="display: flex;">
+          <li class="co_fo_menu_td" style="display: block !important; clear: both;">
+            <div class="co_fo_menu_td_inner" style="height: auto;">
+              <div class="co_fo_menu_td_inner_ma_title">サイト一覧</div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/">・漫画/電子書籍のコミックシーモア</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-left:20px;"><a href="https://www.cmoa.jp/boy/">- 少年・青年マンガ</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-left:20px;"><a href="https://www.cmoa.jp/girl/">- 少女・女性マンガ</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-left:20px;"><a href="https://www.cmoa.jp/boyslove/">- BL（ボーイズラブ）</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-left:20px;"><a href="https://www.cmoa.jp/teenslove/">- TL・レディコミ</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-left:20px;"><a href="https://www.cmoa.jp/harlequin/">- ハーレクイン</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-left:20px;"><a href="https://www.cmoa.jp/lightnovel/">- ライトノベル</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-left:20px;"><a href="https://www.cmoa.jp/book/">- 小説・実用書</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-left:20px;"><a href="https://www.cmoa.jp/magazinetop/">- 雑誌・写真集</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-top:20px;"><a href="https://{$smarty.const.UNLIMITED_SERVER_NAME}/">・シーモア読み放題</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://{$smarty.const.REVIEW_SERVER_NAME}/" rel="nofollow">・シーモアレビュー</a></div>
+            </div>
+          </li>
+          <li class="co_fo_menu_td" style="display: block !important; clear: both; border-left:1px dotted #ccc; border-right:1px dotted #ccc;">
+            <div class="co_fo_menu_td_inner" style="height: auto;">
+              <div class="co_fo_menu_td_inner_ma_title">会員サービス</div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/member/join_top/" class="GA_ban" id="GA_memberregi_footertext" rel="nofollow">・新規会員登録</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/registration/registration_top/" class="GA_ban" id="GA_point_footertext_notlogin" rel="nofollow">・ポイント購入</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/mailmagazine/mailmagazine_top/" rel="nofollow">・メルマガ確認・変更</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/mypage/mytop/" rel="nofollow">・会員情報・設定</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/myinfo/myinfo_buyhistory/" rel="nofollow">・購入履歴</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/ecoupon/box/" rel="nofollow">・クーポンBOX</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-top:9px; line-height: 17px;"><a href="https://www.cmoa.jp/unregist/unregist_top/" rel="nofollow">・月額コース解約</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/Cancel/" target="_blank" rel="nofollow">・docomoマイメニュー解約</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/yomiho/unregist_top/?site_cd=cmoa_yomiho" rel="nofollow">・読み放題コース解約</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/faq/25/" rel="nofollow">・サイト退会</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="margin-top:9px; line-height: 17px;"><a href="https://www.cmoa.jp/eventcoupon/regist/" rel="nofollow">・シーモア図書券をお持ちの方</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/presentcd/" rel="nofollow">・プレゼントコードをお持ちの方</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/information/" rel="nofollow">・サイトからのお知らせ</a></div>
+              <div class="co_fo_menu_td_inner_ma_link" style="line-height: 17px;"><a href="https://www.cmoa.jp/content/info/" rel="nofollow">・コンテンツに関するお知らせ</a></div>
+            </div>
+          </li>
+          <li class="co_fo_menu_td" style="display: block !important; clear: both; border-right:1px dotted #ccc;">
+            <div class="co_fo_menu_td_inner" style="height: auto;">
+              <div class="co_fo_menu_td_inner_ma_title">本棚アプリ</div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/bookapp/guide/" rel="nofollow">・アプリダウンロード</a></div>
+              <div class="co_fo_menu_td_inner_ma_title" style="margin-top:16px;">ヘルプ＆ガイド</div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://{$smarty.const.ISLAND_SERVER_NAME}/">・シーモア島</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/faq/top/">・ヘルプ/お問合せ</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/beginner/">・初めての方へ</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/guide/">・ご利用ガイド（シーモア）</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/freeserial/beginner/">・ご利用ガイド（毎日無料連載）</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://yomiho.cmoa.jp/beginner/">・ご利用ガイド（読み放題）</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/request/" rel="nofollow">・作品のリクエスト</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/other/model/">・推奨環境</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/sitemap/">・サイトマップ</a></div>
+            </div>
+          </li>
+          <li class="co_fo_menu_td" style="display: block !important; clear: both;">
+            <div class="co_fo_menu_td_inner" style="height: auto;">
+              <div class="co_fo_menu_td_inner_ma_title">シーモアオリジナル作品</div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/cmoaoriginal/">・作品紹介</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/cmoacomics/wanted/">・マンガ家募集</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/cmoacomics/recruit/">・マンガ編集者募集</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.cmoa.jp/cmoacomics/">・シーモアコミックス</a></div>
+              <div class="co_fo_menu_td_inner_ma_title" style="margin-top:20px;">SNSサイト</div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://www.facebook.com/comic.cmoa" target="_blank" rel="nofollow">・Facebookページ</a></div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://twitter.com/comic_cmoa" target="_blank" rel="nofollow">・X(Twitter)</a></div>
+              <div class="co_fo_menu_td_inner_ma_title" style="margin-top:20px;">関連サイト</div>
+              <div class="co_fo_menu_td_inner_ma_link"><a href="https://mangaplaza.com/" target="_blank">・MangaPlaza<br>&ensp;（English Manga Store）</a></div>
+              <div style="margin:10px 0 0 10px"><img src="/pcc/images/top/2013_1/footer_qrcode.png" width="200" height="70" alt="スマホでコミックシーモアを楽しめる" loading="lazy"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="co_fo_copyright" style="text-align:center">
+        <div class="co_fo_copyright_div" style="text-align:center"><a href="http://www.nttsolmare.com/corporateinfo/profile/">会社概要</a> | <a href="https://www.cmoa.jp/kiyaku/">利用規約</a> | <a href="https://www.cmoa.jp/privacy/">プライバシーポリシー</a> | <a href="https://www.cmoa.jp/nttg/">情報セキュリティポリシー</a> | <a href="https://www.cmoa.jp/tokushoho/" rel="nofollow">特定商取引法に基づく表示</a> | <a href="https://www.cmoa.jp/sitepolicy/" rel="nofollow">このサイトについて</a> | <a href="http://www.nttsolmare.com/">運営会社 NTTソルマーレ</a></div>
+        <div class="tab-footer-inner_div margin_5">
+          <a href="https://www.cmoa.jp/abj/"><img src="/cc/template/common/rules/abj/images/icon_abj.png" width="60" height="42" alt="ABJ" loading="lazy"></a>
+          <p style="font-size: 11px;padding: 1px 5px 4px;line-height: 15px;text-align: left;color: #333;">ABJマークは、この電子書店・電子書籍配信サービスが、 著作権者からコンテンツ使用許諾を得た正規版配信サービスであることを示す登録商標（登録番号 第6091713号）です。 詳しくは［ABJマーク］または［電子出版制作・流通協議会］で検索してください。</p>
+        </div>
+        <div class="tab-footer-inner_div"><a href="http://www.nttsolmare.com/corporateinfo/profile/" styl="font-size: 14px; color: #333;">Copyright (c) NTTsolmare.Corporation.</a></div>
+      </div>
+    </nav>
+  </footer>
+</section>

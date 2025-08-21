@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@use 'sass:math';
+
+@forward 'variable';
+@use 'variable';
+
+// responsive font
+// @example
+// 14px @ 320px ~ 29px @ 990px
+// font-size: x-calc-font( 14px, 28px, 320px, 990px);
+@function x-calc-font($min, $max, $vwMin, $vwMax ) {
+  $A: math.div($min , 16px) * 1rem;
+  $B: math.div(math.div($vwMin , 16px) * 1rem, 100);
+  $C: 100 * math.div(($max - $min), ($vwMax - $vwMin));
+
+  @return calc(#{$A} + ((1vw - #{$B}) * #{$C}));
+}
+
+// width %
+@function x-calc-percent($target, $container: variable.$base_width ) {
+  @return math.div($target , $container ) * 100%;
+}
+
+// height %
+@function y-calc-percent($target, $container ) {
+  @return math.div($target , $container ) * 100%;
+}
+
+// vw
+@function calcvw($num, $width: variable.$base_width) {
+  @return math.div(1vw * $num, $width) * 100;
+}
+
+// min
+@function calcmin($min, $width: variable.$base_width ) {
+  $widthVw: #{calcvw($min, $width)};
+  @return unquote("min(#{$min}, #{$widthVw})");
+}
+
+// max
+@function calcmax($max, $width: variable.$base_width ) {
+  $widthVw: #{calcvw($max, $width)};
+  @return unquote("max(#{$max}, #{$widthVw})");
+}
+
+// min%
+@function calcminper($min, $width: variable.$base_width ) {
+  $widthVw: math.div($min , $width ) * 100%;
+  @return unquote("min(#{$min}, #{$widthVw})");
+}

@@ -1,0 +1,2736 @@
+@font-face {
+  font-family: NotoSansJP-font;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NotoSansJP-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: NotoSansJP-font;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NotoSansJP-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "font-icon";
+  src: url("../fonts/font-icon.ttf") format("truetype"), url("../fonts/font-icon.woff") format("woff"), url("../fonts/font-icon.woff2") format("woff2"), url("../fonts/font-icon.svg#font-icon") format("svg");
+}
+@font-face {
+  font-family: "font-logo-icon";
+  src: url("../fonts/font-logo-icon.ttf") format("truetype"), url("../fonts/font-logo-icon.woff") format("woff"), url("../fonts/font-logo-icon.woff2") format("woff2"), url("../fonts/font-logo-icon.svg#font-icon") format("svg");
+}
+body {
+  font-family: "NotoSansJP-font", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(12px, 1.6326530612vw, 16px);
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+body img {
+  vertical-align: bottom;
+}
+body a {
+  transition: 0.3s;
+}
+body a:focus {
+  outline: none;
+}
+body a:hover {
+  opacity: 0.6;
+}
+body #mainSec {
+  width: 100%;
+}
+body #mainSec .fv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #70d3f3;
+}
+body #mainSec .fv img {
+  width: 100%;
+  max-width: 1028px;
+}
+body #mainSec .inner {
+  width: 100%;
+  max-width: min(min(100vw, 980px), 100% - min(4.8979591837vw, 48px));
+  padding: 0 min(2.4489795918vw, 24px);
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .inner {
+    max-width: min(min(100vw, 768px), 100% - min(4.1666666667vw, 32px));
+    padding: 0 min(2.0833333333vw, 16px);
+  }
+}
+body #mainSec .inner.fv_inner {
+  width: 100%;
+  max-width: 1028px;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .inner.fv_inner {
+    max-width: 100%;
+  }
+}
+body #mainSec .fv_btn {
+  background-color: var(--global-palette-navy-600);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: min(3.0612244898vw, 30px) 0;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn {
+    padding: min(10.9375vw, 84px) 0 min(7.03125vw, 54px);
+  }
+}
+body #mainSec .fv_btn__none {
+  background-color: transparent;
+}
+body #mainSec .fv_btn.bg_none {
+  background-color: transparent;
+}
+body #mainSec .fv_btn__head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #mainSec .fv_btn__head > div + div {
+  margin-top: min(0.612244898vw, 6px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head div + div {
+    margin-top: min(6.25vw, 48px);
+  }
+}
+body #mainSec .fv_btn__head > div:last-of-type {
+  margin-top: min(2.0408163265vw, 20px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head > div:last-of-type {
+    margin-top: min(6.25vw, 48px);
+  }
+}
+body #mainSec .fv_btn__head__opened {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: min(77.5510204082vw, 760px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__opened {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
+body #mainSec .fv_btn__head__opened .opened {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+body #mainSec .fv_btn__head__opened .opened::after {
+  content: "";
+  background-image: url(../images/static/2024/target_blank.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  font-family: font-icon !important;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: clamp(12px, 1.6326530612vw, 16px);
+  position: absolute;
+  right: 9%;
+  top: 51%;
+  transform: translateY(-50%);
+  color: var(--global-palette-white-50);
+  -webkit-font-smoothing: antialiased;
+  width: min(2.1428571429vw, 21px);
+  height: min(2.1428571429vw, 21px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__opened .opened::after {
+    font-size: clamp(12px, 3.3854166667vw, 26px);
+    right: 6%;
+    width: min(5.46875vw, 42px);
+    height: min(5.46875vw, 42px);
+  }
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__opened .opened.bottom_btn::after {
+    right: 4.6%;
+  }
+}
+body #mainSec .fv_btn__head__opened .opened.order {
+  order: 2;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__opened .opened.order {
+    order: unset;
+  }
+}
+body #mainSec .fv_btn__head__opened .opened__top {
+  width: 100%;
+  max-width: min(29.2857142857vw, 287px);
+  position: absolute;
+  top: -20%;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__opened .opened__top {
+    max-width: 100%;
+    top: -26%;
+  }
+}
+body #mainSec .fv_btn__head__opened .opened__top p.bk_white {
+  width: 100%;
+  max-width: min(29.2857142857vw, 287px);
+  background-color: var(--global-palette-white-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--global-palette-navy-600);
+  font-size: clamp(12px, 1.4285714286vw, 14px);
+  border-radius: min(1.0204081633vw, 10px);
+  font-weight: 700;
+  height: min(2.0408163265vw, 20px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__opened .opened__top p.bk_white {
+    max-width: min(72.9166666667vw, 560px);
+    margin: 0 auto;
+    font-size: clamp(12px, 3.3854166667vw, 26px);
+    border-radius: min(2.6041666667vw, 20px);
+    padding-bottom: min(0.2604166667vw, 2px);
+    height: min(5.2083333333vw, 40px);
+  }
+}
+body #mainSec .fv_btn__head__opened .opened__top p.bk_gray {
+  background-color: #F2F2F2;
+}
+body #mainSec .fv_btn__head__opened .opened a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--global-palette-pink-500);
+  color: var(--global-palette-white-50);
+  font-size: clamp(18px, 2.4489795918vw, 24px);
+  width: 100%;
+  max-width: min(35.8163265306vw, 351px);
+  border-radius: min(1.0204081633vw, 10px);
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  height: min(6.5306122449vw, 64px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__opened .opened a {
+    max-width: min(91.1458333333vw, 700px);
+    font-size: clamp(24px, 6.25vw, 48px);
+    line-height: clamp(24px, 6.25vw, 48px);
+    border-radius: min(1.3020833333vw, 10px);
+    height: min(14.0625vw, 108px);
+    padding-bottom: min(0.5208333333vw, 4px);
+  }
+}
+body #mainSec .fv_btn__head__products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #mainSec .fv_btn__head__products a {
+  width: 100%;
+  max-width: min(35.8163265306vw, 351px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--global-palette-white-50);
+  color: var(--global-palette-navy-600);
+  border-radius: min(1.0204081633vw, 10px);
+  font-weight: 700;
+  position: relative;
+  z-index: 0;
+  outline: 2px solid var(--global-palette-navy-600);
+  font-size: clamp(18px, 2.4489795918vw, 24px);
+  height: min(6.5306122449vw, 64px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__products a {
+    max-width: min(91.1458333333vw, 700px);
+    font-size: clamp(24px, 6.25vw, 48px);
+    line-height: clamp(24px, 6.25vw, 48px);
+    height: min(14.0625vw, 108px);
+    padding-bottom: min(0.5208333333vw, 4px);
+  }
+}
+body #mainSec .fv_btn__head__products a.house {
+  padding-left: min(2.6530612245vw, 26px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__products a.house {
+    padding-left: min(7.5520833333vw, 58px);
+  }
+}
+body #mainSec .fv_btn__head__products a::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/static/2024/lp_strealestate_merit_btn_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: min(2.7551020408vw, 27px);
+  height: min(2.3469387755vw, 23px);
+  position: absolute;
+  left: 18%;
+  top: 51%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__products a::before {
+    background-image: url(../images/static/2024/lp_strealestate_merit_btn_icon_sp.png);
+    width: min(6.640625vw, 51px);
+    height: min(5.7291666667vw, 44px);
+  }
+}
+body #mainSec .fv_btn__head__products a::after {
+  content: "";
+  background-image: url(../images/static/2024/g_cmn_icon_blank_02_d-blue_20210910.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  font-family: font-icon !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: absolute;
+  right: 6%;
+  top: 51%;
+  transform: translateY(-50%);
+  color: var(--global-palette-navy-600);
+  font-size: clamp(12px, 1.6326530612vw, 16px);
+  -webkit-font-smoothing: antialiased;
+  width: min(2.1428571429vw, 21px);
+  height: min(2.1428571429vw, 21px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__products a::after {
+    font-size: clamp(12px, 3.3854166667vw, 26px);
+    right: 3.7%;
+    width: min(5.46875vw, 42px);
+    height: min(5.46875vw, 42px);
+  }
+}
+body #mainSec .fv_btn__head__products a.continuation::before {
+  background-image: none;
+}
+body #mainSec .fv_btn__head__products.icon_position a::after {
+  right: 4%;
+}
+body #mainSec .fv_btn__head__products.no-blank a::after {
+  content: "\f101";
+  display: block;
+  font-family: font-icon !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: absolute;
+  right: 6%;
+  top: 52%;
+  transform: translateY(-50%);
+  color: var(--global-palette-navy-600);
+  font-size: clamp(12px, 1.6326530612vw, 16px);
+  -webkit-font-smoothing: antialiased;
+  background-image: none !important;
+  width: unset;
+  height: unset;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head__products.no-blank a::after {
+    font-size: clamp(12px, 3.3854166667vw, 26px);
+    right: 4%;
+  }
+}
+body #mainSec .fv_btn__head .chu {
+  font-size: clamp(8px, 1.2244897959vw, 12px);
+  color: var(--global-palette-white-50);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .fv_btn__head .chu {
+    font-size: clamp(12px, 2.6041666667vw, 20px);
+    max-width: min(71.6145833333vw, 550px);
+    margin-top: -6%;
+    text-indent: -1.1em;
+    padding-left: 1em;
+    text-align: left;
+  }
+}
+body #mainSec .fv_btn__head .chu__bk {
+  color: var(--global-palette-black-alpha-600);
+}
+body #mainSec .section01,
+body #mainSec .section02,
+body #mainSec .section02_sub,
+body #mainSec .section03,
+body #mainSec .section04,
+body #mainSec .section05,
+body #mainSec .section06 {
+  text-align: center;
+  background-color: #f0fbff;
+  padding: min(4.693877551vw, 46px) 0 min(3.0612244898vw, 30px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01,
+  body #mainSec .section02,
+  body #mainSec .section02_sub,
+  body #mainSec .section03,
+  body #mainSec .section04,
+  body #mainSec .section05,
+  body #mainSec .section06 {
+    padding: min(13.0208333333vw, 100px) 0 min(3.90625vw, 30px);
+  }
+}
+body #mainSec .section01 p, body #mainSec .section01 dt, body #mainSec .section01 dd,
+body #mainSec .section02 p,
+body #mainSec .section02 dt,
+body #mainSec .section02 dd,
+body #mainSec .section02_sub p,
+body #mainSec .section02_sub dt,
+body #mainSec .section02_sub dd,
+body #mainSec .section03 p,
+body #mainSec .section03 dt,
+body #mainSec .section03 dd,
+body #mainSec .section04 p,
+body #mainSec .section04 dt,
+body #mainSec .section04 dd,
+body #mainSec .section05 p,
+body #mainSec .section05 dt,
+body #mainSec .section05 dd,
+body #mainSec .section06 p,
+body #mainSec .section06 dt,
+body #mainSec .section06 dd {
+  font-size: clamp(24px, 3.2653061224vw, 32px);
+  color: var(--global-palette-navy-600);
+  font-weight: 700;
+  line-height: 1.4 !important;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01 p, body #mainSec .section01 dt, body #mainSec .section01 dd,
+  body #mainSec .section02 p,
+  body #mainSec .section02 dt,
+  body #mainSec .section02 dd,
+  body #mainSec .section02_sub p,
+  body #mainSec .section02_sub dt,
+  body #mainSec .section02_sub dd,
+  body #mainSec .section03 p,
+  body #mainSec .section03 dt,
+  body #mainSec .section03 dd,
+  body #mainSec .section04 p,
+  body #mainSec .section04 dt,
+  body #mainSec .section04 dd,
+  body #mainSec .section05 p,
+  body #mainSec .section05 dt,
+  body #mainSec .section05 dd,
+  body #mainSec .section06 p,
+  body #mainSec .section06 dt,
+  body #mainSec .section06 dd {
+    font-size: clamp(26px, 6.5104166667vw, 50px);
+  }
+}
+body #mainSec .section01 p.title_top, body #mainSec .section01 dt.title_top, body #mainSec .section01 dd.title_top,
+body #mainSec .section02 p.title_top,
+body #mainSec .section02 dt.title_top,
+body #mainSec .section02 dd.title_top,
+body #mainSec .section02_sub p.title_top,
+body #mainSec .section02_sub dt.title_top,
+body #mainSec .section02_sub dd.title_top,
+body #mainSec .section03 p.title_top,
+body #mainSec .section03 dt.title_top,
+body #mainSec .section03 dd.title_top,
+body #mainSec .section04 p.title_top,
+body #mainSec .section04 dt.title_top,
+body #mainSec .section04 dd.title_top,
+body #mainSec .section05 p.title_top,
+body #mainSec .section05 dt.title_top,
+body #mainSec .section05 dd.title_top,
+body #mainSec .section06 p.title_top,
+body #mainSec .section06 dt.title_top,
+body #mainSec .section06 dd.title_top {
+  color: #80ABD6;
+  font-size: clamp(14px, 1.8367346939vw, 18px);
+  display: block;
+  letter-spacing: 2px;
+  padding-bottom: min(0.8163265306vw, 8px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01 p.title_top, body #mainSec .section01 dt.title_top, body #mainSec .section01 dd.title_top,
+  body #mainSec .section02 p.title_top,
+  body #mainSec .section02 dt.title_top,
+  body #mainSec .section02 dd.title_top,
+  body #mainSec .section02_sub p.title_top,
+  body #mainSec .section02_sub dt.title_top,
+  body #mainSec .section02_sub dd.title_top,
+  body #mainSec .section03 p.title_top,
+  body #mainSec .section03 dt.title_top,
+  body #mainSec .section03 dd.title_top,
+  body #mainSec .section04 p.title_top,
+  body #mainSec .section04 dt.title_top,
+  body #mainSec .section04 dd.title_top,
+  body #mainSec .section05 p.title_top,
+  body #mainSec .section05 dt.title_top,
+  body #mainSec .section05 dd.title_top,
+  body #mainSec .section06 p.title_top,
+  body #mainSec .section06 dt.title_top,
+  body #mainSec .section06 dd.title_top {
+    font-size: clamp(16px, 3.90625vw, 30px);
+  }
+}
+body #mainSec .section01 p .sub, body #mainSec .section01 dt .sub, body #mainSec .section01 dd .sub,
+body #mainSec .section02 p .sub,
+body #mainSec .section02 dt .sub,
+body #mainSec .section02 dd .sub,
+body #mainSec .section02_sub p .sub,
+body #mainSec .section02_sub dt .sub,
+body #mainSec .section02_sub dd .sub,
+body #mainSec .section03 p .sub,
+body #mainSec .section03 dt .sub,
+body #mainSec .section03 dd .sub,
+body #mainSec .section04 p .sub,
+body #mainSec .section04 dt .sub,
+body #mainSec .section04 dd .sub,
+body #mainSec .section05 p .sub,
+body #mainSec .section05 dt .sub,
+body #mainSec .section05 dd .sub,
+body #mainSec .section06 p .sub,
+body #mainSec .section06 dt .sub,
+body #mainSec .section06 dd .sub {
+  font-size: clamp(18px, 2.4489795918vw, 24px);
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01 p .sub, body #mainSec .section01 dt .sub, body #mainSec .section01 dd .sub,
+  body #mainSec .section02 p .sub,
+  body #mainSec .section02 dt .sub,
+  body #mainSec .section02 dd .sub,
+  body #mainSec .section02_sub p .sub,
+  body #mainSec .section02_sub dt .sub,
+  body #mainSec .section02_sub dd .sub,
+  body #mainSec .section03 p .sub,
+  body #mainSec .section03 dt .sub,
+  body #mainSec .section03 dd .sub,
+  body #mainSec .section04 p .sub,
+  body #mainSec .section04 dt .sub,
+  body #mainSec .section04 dd .sub,
+  body #mainSec .section05 p .sub,
+  body #mainSec .section05 dt .sub,
+  body #mainSec .section05 dd .sub,
+  body #mainSec .section06 p .sub,
+  body #mainSec .section06 dt .sub,
+  body #mainSec .section06 dd .sub {
+    font-size: clamp(18px, 5.2083333333vw, 40px);
+  }
+}
+body #mainSec .section01 p .outer-span, body #mainSec .section01 dt .outer-span, body #mainSec .section01 dd .outer-span,
+body #mainSec .section02 p .outer-span,
+body #mainSec .section02 dt .outer-span,
+body #mainSec .section02 dd .outer-span,
+body #mainSec .section02_sub p .outer-span,
+body #mainSec .section02_sub dt .outer-span,
+body #mainSec .section02_sub dd .outer-span,
+body #mainSec .section03 p .outer-span,
+body #mainSec .section03 dt .outer-span,
+body #mainSec .section03 dd .outer-span,
+body #mainSec .section04 p .outer-span,
+body #mainSec .section04 dt .outer-span,
+body #mainSec .section04 dd .outer-span,
+body #mainSec .section05 p .outer-span,
+body #mainSec .section05 dt .outer-span,
+body #mainSec .section05 dd .outer-span,
+body #mainSec .section06 p .outer-span,
+body #mainSec .section06 dt .outer-span,
+body #mainSec .section06 dd .outer-span {
+  display: inline-block;
+  font-size: clamp(18px, 2.4489795918vw, 24px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01 p .outer-span, body #mainSec .section01 dt .outer-span, body #mainSec .section01 dd .outer-span,
+  body #mainSec .section02 p .outer-span,
+  body #mainSec .section02 dt .outer-span,
+  body #mainSec .section02 dd .outer-span,
+  body #mainSec .section02_sub p .outer-span,
+  body #mainSec .section02_sub dt .outer-span,
+  body #mainSec .section02_sub dd .outer-span,
+  body #mainSec .section03 p .outer-span,
+  body #mainSec .section03 dt .outer-span,
+  body #mainSec .section03 dd .outer-span,
+  body #mainSec .section04 p .outer-span,
+  body #mainSec .section04 dt .outer-span,
+  body #mainSec .section04 dd .outer-span,
+  body #mainSec .section05 p .outer-span,
+  body #mainSec .section05 dt .outer-span,
+  body #mainSec .section05 dd .outer-span,
+  body #mainSec .section06 p .outer-span,
+  body #mainSec .section06 dt .outer-span,
+  body #mainSec .section06 dd .outer-span {
+    font-size: clamp(18px, 5.2083333333vw, 40px);
+  }
+}
+body #mainSec .section01 p .inner-span, body #mainSec .section01 dt .inner-span, body #mainSec .section01 dd .inner-span,
+body #mainSec .section02 p .inner-span,
+body #mainSec .section02 dt .inner-span,
+body #mainSec .section02 dd .inner-span,
+body #mainSec .section02_sub p .inner-span,
+body #mainSec .section02_sub dt .inner-span,
+body #mainSec .section02_sub dd .inner-span,
+body #mainSec .section03 p .inner-span,
+body #mainSec .section03 dt .inner-span,
+body #mainSec .section03 dd .inner-span,
+body #mainSec .section04 p .inner-span,
+body #mainSec .section04 dt .inner-span,
+body #mainSec .section04 dd .inner-span,
+body #mainSec .section05 p .inner-span,
+body #mainSec .section05 dt .inner-span,
+body #mainSec .section05 dd .inner-span,
+body #mainSec .section06 p .inner-span,
+body #mainSec .section06 dt .inner-span,
+body #mainSec .section06 dd .inner-span {
+  font-size: clamp(14px, 1.8367346939vw, 18px);
+  display: inline-block;
+  font-family: YakuHanJP;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01 p .inner-span, body #mainSec .section01 dt .inner-span, body #mainSec .section01 dd .inner-span,
+  body #mainSec .section02 p .inner-span,
+  body #mainSec .section02 dt .inner-span,
+  body #mainSec .section02 dd .inner-span,
+  body #mainSec .section02_sub p .inner-span,
+  body #mainSec .section02_sub dt .inner-span,
+  body #mainSec .section02_sub dd .inner-span,
+  body #mainSec .section03 p .inner-span,
+  body #mainSec .section03 dt .inner-span,
+  body #mainSec .section03 dd .inner-span,
+  body #mainSec .section04 p .inner-span,
+  body #mainSec .section04 dt .inner-span,
+  body #mainSec .section04 dd .inner-span,
+  body #mainSec .section05 p .inner-span,
+  body #mainSec .section05 dt .inner-span,
+  body #mainSec .section05 dd .inner-span,
+  body #mainSec .section06 p .inner-span,
+  body #mainSec .section06 dt .inner-span,
+  body #mainSec .section06 dd .inner-span {
+    font-size: clamp(12px, 3.3854166667vw, 26px);
+  }
+}
+body #mainSec .section01 p.bk_text, body #mainSec .section01 dt.bk_text, body #mainSec .section01 dd.bk_text,
+body #mainSec .section02 p.bk_text,
+body #mainSec .section02 dt.bk_text,
+body #mainSec .section02 dd.bk_text,
+body #mainSec .section02_sub p.bk_text,
+body #mainSec .section02_sub dt.bk_text,
+body #mainSec .section02_sub dd.bk_text,
+body #mainSec .section03 p.bk_text,
+body #mainSec .section03 dt.bk_text,
+body #mainSec .section03 dd.bk_text,
+body #mainSec .section04 p.bk_text,
+body #mainSec .section04 dt.bk_text,
+body #mainSec .section04 dd.bk_text,
+body #mainSec .section05 p.bk_text,
+body #mainSec .section05 dt.bk_text,
+body #mainSec .section05 dd.bk_text,
+body #mainSec .section06 p.bk_text,
+body #mainSec .section06 dt.bk_text,
+body #mainSec .section06 dd.bk_text {
+  color: #000;
+  font-size: clamp(14px, 1.8367346939vw, 18px);
+  display: inline-block;
+  font-family: YakuHanJP;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01 p.bk_text, body #mainSec .section01 dt.bk_text, body #mainSec .section01 dd.bk_text,
+  body #mainSec .section02 p.bk_text,
+  body #mainSec .section02 dt.bk_text,
+  body #mainSec .section02 dd.bk_text,
+  body #mainSec .section02_sub p.bk_text,
+  body #mainSec .section02_sub dt.bk_text,
+  body #mainSec .section02_sub dd.bk_text,
+  body #mainSec .section03 p.bk_text,
+  body #mainSec .section03 dt.bk_text,
+  body #mainSec .section03 dd.bk_text,
+  body #mainSec .section04 p.bk_text,
+  body #mainSec .section04 dt.bk_text,
+  body #mainSec .section04 dd.bk_text,
+  body #mainSec .section05 p.bk_text,
+  body #mainSec .section05 dt.bk_text,
+  body #mainSec .section05 dd.bk_text,
+  body #mainSec .section06 p.bk_text,
+  body #mainSec .section06 dt.bk_text,
+  body #mainSec .section06 dd.bk_text {
+    font-size: clamp(14px, 3.6458333333vw, 28px);
+  }
+}
+body #mainSec .section01 .manga,
+body #mainSec .section02 .manga,
+body #mainSec .section02_sub .manga,
+body #mainSec .section03 .manga,
+body #mainSec .section04 .manga,
+body #mainSec .section05 .manga,
+body #mainSec .section06 .manga {
+  width: 100%;
+  margin: min(2.4489795918vw, 24px) auto 0;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01 .manga,
+  body #mainSec .section02 .manga,
+  body #mainSec .section02_sub .manga,
+  body #mainSec .section03 .manga,
+  body #mainSec .section04 .manga,
+  body #mainSec .section05 .manga,
+  body #mainSec .section06 .manga {
+    margin: min(2.6041666667vw, 20px) auto min(3.90625vw, -30px);
+  }
+}
+body #mainSec .section01 .manga img,
+body #mainSec .section02 .manga img,
+body #mainSec .section02_sub .manga img,
+body #mainSec .section03 .manga img,
+body #mainSec .section04 .manga img,
+body #mainSec .section05 .manga img,
+body #mainSec .section06 .manga img {
+  width: 100%;
+  max-width: min(85.2040816327vw, 835px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01 .manga img,
+  body #mainSec .section02 .manga img,
+  body #mainSec .section02_sub .manga img,
+  body #mainSec .section03 .manga img,
+  body #mainSec .section04 .manga img,
+  body #mainSec .section05 .manga img,
+  body #mainSec .section06 .manga img {
+    max-width: min(91.1458333333vw, 700px);
+  }
+}
+body #mainSec .section01.section02, body #mainSec .section01.section02_sub,
+body #mainSec .section02.section02,
+body #mainSec .section02.section02_sub,
+body #mainSec .section02_sub.section02,
+body #mainSec .section02_sub.section02_sub,
+body #mainSec .section03.section02,
+body #mainSec .section03.section02_sub,
+body #mainSec .section04.section02,
+body #mainSec .section04.section02_sub,
+body #mainSec .section05.section02,
+body #mainSec .section05.section02_sub,
+body #mainSec .section06.section02,
+body #mainSec .section06.section02_sub {
+  background-color: var(--global-palette-white-50);
+  padding: min(6.1224489796vw, 60px) 0 0;
+}
+body #mainSec .section01.section02 .merit, body #mainSec .section01.section02_sub .merit,
+body #mainSec .section02.section02 .merit,
+body #mainSec .section02.section02_sub .merit,
+body #mainSec .section02_sub.section02 .merit,
+body #mainSec .section02_sub.section02_sub .merit,
+body #mainSec .section03.section02 .merit,
+body #mainSec .section03.section02_sub .merit,
+body #mainSec .section04.section02 .merit,
+body #mainSec .section04.section02_sub .merit,
+body #mainSec .section05.section02 .merit,
+body #mainSec .section05.section02_sub .merit,
+body #mainSec .section06.section02 .merit,
+body #mainSec .section06.section02_sub .merit {
+  width: 100%;
+  margin: min(2.0408163265vw, 20px) auto min(6.1224489796vw, 60px);
+  position: relative;
+  z-index: 0;
+}
+body #mainSec .section01.section02 .merit img, body #mainSec .section01.section02_sub .merit img,
+body #mainSec .section02.section02 .merit img,
+body #mainSec .section02.section02_sub .merit img,
+body #mainSec .section02_sub.section02 .merit img,
+body #mainSec .section02_sub.section02_sub .merit img,
+body #mainSec .section03.section02 .merit img,
+body #mainSec .section03.section02_sub .merit img,
+body #mainSec .section04.section02 .merit img,
+body #mainSec .section04.section02_sub .merit img,
+body #mainSec .section05.section02 .merit img,
+body #mainSec .section05.section02_sub .merit img,
+body #mainSec .section06.section02 .merit img,
+body #mainSec .section06.section02_sub .merit img {
+  width: 100%;
+  max-width: min(90.8163265306vw, 890px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit img, body #mainSec .section01.section02_sub .merit img,
+  body #mainSec .section02.section02 .merit img,
+  body #mainSec .section02.section02_sub .merit img,
+  body #mainSec .section02_sub.section02 .merit img,
+  body #mainSec .section02_sub.section02_sub .merit img,
+  body #mainSec .section03.section02 .merit img,
+  body #mainSec .section03.section02_sub .merit img,
+  body #mainSec .section04.section02 .merit img,
+  body #mainSec .section04.section02_sub .merit img,
+  body #mainSec .section05.section02 .merit img,
+  body #mainSec .section05.section02_sub .merit img,
+  body #mainSec .section06.section02 .merit img,
+  body #mainSec .section06.section02_sub .merit img {
+    max-width: 100%;
+  }
+}
+body #mainSec .section01.section02 .merit__parts, body #mainSec .section01.section02_sub .merit__parts,
+body #mainSec .section02.section02 .merit__parts,
+body #mainSec .section02.section02_sub .merit__parts,
+body #mainSec .section02_sub.section02 .merit__parts,
+body #mainSec .section02_sub.section02_sub .merit__parts,
+body #mainSec .section03.section02 .merit__parts,
+body #mainSec .section03.section02_sub .merit__parts,
+body #mainSec .section04.section02 .merit__parts,
+body #mainSec .section04.section02_sub .merit__parts,
+body #mainSec .section05.section02 .merit__parts,
+body #mainSec .section05.section02_sub .merit__parts,
+body #mainSec .section06.section02 .merit__parts,
+body #mainSec .section06.section02_sub .merit__parts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 11%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts, body #mainSec .section01.section02_sub .merit__parts,
+  body #mainSec .section02.section02 .merit__parts,
+  body #mainSec .section02.section02_sub .merit__parts,
+  body #mainSec .section02_sub.section02 .merit__parts,
+  body #mainSec .section02_sub.section02_sub .merit__parts,
+  body #mainSec .section03.section02 .merit__parts,
+  body #mainSec .section03.section02_sub .merit__parts,
+  body #mainSec .section04.section02 .merit__parts,
+  body #mainSec .section04.section02_sub .merit__parts,
+  body #mainSec .section05.section02 .merit__parts,
+  body #mainSec .section05.section02_sub .merit__parts,
+  body #mainSec .section06.section02 .merit__parts,
+  body #mainSec .section06.section02_sub .merit__parts {
+    top: 7.4%;
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_title, body #mainSec .section01.section02_sub .merit__parts .merit_title,
+body #mainSec .section02.section02 .merit__parts .merit_title,
+body #mainSec .section02.section02_sub .merit__parts .merit_title,
+body #mainSec .section02_sub.section02 .merit__parts .merit_title,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_title,
+body #mainSec .section03.section02 .merit__parts .merit_title,
+body #mainSec .section03.section02_sub .merit__parts .merit_title,
+body #mainSec .section04.section02 .merit__parts .merit_title,
+body #mainSec .section04.section02_sub .merit__parts .merit_title,
+body #mainSec .section05.section02 .merit__parts .merit_title,
+body #mainSec .section05.section02_sub .merit__parts .merit_title,
+body #mainSec .section06.section02 .merit__parts .merit_title,
+body #mainSec .section06.section02_sub .merit__parts .merit_title {
+  width: 100%;
+  max-width: min(22.5510204082vw, 221px);
+  background-color: var(--global-palette-navy-600);
+  border-radius: min(1.6326530612vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_title, body #mainSec .section01.section02_sub .merit__parts .merit_title,
+  body #mainSec .section02.section02 .merit__parts .merit_title,
+  body #mainSec .section02.section02_sub .merit__parts .merit_title,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_title,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_title,
+  body #mainSec .section03.section02 .merit__parts .merit_title,
+  body #mainSec .section03.section02_sub .merit__parts .merit_title,
+  body #mainSec .section04.section02 .merit__parts .merit_title,
+  body #mainSec .section04.section02_sub .merit__parts .merit_title,
+  body #mainSec .section05.section02 .merit__parts .merit_title,
+  body #mainSec .section05.section02_sub .merit__parts .merit_title,
+  body #mainSec .section06.section02 .merit__parts .merit_title,
+  body #mainSec .section06.section02_sub .merit__parts .merit_title {
+    max-width: min(47.7864583333vw, 367px);
+    border-radius: min(2.9947916667vw, 23px);
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_title p, body #mainSec .section01.section02_sub .merit__parts .merit_title p,
+body #mainSec .section02.section02 .merit__parts .merit_title p,
+body #mainSec .section02.section02_sub .merit__parts .merit_title p,
+body #mainSec .section02_sub.section02 .merit__parts .merit_title p,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_title p,
+body #mainSec .section03.section02 .merit__parts .merit_title p,
+body #mainSec .section03.section02_sub .merit__parts .merit_title p,
+body #mainSec .section04.section02 .merit__parts .merit_title p,
+body #mainSec .section04.section02_sub .merit__parts .merit_title p,
+body #mainSec .section05.section02 .merit__parts .merit_title p,
+body #mainSec .section05.section02_sub .merit__parts .merit_title p,
+body #mainSec .section06.section02 .merit__parts .merit_title p,
+body #mainSec .section06.section02_sub .merit__parts .merit_title p {
+  font-size: clamp(14px, 2.0408163265vw, 20px);
+  color: var(--global-palette-white-50);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_title p, body #mainSec .section01.section02_sub .merit__parts .merit_title p,
+  body #mainSec .section02.section02 .merit__parts .merit_title p,
+  body #mainSec .section02.section02_sub .merit__parts .merit_title p,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_title p,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_title p,
+  body #mainSec .section03.section02 .merit__parts .merit_title p,
+  body #mainSec .section03.section02_sub .merit__parts .merit_title p,
+  body #mainSec .section04.section02 .merit__parts .merit_title p,
+  body #mainSec .section04.section02_sub .merit__parts .merit_title p,
+  body #mainSec .section05.section02 .merit__parts .merit_title p,
+  body #mainSec .section05.section02_sub .merit__parts .merit_title p,
+  body #mainSec .section06.section02 .merit__parts .merit_title p,
+  body #mainSec .section06.section02_sub .merit__parts .merit_title p {
+    font-size: clamp(16px, 4.296875vw, 33px);
+    padding-bottom: min(0.5208333333vw, 4px);
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents, body #mainSec .section01.section02_sub .merit__parts .merit_contents,
+body #mainSec .section02.section02 .merit__parts .merit_contents,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents,
+body #mainSec .section03.section02 .merit__parts .merit_contents,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents,
+body #mainSec .section04.section02 .merit__parts .merit_contents,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents,
+body #mainSec .section05.section02 .merit__parts .merit_contents,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents,
+body #mainSec .section06.section02 .merit__parts .merit_contents,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents {
+  width: 100%;
+  max-width: min(81.1224489796vw, 795px);
+  margin-top: min(1.4285714286vw, 14px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_contents, body #mainSec .section01.section02_sub .merit__parts .merit_contents,
+  body #mainSec .section02.section02 .merit__parts .merit_contents,
+  body #mainSec .section02.section02_sub .merit__parts .merit_contents,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_contents,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents,
+  body #mainSec .section03.section02 .merit__parts .merit_contents,
+  body #mainSec .section03.section02_sub .merit__parts .merit_contents,
+  body #mainSec .section04.section02 .merit__parts .merit_contents,
+  body #mainSec .section04.section02_sub .merit__parts .merit_contents,
+  body #mainSec .section05.section02 .merit__parts .merit_contents,
+  body #mainSec .section05.section02_sub .merit__parts .merit_contents,
+  body #mainSec .section06.section02 .merit__parts .merit_contents,
+  body #mainSec .section06.section02_sub .merit__parts .merit_contents {
+    max-width: 100%;
+    margin-top: min(2.8645833333vw, 22px);
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents ul, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul,
+body #mainSec .section02.section02 .merit__parts .merit_contents ul,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents ul,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul,
+body #mainSec .section03.section02 .merit__parts .merit_contents ul,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents ul,
+body #mainSec .section04.section02 .merit__parts .merit_contents ul,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents ul,
+body #mainSec .section05.section02 .merit__parts .merit_contents ul,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents ul,
+body #mainSec .section06.section02 .merit__parts .merit_contents ul,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_contents ul, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul,
+  body #mainSec .section02.section02 .merit__parts .merit_contents ul,
+  body #mainSec .section02.section02_sub .merit__parts .merit_contents ul,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul,
+  body #mainSec .section03.section02 .merit__parts .merit_contents ul,
+  body #mainSec .section03.section02_sub .merit__parts .merit_contents ul,
+  body #mainSec .section04.section02 .merit__parts .merit_contents ul,
+  body #mainSec .section04.section02_sub .merit__parts .merit_contents ul,
+  body #mainSec .section05.section02 .merit__parts .merit_contents ul,
+  body #mainSec .section05.section02_sub .merit__parts .merit_contents ul,
+  body #mainSec .section06.section02 .merit__parts .merit_contents ul,
+  body #mainSec .section06.section02_sub .merit__parts .merit_contents ul {
+    flex-direction: column;
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents ul li, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li,
+body #mainSec .section02.section02 .merit__parts .merit_contents ul li,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li,
+body #mainSec .section03.section02 .merit__parts .merit_contents ul li,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li,
+body #mainSec .section04.section02 .merit__parts .merit_contents ul li,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li,
+body #mainSec .section05.section02 .merit__parts .merit_contents ul li,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li,
+body #mainSec .section06.section02 .merit__parts .merit_contents ul li,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li {
+  width: 100%;
+  max-width: min(25.7142857143vw, 252px);
+  background-color: var(--global-palette-white-50);
+  height: min(27.9591836735vw, 274px);
+  border-radius: min(1.0204081633vw, 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: min(1.6326530612vw, 16px);
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_contents ul li, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li,
+  body #mainSec .section02.section02 .merit__parts .merit_contents ul li,
+  body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li,
+  body #mainSec .section03.section02 .merit__parts .merit_contents ul li,
+  body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li,
+  body #mainSec .section04.section02 .merit__parts .merit_contents ul li,
+  body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li,
+  body #mainSec .section05.section02 .merit__parts .merit_contents ul li,
+  body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li,
+  body #mainSec .section06.section02 .merit__parts .merit_contents ul li,
+  body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li {
+    max-width: min(78.125vw, 600px);
+    border-radius: min(1.3020833333vw, 10px);
+    flex-direction: row;
+    padding: min(2.6041666667vw, 20px) min(2.0833333333vw, 16px);
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents ul li + li, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li + li,
+body #mainSec .section02.section02 .merit__parts .merit_contents ul li + li,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li + li,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li + li,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li + li,
+body #mainSec .section03.section02 .merit__parts .merit_contents ul li + li,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li + li,
+body #mainSec .section04.section02 .merit__parts .merit_contents ul li + li,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li + li,
+body #mainSec .section05.section02 .merit__parts .merit_contents ul li + li,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li + li,
+body #mainSec .section06.section02 .merit__parts .merit_contents ul li + li,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li + li {
+  margin-left: min(2.0408163265vw, 20px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_contents ul li + li, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li + li,
+  body #mainSec .section02.section02 .merit__parts .merit_contents ul li + li,
+  body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li + li,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li + li,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li + li,
+  body #mainSec .section03.section02 .merit__parts .merit_contents ul li + li,
+  body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li + li,
+  body #mainSec .section04.section02 .merit__parts .merit_contents ul li + li,
+  body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li + li,
+  body #mainSec .section05.section02 .merit__parts .merit_contents ul li + li,
+  body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li + li,
+  body #mainSec .section06.section02 .merit__parts .merit_contents ul li + li,
+  body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li + li {
+    margin-left: 0;
+    margin-top: min(3.125vw, 24px);
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents ul li .summary, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .summary,
+body #mainSec .section02.section02 .merit__parts .merit_contents ul li .summary,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .summary,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .summary,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .summary,
+body #mainSec .section03.section02 .merit__parts .merit_contents ul li .summary,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .summary,
+body #mainSec .section04.section02 .merit__parts .merit_contents ul li .summary,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .summary,
+body #mainSec .section05.section02 .merit__parts .merit_contents ul li .summary,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .summary,
+body #mainSec .section06.section02 .merit__parts .merit_contents ul li .summary,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100%;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_contents ul li .summary, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section02.section02 .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section03.section02 .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section04.section02 .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section05.section02 .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section06.section02 .merit__parts .merit_contents ul li .summary,
+  body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .summary {
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    max-width: min(58.59375vw, 450px);
+    margin-left: auto;
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents ul li .contents_top__text, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section02.section02 .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section03.section02 .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section04.section02 .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section05.section02 .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section06.section02 .merit__parts .merit_contents ul li .contents_top__text,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .contents_top__text {
+  font-size: clamp(18px, 2.4489795918vw, 24px);
+  color: var(--global-palette-navy-600);
+  line-height: 1.2 !important;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_contents ul li .contents_top__text, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section02.section02 .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section03.section02 .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section04.section02 .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section05.section02 .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section06.section02 .merit__parts .merit_contents ul li .contents_top__text,
+  body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .contents_top__text {
+    font-size: clamp(18px, 5.2083333333vw, 40px);
+    text-align: left;
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents ul li .contents_middle, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section02.section02 .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section03.section02 .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section04.section02 .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section05.section02 .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section06.section02 .merit__parts .merit_contents ul li .contents_middle,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .contents_middle {
+  position: absolute;
+  top: 28%;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_contents ul li .contents_middle, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section02.section02 .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section03.section02 .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section04.section02 .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section05.section02 .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section06.section02 .merit__parts .merit_contents ul li .contents_middle,
+  body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .contents_middle {
+    top: 7%;
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents ul li .contents_middle img, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section02.section02 .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section03.section02 .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section04.section02 .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section05.section02 .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section06.section02 .merit__parts .merit_contents ul li .contents_middle img,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .contents_middle img {
+  width: 100%;
+  max-width: min(9.7959183673vw, 96px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_contents ul li .contents_middle img, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section02.section02 .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section03.section02 .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section04.section02 .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section05.section02 .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section06.section02 .merit__parts .merit_contents ul li .contents_middle img,
+  body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .contents_middle img {
+    max-width: min(17.1875vw, 132px);
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents ul li .contents_bottom, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section02.section02 .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section03.section02 .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section04.section02 .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section05.section02 .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section06.section02 .merit__parts .merit_contents ul li .contents_bottom,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .contents_bottom {
+  text-align: left;
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents ul li .contents_bottom__text, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section02.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section03.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section04.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section05.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section06.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text {
+  font-size: clamp(12px, 1.6326530612vw, 16px);
+  color: #000;
+  line-height: 1.4 !important;
+  font-family: YakuHanJP;
+  letter-spacing: 0.4px;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .merit__parts .merit_contents ul li .contents_bottom__text, body #mainSec .section01.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section02.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section02.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section02_sub.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section03.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section03.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section04.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section04.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section05.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section05.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section06.section02 .merit__parts .merit_contents ul li .contents_bottom__text,
+  body #mainSec .section06.section02_sub .merit__parts .merit_contents ul li .contents_bottom__text {
+    font-size: clamp(12px, 3.125vw, 24px);
+  }
+}
+body #mainSec .section01.section02 .merit__parts .merit_contents p, body #mainSec .section01.section02_sub .merit__parts .merit_contents p,
+body #mainSec .section02.section02 .merit__parts .merit_contents p,
+body #mainSec .section02.section02_sub .merit__parts .merit_contents p,
+body #mainSec .section02_sub.section02 .merit__parts .merit_contents p,
+body #mainSec .section02_sub.section02_sub .merit__parts .merit_contents p,
+body #mainSec .section03.section02 .merit__parts .merit_contents p,
+body #mainSec .section03.section02_sub .merit__parts .merit_contents p,
+body #mainSec .section04.section02 .merit__parts .merit_contents p,
+body #mainSec .section04.section02_sub .merit__parts .merit_contents p,
+body #mainSec .section05.section02 .merit__parts .merit_contents p,
+body #mainSec .section05.section02_sub .merit__parts .merit_contents p,
+body #mainSec .section06.section02 .merit__parts .merit_contents p,
+body #mainSec .section06.section02_sub .merit__parts .merit_contents p {
+  font-size: clamp(18px, 2.4489795918vw, 24px);
+}
+body #mainSec .section01.section02 .custom-object, body #mainSec .section01.section02_sub .custom-object,
+body #mainSec .section02.section02 .custom-object,
+body #mainSec .section02.section02_sub .custom-object,
+body #mainSec .section02_sub.section02 .custom-object,
+body #mainSec .section02_sub.section02_sub .custom-object,
+body #mainSec .section03.section02 .custom-object,
+body #mainSec .section03.section02_sub .custom-object,
+body #mainSec .section04.section02 .custom-object,
+body #mainSec .section04.section02_sub .custom-object,
+body #mainSec .section05.section02 .custom-object,
+body #mainSec .section05.section02_sub .custom-object,
+body #mainSec .section06.section02 .custom-object,
+body #mainSec .section06.section02_sub .custom-object {
+  width: 100%;
+  background-color: #F5F5F5;
+  position: relative;
+  z-index: 0;
+}
+body #mainSec .section01.section02 .custom-object::before, body #mainSec .section01.section02_sub .custom-object::before,
+body #mainSec .section02.section02 .custom-object::before,
+body #mainSec .section02.section02_sub .custom-object::before,
+body #mainSec .section02_sub.section02 .custom-object::before,
+body #mainSec .section02_sub.section02_sub .custom-object::before,
+body #mainSec .section03.section02 .custom-object::before,
+body #mainSec .section03.section02_sub .custom-object::before,
+body #mainSec .section04.section02 .custom-object::before,
+body #mainSec .section04.section02_sub .custom-object::before,
+body #mainSec .section05.section02 .custom-object::before,
+body #mainSec .section05.section02_sub .custom-object::before,
+body #mainSec .section06.section02 .custom-object::before,
+body #mainSec .section06.section02_sub .custom-object::before {
+  content: "";
+  position: absolute;
+  top: 5.4px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #9db2d7;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .custom-object::before, body #mainSec .section01.section02_sub .custom-object::before,
+  body #mainSec .section02.section02 .custom-object::before,
+  body #mainSec .section02.section02_sub .custom-object::before,
+  body #mainSec .section02_sub.section02 .custom-object::before,
+  body #mainSec .section02_sub.section02_sub .custom-object::before,
+  body #mainSec .section03.section02 .custom-object::before,
+  body #mainSec .section03.section02_sub .custom-object::before,
+  body #mainSec .section04.section02 .custom-object::before,
+  body #mainSec .section04.section02_sub .custom-object::before,
+  body #mainSec .section05.section02 .custom-object::before,
+  body #mainSec .section05.section02_sub .custom-object::before,
+  body #mainSec .section06.section02 .custom-object::before,
+  body #mainSec .section06.section02_sub .custom-object::before {
+    background-color: transparent;
+  }
+}
+body #mainSec .section01.section02 .custom-object::after, body #mainSec .section01.section02_sub .custom-object::after,
+body #mainSec .section02.section02 .custom-object::after,
+body #mainSec .section02.section02_sub .custom-object::after,
+body #mainSec .section02_sub.section02 .custom-object::after,
+body #mainSec .section02_sub.section02_sub .custom-object::after,
+body #mainSec .section03.section02 .custom-object::after,
+body #mainSec .section03.section02_sub .custom-object::after,
+body #mainSec .section04.section02 .custom-object::after,
+body #mainSec .section04.section02_sub .custom-object::after,
+body #mainSec .section05.section02 .custom-object::after,
+body #mainSec .section05.section02_sub .custom-object::after,
+body #mainSec .section06.section02 .custom-object::after,
+body #mainSec .section06.section02_sub .custom-object::after {
+  content: "";
+  position: absolute;
+  background-color: #F5F5F5;
+  width: min(24.4897959184vw, 240px);
+  height: 3px;
+  top: min(0.5102040816vw, 5px);
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .custom-object::after, body #mainSec .section01.section02_sub .custom-object::after,
+  body #mainSec .section02.section02 .custom-object::after,
+  body #mainSec .section02.section02_sub .custom-object::after,
+  body #mainSec .section02_sub.section02 .custom-object::after,
+  body #mainSec .section02_sub.section02_sub .custom-object::after,
+  body #mainSec .section03.section02 .custom-object::after,
+  body #mainSec .section03.section02_sub .custom-object::after,
+  body #mainSec .section04.section02 .custom-object::after,
+  body #mainSec .section04.section02_sub .custom-object::after,
+  body #mainSec .section05.section02 .custom-object::after,
+  body #mainSec .section05.section02_sub .custom-object::after,
+  body #mainSec .section06.section02 .custom-object::after,
+  body #mainSec .section06.section02_sub .custom-object::after {
+    width: 100%;
+    max-width: 240px;
+    background-color: transparent;
+  }
+}
+body #mainSec .section01.section02 .custom-object__top, body #mainSec .section01.section02_sub .custom-object__top,
+body #mainSec .section02.section02 .custom-object__top,
+body #mainSec .section02.section02_sub .custom-object__top,
+body #mainSec .section02_sub.section02 .custom-object__top,
+body #mainSec .section02_sub.section02_sub .custom-object__top,
+body #mainSec .section03.section02 .custom-object__top,
+body #mainSec .section03.section02_sub .custom-object__top,
+body #mainSec .section04.section02 .custom-object__top,
+body #mainSec .section04.section02_sub .custom-object__top,
+body #mainSec .section05.section02 .custom-object__top,
+body #mainSec .section05.section02_sub .custom-object__top,
+body #mainSec .section06.section02 .custom-object__top,
+body #mainSec .section06.section02_sub .custom-object__top {
+  position: absolute;
+  top: -10.1%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .custom-object__top, body #mainSec .section01.section02_sub .custom-object__top,
+  body #mainSec .section02.section02 .custom-object__top,
+  body #mainSec .section02.section02_sub .custom-object__top,
+  body #mainSec .section02_sub.section02 .custom-object__top,
+  body #mainSec .section02_sub.section02_sub .custom-object__top,
+  body #mainSec .section03.section02 .custom-object__top,
+  body #mainSec .section03.section02_sub .custom-object__top,
+  body #mainSec .section04.section02 .custom-object__top,
+  body #mainSec .section04.section02_sub .custom-object__top,
+  body #mainSec .section05.section02 .custom-object__top,
+  body #mainSec .section05.section02_sub .custom-object__top,
+  body #mainSec .section06.section02 .custom-object__top,
+  body #mainSec .section06.section02_sub .custom-object__top {
+    top: -9.4%;
+  }
+}
+body #mainSec .section01.section02 .custom-object__top img, body #mainSec .section01.section02_sub .custom-object__top img,
+body #mainSec .section02.section02 .custom-object__top img,
+body #mainSec .section02.section02_sub .custom-object__top img,
+body #mainSec .section02_sub.section02 .custom-object__top img,
+body #mainSec .section02_sub.section02_sub .custom-object__top img,
+body #mainSec .section03.section02 .custom-object__top img,
+body #mainSec .section03.section02_sub .custom-object__top img,
+body #mainSec .section04.section02 .custom-object__top img,
+body #mainSec .section04.section02_sub .custom-object__top img,
+body #mainSec .section05.section02 .custom-object__top img,
+body #mainSec .section05.section02_sub .custom-object__top img,
+body #mainSec .section06.section02 .custom-object__top img,
+body #mainSec .section06.section02_sub .custom-object__top img {
+  width: 100%;
+  max-width: min(25.2040816327vw, 247px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .custom-object__top img, body #mainSec .section01.section02_sub .custom-object__top img,
+  body #mainSec .section02.section02 .custom-object__top img,
+  body #mainSec .section02.section02_sub .custom-object__top img,
+  body #mainSec .section02_sub.section02 .custom-object__top img,
+  body #mainSec .section02_sub.section02_sub .custom-object__top img,
+  body #mainSec .section03.section02 .custom-object__top img,
+  body #mainSec .section03.section02_sub .custom-object__top img,
+  body #mainSec .section04.section02 .custom-object__top img,
+  body #mainSec .section04.section02_sub .custom-object__top img,
+  body #mainSec .section05.section02 .custom-object__top img,
+  body #mainSec .section05.section02_sub .custom-object__top img,
+  body #mainSec .section06.section02 .custom-object__top img,
+  body #mainSec .section06.section02_sub .custom-object__top img {
+    max-width: 100%;
+  }
+}
+body #mainSec .section01.section02 .custom-object .top_text, body #mainSec .section01.section02_sub .custom-object .top_text,
+body #mainSec .section02.section02 .custom-object .top_text,
+body #mainSec .section02.section02_sub .custom-object .top_text,
+body #mainSec .section02_sub.section02 .custom-object .top_text,
+body #mainSec .section02_sub.section02_sub .custom-object .top_text,
+body #mainSec .section03.section02 .custom-object .top_text,
+body #mainSec .section03.section02_sub .custom-object .top_text,
+body #mainSec .section04.section02 .custom-object .top_text,
+body #mainSec .section04.section02_sub .custom-object .top_text,
+body #mainSec .section05.section02 .custom-object .top_text,
+body #mainSec .section05.section02_sub .custom-object .top_text,
+body #mainSec .section06.section02 .custom-object .top_text,
+body #mainSec .section06.section02_sub .custom-object .top_text {
+  font-size: clamp(12px, 1.6326530612vw, 16px);
+  color: #000;
+  padding-top: min(2.0408163265vw, 20px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02 .custom-object .top_text, body #mainSec .section01.section02_sub .custom-object .top_text,
+  body #mainSec .section02.section02 .custom-object .top_text,
+  body #mainSec .section02.section02_sub .custom-object .top_text,
+  body #mainSec .section02_sub.section02 .custom-object .top_text,
+  body #mainSec .section02_sub.section02_sub .custom-object .top_text,
+  body #mainSec .section03.section02 .custom-object .top_text,
+  body #mainSec .section03.section02_sub .custom-object .top_text,
+  body #mainSec .section04.section02 .custom-object .top_text,
+  body #mainSec .section04.section02_sub .custom-object .top_text,
+  body #mainSec .section05.section02 .custom-object .top_text,
+  body #mainSec .section05.section02_sub .custom-object .top_text,
+  body #mainSec .section06.section02 .custom-object .top_text,
+  body #mainSec .section06.section02_sub .custom-object .top_text {
+    font-size: clamp(14px, 3.6458333333vw, 28px);
+  }
+}
+body #mainSec .section01.section02_sub,
+body #mainSec .section02.section02_sub,
+body #mainSec .section02_sub.section02_sub,
+body #mainSec .section03.section02_sub,
+body #mainSec .section04.section02_sub,
+body #mainSec .section05.section02_sub,
+body #mainSec .section06.section02_sub {
+  padding-top: min(3.8775510204vw, 38px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section02_sub,
+  body #mainSec .section02.section02_sub,
+  body #mainSec .section02_sub.section02_sub,
+  body #mainSec .section03.section02_sub,
+  body #mainSec .section04.section02_sub,
+  body #mainSec .section05.section02_sub,
+  body #mainSec .section06.section02_sub {
+    padding-top: min(4.9479166667vw, 38px);
+    margin-top: min(18.2291666667vw, 140px);
+  }
+}
+body #mainSec .section01.section03,
+body #mainSec .section02.section03,
+body #mainSec .section02_sub.section03,
+body #mainSec .section03.section03,
+body #mainSec .section04.section03,
+body #mainSec .section05.section03,
+body #mainSec .section06.section03 {
+  background-color: var(--global-palette-white-50);
+}
+body #mainSec .section01.section03 .table_wrapper,
+body #mainSec .section02.section03 .table_wrapper,
+body #mainSec .section02_sub.section03 .table_wrapper,
+body #mainSec .section03.section03 .table_wrapper,
+body #mainSec .section04.section03 .table_wrapper,
+body #mainSec .section05.section03 .table_wrapper,
+body #mainSec .section06.section03 .table_wrapper {
+  width: 100%;
+  max-width: min(90.7142857143vw, 889px);
+  margin: min(3.0612244898vw, 30px) auto min(1.0204081633vw, 10px);
+  background-color: #E6E6E6;
+  border-radius: min(1.0204081633vw, 10px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper,
+  body #mainSec .section02.section03 .table_wrapper,
+  body #mainSec .section02_sub.section03 .table_wrapper,
+  body #mainSec .section03.section03 .table_wrapper,
+  body #mainSec .section04.section03 .table_wrapper,
+  body #mainSec .section05.section03 .table_wrapper,
+  body #mainSec .section06.section03 .table_wrapper {
+    padding: min(1.0416666667vw, 8px) min(1.5625vw, 12px) min(2.0833333333vw, 16px);
+    border-radius: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner,
+body #mainSec .section02.section03 .table_wrapper__inner,
+body #mainSec .section02_sub.section03 .table_wrapper__inner,
+body #mainSec .section03.section03 .table_wrapper__inner,
+body #mainSec .section04.section03 .table_wrapper__inner,
+body #mainSec .section05.section03 .table_wrapper__inner,
+body #mainSec .section06.section03 .table_wrapper__inner {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner,
+  body #mainSec .section02.section03 .table_wrapper__inner,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner,
+  body #mainSec .section03.section03 .table_wrapper__inner,
+  body #mainSec .section04.section03 .table_wrapper__inner,
+  body #mainSec .section05.section03 .table_wrapper__inner,
+  body #mainSec .section06.section03 .table_wrapper__inner {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table,
+body #mainSec .section02.section03 .table_wrapper__inner table,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table,
+body #mainSec .section03.section03 .table_wrapper__inner table,
+body #mainSec .section04.section03 .table_wrapper__inner table,
+body #mainSec .section05.section03 .table_wrapper__inner table,
+body #mainSec .section06.section03 .table_wrapper__inner table {
+  background-color: #fff;
+  margin: min(2.0408163265vw, 20px) 0 min(2.0408163265vw, 20px) min(1.4285714286vw, 14px);
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: min(1.0204081633vw, 10px) 0 0 min(1.0204081633vw, 10px);
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  min-width: min(16.3265306122vw, 160px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner table,
+  body #mainSec .section02.section03 .table_wrapper__inner table,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table,
+  body #mainSec .section03.section03 .table_wrapper__inner table,
+  body #mainSec .section04.section03 .table_wrapper__inner table,
+  body #mainSec .section05.section03 .table_wrapper__inner table,
+  body #mainSec .section06.section03 .table_wrapper__inner table {
+    min-width: min(26.0416666667vw, 200px);
+    border-radius: min(1.3020833333vw, 10px) 0 0 min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table.table02, body #mainSec .section01.section03 .table_wrapper__inner table.table03,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02,
+body #mainSec .section02.section03 .table_wrapper__inner table.table03,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table03,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02,
+body #mainSec .section03.section03 .table_wrapper__inner table.table03,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02,
+body #mainSec .section04.section03 .table_wrapper__inner table.table03,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02,
+body #mainSec .section05.section03 .table_wrapper__inner table.table03,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02,
+body #mainSec .section06.section03 .table_wrapper__inner table.table03 {
+  margin: min(2.0408163265vw, 20px) 0 min(2.0408163265vw, 20px);
+  border-radius: 0;
+  position: relative;
+  min-width: min(20.4081632653vw, 200px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner table.table02, body #mainSec .section01.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section02.section03 .table_wrapper__inner table.table02,
+  body #mainSec .section02.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section03.section03 .table_wrapper__inner table.table02,
+  body #mainSec .section03.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section04.section03 .table_wrapper__inner table.table02,
+  body #mainSec .section04.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section05.section03 .table_wrapper__inner table.table02,
+  body #mainSec .section05.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section06.section03 .table_wrapper__inner table.table02,
+  body #mainSec .section06.section03 .table_wrapper__inner table.table03 {
+    margin: min(2.6041666667vw, 20px) 0 min(2.6041666667vw, 20px);
+    min-width: min(39.0625vw, 300px);
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table.table02::after, body #mainSec .section01.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02::after,
+body #mainSec .section02.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02::after,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02::after,
+body #mainSec .section03.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02::after,
+body #mainSec .section04.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02::after,
+body #mainSec .section05.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02::after,
+body #mainSec .section06.section03 .table_wrapper__inner table.table03::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: 4px solid var(--semantics-buy-1-default);
+  border-radius: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner table.table02::after, body #mainSec .section01.section03 .table_wrapper__inner table.table03::after,
+  body #mainSec .section02.section03 .table_wrapper__inner table.table02::after,
+  body #mainSec .section02.section03 .table_wrapper__inner table.table03::after,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02::after,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table.table03::after,
+  body #mainSec .section03.section03 .table_wrapper__inner table.table02::after,
+  body #mainSec .section03.section03 .table_wrapper__inner table.table03::after,
+  body #mainSec .section04.section03 .table_wrapper__inner table.table02::after,
+  body #mainSec .section04.section03 .table_wrapper__inner table.table03::after,
+  body #mainSec .section05.section03 .table_wrapper__inner table.table02::after,
+  body #mainSec .section05.section03 .table_wrapper__inner table.table03::after,
+  body #mainSec .section06.section03 .table_wrapper__inner table.table02::after,
+  body #mainSec .section06.section03 .table_wrapper__inner table.table03::after {
+    border: 4px solid var(--semantics-buy-1-default);
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table.table02 td, body #mainSec .section01.section03 .table_wrapper__inner table.table02 th, body #mainSec .section01.section03 .table_wrapper__inner table.table03 td, body #mainSec .section01.section03 .table_wrapper__inner table.table03 th,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 th,
+body #mainSec .section02.section03 .table_wrapper__inner table.table03 td,
+body #mainSec .section02.section03 .table_wrapper__inner table.table03 th,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 th,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table03 td,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table03 th,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 th,
+body #mainSec .section03.section03 .table_wrapper__inner table.table03 td,
+body #mainSec .section03.section03 .table_wrapper__inner table.table03 th,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 th,
+body #mainSec .section04.section03 .table_wrapper__inner table.table03 td,
+body #mainSec .section04.section03 .table_wrapper__inner table.table03 th,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 th,
+body #mainSec .section05.section03 .table_wrapper__inner table.table03 td,
+body #mainSec .section05.section03 .table_wrapper__inner table.table03 th,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 th,
+body #mainSec .section06.section03 .table_wrapper__inner table.table03 td,
+body #mainSec .section06.section03 .table_wrapper__inner table.table03 th {
+  border: 1px solid #999;
+  box-sizing: border-box;
+  border-right: none;
+}
+body #mainSec .section01.section03 .table_wrapper__inner table.table03,
+body #mainSec .section02.section03 .table_wrapper__inner table.table03,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table03,
+body #mainSec .section03.section03 .table_wrapper__inner table.table03,
+body #mainSec .section04.section03 .table_wrapper__inner table.table03,
+body #mainSec .section05.section03 .table_wrapper__inner table.table03,
+body #mainSec .section06.section03 .table_wrapper__inner table.table03 {
+  margin: min(2.0408163265vw, 20px) min(1.4285714286vw, 14px) min(2.0408163265vw, 20px) -1px;
+  border-radius: 0 min(1.3265306122vw, 13px) min(1.3265306122vw, 13px) 0;
+  min-width: min(40.8163265306vw, 400px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section02.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section03.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section04.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section05.section03 .table_wrapper__inner table.table03,
+  body #mainSec .section06.section03 .table_wrapper__inner table.table03 {
+    margin: min(2.6041666667vw, 20px) min(1.8229166667vw, 14px) min(2.6041666667vw, 20px) -1px;
+    border-radius: 0 min(1.6927083333vw, 13px) min(1.6927083333vw, 13px) 0;
+    min-width: min(78.125vw, 600px);
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section02.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section03.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section04.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section05.section03 .table_wrapper__inner table.table03::after,
+body #mainSec .section06.section03 .table_wrapper__inner table.table03::after {
+  content: none;
+  display: none;
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td, body #mainSec .section01.section03 .table_wrapper__inner table th,
+body #mainSec .section02.section03 .table_wrapper__inner table td,
+body #mainSec .section02.section03 .table_wrapper__inner table th,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th,
+body #mainSec .section03.section03 .table_wrapper__inner table td,
+body #mainSec .section03.section03 .table_wrapper__inner table th,
+body #mainSec .section04.section03 .table_wrapper__inner table td,
+body #mainSec .section04.section03 .table_wrapper__inner table th,
+body #mainSec .section05.section03 .table_wrapper__inner table td,
+body #mainSec .section05.section03 .table_wrapper__inner table th,
+body #mainSec .section06.section03 .table_wrapper__inner table td,
+body #mainSec .section06.section03 .table_wrapper__inner table th {
+  box-sizing: border-box;
+  padding: min(0.4081632653vw, 4px);
+  text-align: center;
+  vertical-align: middle;
+  height: min(5.5102040816vw, 54px);
+  font-size: clamp(12px, 1.6326530612vw, 16px);
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner table td, body #mainSec .section01.section03 .table_wrapper__inner table th,
+  body #mainSec .section02.section03 .table_wrapper__inner table td,
+  body #mainSec .section02.section03 .table_wrapper__inner table th,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table td,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table th,
+  body #mainSec .section03.section03 .table_wrapper__inner table td,
+  body #mainSec .section03.section03 .table_wrapper__inner table th,
+  body #mainSec .section04.section03 .table_wrapper__inner table td,
+  body #mainSec .section04.section03 .table_wrapper__inner table th,
+  body #mainSec .section05.section03 .table_wrapper__inner table td,
+  body #mainSec .section05.section03 .table_wrapper__inner table th,
+  body #mainSec .section06.section03 .table_wrapper__inner table td,
+  body #mainSec .section06.section03 .table_wrapper__inner table th {
+    font-size: clamp(14px, 3.6458333333vw, 28px);
+    height: min(21.3541666667vw, 164px);
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td .table_fsz_small, body #mainSec .section01.section03 .table_wrapper__inner table th .table_fsz_small,
+body #mainSec .section02.section03 .table_wrapper__inner table td .table_fsz_small,
+body #mainSec .section02.section03 .table_wrapper__inner table th .table_fsz_small,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td .table_fsz_small,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th .table_fsz_small,
+body #mainSec .section03.section03 .table_wrapper__inner table td .table_fsz_small,
+body #mainSec .section03.section03 .table_wrapper__inner table th .table_fsz_small,
+body #mainSec .section04.section03 .table_wrapper__inner table td .table_fsz_small,
+body #mainSec .section04.section03 .table_wrapper__inner table th .table_fsz_small,
+body #mainSec .section05.section03 .table_wrapper__inner table td .table_fsz_small,
+body #mainSec .section05.section03 .table_wrapper__inner table th .table_fsz_small,
+body #mainSec .section06.section03 .table_wrapper__inner table td .table_fsz_small,
+body #mainSec .section06.section03 .table_wrapper__inner table th .table_fsz_small {
+  display: block;
+  font-size: clamp(8px, 1.2244897959vw, 12px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner table td .table_fsz_small, body #mainSec .section01.section03 .table_wrapper__inner table th .table_fsz_small,
+  body #mainSec .section02.section03 .table_wrapper__inner table td .table_fsz_small,
+  body #mainSec .section02.section03 .table_wrapper__inner table th .table_fsz_small,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table td .table_fsz_small,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table th .table_fsz_small,
+  body #mainSec .section03.section03 .table_wrapper__inner table td .table_fsz_small,
+  body #mainSec .section03.section03 .table_wrapper__inner table th .table_fsz_small,
+  body #mainSec .section04.section03 .table_wrapper__inner table td .table_fsz_small,
+  body #mainSec .section04.section03 .table_wrapper__inner table th .table_fsz_small,
+  body #mainSec .section05.section03 .table_wrapper__inner table td .table_fsz_small,
+  body #mainSec .section05.section03 .table_wrapper__inner table th .table_fsz_small,
+  body #mainSec .section06.section03 .table_wrapper__inner table td .table_fsz_small,
+  body #mainSec .section06.section03 .table_wrapper__inner table th .table_fsz_small {
+    font-size: clamp(12px, 2.34375vw, 18px);
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td + td, body #mainSec .section01.section03 .table_wrapper__inner table td + th, body #mainSec .section01.section03 .table_wrapper__inner table th + td, body #mainSec .section01.section03 .table_wrapper__inner table th + th,
+body #mainSec .section02.section03 .table_wrapper__inner table td + td,
+body #mainSec .section02.section03 .table_wrapper__inner table td + th,
+body #mainSec .section02.section03 .table_wrapper__inner table th + td,
+body #mainSec .section02.section03 .table_wrapper__inner table th + th,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td + td,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td + th,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th + td,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th + th,
+body #mainSec .section03.section03 .table_wrapper__inner table td + td,
+body #mainSec .section03.section03 .table_wrapper__inner table td + th,
+body #mainSec .section03.section03 .table_wrapper__inner table th + td,
+body #mainSec .section03.section03 .table_wrapper__inner table th + th,
+body #mainSec .section04.section03 .table_wrapper__inner table td + td,
+body #mainSec .section04.section03 .table_wrapper__inner table td + th,
+body #mainSec .section04.section03 .table_wrapper__inner table th + td,
+body #mainSec .section04.section03 .table_wrapper__inner table th + th,
+body #mainSec .section05.section03 .table_wrapper__inner table td + td,
+body #mainSec .section05.section03 .table_wrapper__inner table td + th,
+body #mainSec .section05.section03 .table_wrapper__inner table th + td,
+body #mainSec .section05.section03 .table_wrapper__inner table th + th,
+body #mainSec .section06.section03 .table_wrapper__inner table td + td,
+body #mainSec .section06.section03 .table_wrapper__inner table td + th,
+body #mainSec .section06.section03 .table_wrapper__inner table th + td,
+body #mainSec .section06.section03 .table_wrapper__inner table th + th {
+  border: 1px solid #999;
+  box-sizing: border-box;
+  border-right: none;
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td.blue, body #mainSec .section01.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section02.section03 .table_wrapper__inner table td.blue,
+body #mainSec .section02.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td.blue,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section03.section03 .table_wrapper__inner table td.blue,
+body #mainSec .section03.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section04.section03 .table_wrapper__inner table td.blue,
+body #mainSec .section04.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section05.section03 .table_wrapper__inner table td.blue,
+body #mainSec .section05.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section06.section03 .table_wrapper__inner table td.blue,
+body #mainSec .section06.section03 .table_wrapper__inner table th.blue {
+  color: var(--global-palette-white-50);
+  background-color: var(--global-palette-navy-600);
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td.light_blue, body #mainSec .section01.section03 .table_wrapper__inner table th.light_blue,
+body #mainSec .section02.section03 .table_wrapper__inner table td.light_blue,
+body #mainSec .section02.section03 .table_wrapper__inner table th.light_blue,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td.light_blue,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.light_blue,
+body #mainSec .section03.section03 .table_wrapper__inner table td.light_blue,
+body #mainSec .section03.section03 .table_wrapper__inner table th.light_blue,
+body #mainSec .section04.section03 .table_wrapper__inner table td.light_blue,
+body #mainSec .section04.section03 .table_wrapper__inner table th.light_blue,
+body #mainSec .section05.section03 .table_wrapper__inner table td.light_blue,
+body #mainSec .section05.section03 .table_wrapper__inner table th.light_blue,
+body #mainSec .section06.section03 .table_wrapper__inner table td.light_blue,
+body #mainSec .section06.section03 .table_wrapper__inner table th.light_blue {
+  background-color: #E5F1F6;
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td.width_left, body #mainSec .section01.section03 .table_wrapper__inner table th.width_left,
+body #mainSec .section02.section03 .table_wrapper__inner table td.width_left,
+body #mainSec .section02.section03 .table_wrapper__inner table th.width_left,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td.width_left,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.width_left,
+body #mainSec .section03.section03 .table_wrapper__inner table td.width_left,
+body #mainSec .section03.section03 .table_wrapper__inner table th.width_left,
+body #mainSec .section04.section03 .table_wrapper__inner table td.width_left,
+body #mainSec .section04.section03 .table_wrapper__inner table th.width_left,
+body #mainSec .section05.section03 .table_wrapper__inner table td.width_left,
+body #mainSec .section05.section03 .table_wrapper__inner table th.width_left,
+body #mainSec .section06.section03 .table_wrapper__inner table td.width_left,
+body #mainSec .section06.section03 .table_wrapper__inner table th.width_left {
+  width: min(16.3265306122vw, 160px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner table td.width_left, body #mainSec .section01.section03 .table_wrapper__inner table th.width_left,
+  body #mainSec .section02.section03 .table_wrapper__inner table td.width_left,
+  body #mainSec .section02.section03 .table_wrapper__inner table th.width_left,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table td.width_left,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table th.width_left,
+  body #mainSec .section03.section03 .table_wrapper__inner table td.width_left,
+  body #mainSec .section03.section03 .table_wrapper__inner table th.width_left,
+  body #mainSec .section04.section03 .table_wrapper__inner table td.width_left,
+  body #mainSec .section04.section03 .table_wrapper__inner table th.width_left,
+  body #mainSec .section05.section03 .table_wrapper__inner table td.width_left,
+  body #mainSec .section05.section03 .table_wrapper__inner table th.width_left,
+  body #mainSec .section06.section03 .table_wrapper__inner table td.width_left,
+  body #mainSec .section06.section03 .table_wrapper__inner table th.width_left {
+    width: min(20.8333333333vw, 160px);
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td.width_left:last-of-type, body #mainSec .section01.section03 .table_wrapper__inner table th.width_left:last-of-type,
+body #mainSec .section02.section03 .table_wrapper__inner table td.width_left:last-of-type,
+body #mainSec .section02.section03 .table_wrapper__inner table th.width_left:last-of-type,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td.width_left:last-of-type,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.width_left:last-of-type,
+body #mainSec .section03.section03 .table_wrapper__inner table td.width_left:last-of-type,
+body #mainSec .section03.section03 .table_wrapper__inner table th.width_left:last-of-type,
+body #mainSec .section04.section03 .table_wrapper__inner table td.width_left:last-of-type,
+body #mainSec .section04.section03 .table_wrapper__inner table th.width_left:last-of-type,
+body #mainSec .section05.section03 .table_wrapper__inner table td.width_left:last-of-type,
+body #mainSec .section05.section03 .table_wrapper__inner table th.width_left:last-of-type,
+body #mainSec .section06.section03 .table_wrapper__inner table td.width_left:last-of-type,
+body #mainSec .section06.section03 .table_wrapper__inner table th.width_left:last-of-type {
+  border-top: 1px solid #999;
+  box-sizing: border-box;
+}
+body #mainSec .section01.section03 .table_wrapper__inner table th:first-child,
+body #mainSec .section02.section03 .table_wrapper__inner table th:first-child,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th:first-child,
+body #mainSec .section03.section03 .table_wrapper__inner table th:first-child,
+body #mainSec .section04.section03 .table_wrapper__inner table th:first-child,
+body #mainSec .section05.section03 .table_wrapper__inner table th:first-child,
+body #mainSec .section06.section03 .table_wrapper__inner table th:first-child {
+  border: transparent;
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td, body #mainSec .section01.section03 .table_wrapper__inner table th, body #mainSec .section01.section03 .table_wrapper__inner table th.blue, body #mainSec .section01.section03 .table_wrapper__inner table.table02 td, body #mainSec .section01.section03 .table_wrapper__inner table.table02 th.blue,
+body #mainSec .section02.section03 .table_wrapper__inner table td,
+body #mainSec .section02.section03 .table_wrapper__inner table th,
+body #mainSec .section02.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 th.blue,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 th.blue,
+body #mainSec .section03.section03 .table_wrapper__inner table td,
+body #mainSec .section03.section03 .table_wrapper__inner table th,
+body #mainSec .section03.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 th.blue,
+body #mainSec .section04.section03 .table_wrapper__inner table td,
+body #mainSec .section04.section03 .table_wrapper__inner table th,
+body #mainSec .section04.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 th.blue,
+body #mainSec .section05.section03 .table_wrapper__inner table td,
+body #mainSec .section05.section03 .table_wrapper__inner table th,
+body #mainSec .section05.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 th.blue,
+body #mainSec .section06.section03 .table_wrapper__inner table td,
+body #mainSec .section06.section03 .table_wrapper__inner table th,
+body #mainSec .section06.section03 .table_wrapper__inner table th.blue,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 td,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 th.blue {
+  width: min(23.8775510204vw, 234px);
+  box-sizing: border-box;
+  border-left: none;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner table td, body #mainSec .section01.section03 .table_wrapper__inner table th, body #mainSec .section01.section03 .table_wrapper__inner table th.blue, body #mainSec .section01.section03 .table_wrapper__inner table.table02 td, body #mainSec .section01.section03 .table_wrapper__inner table.table02 th.blue,
+  body #mainSec .section02.section03 .table_wrapper__inner table td,
+  body #mainSec .section02.section03 .table_wrapper__inner table th,
+  body #mainSec .section02.section03 .table_wrapper__inner table th.blue,
+  body #mainSec .section02.section03 .table_wrapper__inner table.table02 td,
+  body #mainSec .section02.section03 .table_wrapper__inner table.table02 th.blue,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table td,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table th,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table th.blue,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 td,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 th.blue,
+  body #mainSec .section03.section03 .table_wrapper__inner table td,
+  body #mainSec .section03.section03 .table_wrapper__inner table th,
+  body #mainSec .section03.section03 .table_wrapper__inner table th.blue,
+  body #mainSec .section03.section03 .table_wrapper__inner table.table02 td,
+  body #mainSec .section03.section03 .table_wrapper__inner table.table02 th.blue,
+  body #mainSec .section04.section03 .table_wrapper__inner table td,
+  body #mainSec .section04.section03 .table_wrapper__inner table th,
+  body #mainSec .section04.section03 .table_wrapper__inner table th.blue,
+  body #mainSec .section04.section03 .table_wrapper__inner table.table02 td,
+  body #mainSec .section04.section03 .table_wrapper__inner table.table02 th.blue,
+  body #mainSec .section05.section03 .table_wrapper__inner table td,
+  body #mainSec .section05.section03 .table_wrapper__inner table th,
+  body #mainSec .section05.section03 .table_wrapper__inner table th.blue,
+  body #mainSec .section05.section03 .table_wrapper__inner table.table02 td,
+  body #mainSec .section05.section03 .table_wrapper__inner table.table02 th.blue,
+  body #mainSec .section06.section03 .table_wrapper__inner table td,
+  body #mainSec .section06.section03 .table_wrapper__inner table th,
+  body #mainSec .section06.section03 .table_wrapper__inner table th.blue,
+  body #mainSec .section06.section03 .table_wrapper__inner table.table02 td,
+  body #mainSec .section06.section03 .table_wrapper__inner table.table02 th.blue {
+    width: min(31.9010416667vw, 245px);
+    line-height: 1.2;
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td.bd_bottom_none, body #mainSec .section01.section03 .table_wrapper__inner table th.bd_bottom_none, body #mainSec .section01.section03 .table_wrapper__inner table th.blue.bd_bottom_none, body #mainSec .section01.section03 .table_wrapper__inner table.table02 td.bd_bottom_none, body #mainSec .section01.section03 .table_wrapper__inner table.table02 th.blue.bd_bottom_none,
+body #mainSec .section02.section03 .table_wrapper__inner table td.bd_bottom_none,
+body #mainSec .section02.section03 .table_wrapper__inner table th.bd_bottom_none,
+body #mainSec .section02.section03 .table_wrapper__inner table th.blue.bd_bottom_none,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 td.bd_bottom_none,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 th.blue.bd_bottom_none,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td.bd_bottom_none,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.bd_bottom_none,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.blue.bd_bottom_none,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 td.bd_bottom_none,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 th.blue.bd_bottom_none,
+body #mainSec .section03.section03 .table_wrapper__inner table td.bd_bottom_none,
+body #mainSec .section03.section03 .table_wrapper__inner table th.bd_bottom_none,
+body #mainSec .section03.section03 .table_wrapper__inner table th.blue.bd_bottom_none,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 td.bd_bottom_none,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 th.blue.bd_bottom_none,
+body #mainSec .section04.section03 .table_wrapper__inner table td.bd_bottom_none,
+body #mainSec .section04.section03 .table_wrapper__inner table th.bd_bottom_none,
+body #mainSec .section04.section03 .table_wrapper__inner table th.blue.bd_bottom_none,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 td.bd_bottom_none,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 th.blue.bd_bottom_none,
+body #mainSec .section05.section03 .table_wrapper__inner table td.bd_bottom_none,
+body #mainSec .section05.section03 .table_wrapper__inner table th.bd_bottom_none,
+body #mainSec .section05.section03 .table_wrapper__inner table th.blue.bd_bottom_none,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 td.bd_bottom_none,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 th.blue.bd_bottom_none,
+body #mainSec .section06.section03 .table_wrapper__inner table td.bd_bottom_none,
+body #mainSec .section06.section03 .table_wrapper__inner table th.bd_bottom_none,
+body #mainSec .section06.section03 .table_wrapper__inner table th.blue.bd_bottom_none,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 td.bd_bottom_none,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 th.blue.bd_bottom_none {
+  border-bottom: transparent;
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td.table_top_height, body #mainSec .section01.section03 .table_wrapper__inner table th.table_top_height, body #mainSec .section01.section03 .table_wrapper__inner table th.blue.table_top_height, body #mainSec .section01.section03 .table_wrapper__inner table.table02 td.table_top_height, body #mainSec .section01.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+body #mainSec .section02.section03 .table_wrapper__inner table td.table_top_height,
+body #mainSec .section02.section03 .table_wrapper__inner table th.table_top_height,
+body #mainSec .section02.section03 .table_wrapper__inner table th.blue.table_top_height,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 td.table_top_height,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td.table_top_height,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.table_top_height,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.blue.table_top_height,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 td.table_top_height,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+body #mainSec .section03.section03 .table_wrapper__inner table td.table_top_height,
+body #mainSec .section03.section03 .table_wrapper__inner table th.table_top_height,
+body #mainSec .section03.section03 .table_wrapper__inner table th.blue.table_top_height,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 td.table_top_height,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+body #mainSec .section04.section03 .table_wrapper__inner table td.table_top_height,
+body #mainSec .section04.section03 .table_wrapper__inner table th.table_top_height,
+body #mainSec .section04.section03 .table_wrapper__inner table th.blue.table_top_height,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 td.table_top_height,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+body #mainSec .section05.section03 .table_wrapper__inner table td.table_top_height,
+body #mainSec .section05.section03 .table_wrapper__inner table th.table_top_height,
+body #mainSec .section05.section03 .table_wrapper__inner table th.blue.table_top_height,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 td.table_top_height,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+body #mainSec .section06.section03 .table_wrapper__inner table td.table_top_height,
+body #mainSec .section06.section03 .table_wrapper__inner table th.table_top_height,
+body #mainSec .section06.section03 .table_wrapper__inner table th.blue.table_top_height,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 td.table_top_height,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 th.blue.table_top_height {
+  height: min(3.4693877551vw, 34px);
+  border-top: none !important;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section03 .table_wrapper__inner table td.table_top_height, body #mainSec .section01.section03 .table_wrapper__inner table th.table_top_height, body #mainSec .section01.section03 .table_wrapper__inner table th.blue.table_top_height, body #mainSec .section01.section03 .table_wrapper__inner table.table02 td.table_top_height, body #mainSec .section01.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+  body #mainSec .section02.section03 .table_wrapper__inner table td.table_top_height,
+  body #mainSec .section02.section03 .table_wrapper__inner table th.table_top_height,
+  body #mainSec .section02.section03 .table_wrapper__inner table th.blue.table_top_height,
+  body #mainSec .section02.section03 .table_wrapper__inner table.table02 td.table_top_height,
+  body #mainSec .section02.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table td.table_top_height,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table th.table_top_height,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table th.blue.table_top_height,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 td.table_top_height,
+  body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+  body #mainSec .section03.section03 .table_wrapper__inner table td.table_top_height,
+  body #mainSec .section03.section03 .table_wrapper__inner table th.table_top_height,
+  body #mainSec .section03.section03 .table_wrapper__inner table th.blue.table_top_height,
+  body #mainSec .section03.section03 .table_wrapper__inner table.table02 td.table_top_height,
+  body #mainSec .section03.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+  body #mainSec .section04.section03 .table_wrapper__inner table td.table_top_height,
+  body #mainSec .section04.section03 .table_wrapper__inner table th.table_top_height,
+  body #mainSec .section04.section03 .table_wrapper__inner table th.blue.table_top_height,
+  body #mainSec .section04.section03 .table_wrapper__inner table.table02 td.table_top_height,
+  body #mainSec .section04.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+  body #mainSec .section05.section03 .table_wrapper__inner table td.table_top_height,
+  body #mainSec .section05.section03 .table_wrapper__inner table th.table_top_height,
+  body #mainSec .section05.section03 .table_wrapper__inner table th.blue.table_top_height,
+  body #mainSec .section05.section03 .table_wrapper__inner table.table02 td.table_top_height,
+  body #mainSec .section05.section03 .table_wrapper__inner table.table02 th.blue.table_top_height,
+  body #mainSec .section06.section03 .table_wrapper__inner table td.table_top_height,
+  body #mainSec .section06.section03 .table_wrapper__inner table th.table_top_height,
+  body #mainSec .section06.section03 .table_wrapper__inner table th.blue.table_top_height,
+  body #mainSec .section06.section03 .table_wrapper__inner table.table02 td.table_top_height,
+  body #mainSec .section06.section03 .table_wrapper__inner table.table02 th.blue.table_top_height {
+    height: min(7.8125vw, 60px);
+  }
+}
+body #mainSec .section01.section03 .table_wrapper__inner table td.table_top_height.border_left, body #mainSec .section01.section03 .table_wrapper__inner table th.table_top_height.border_left, body #mainSec .section01.section03 .table_wrapper__inner table th.blue.table_top_height.border_left, body #mainSec .section01.section03 .table_wrapper__inner table.table02 td.table_top_height.border_left, body #mainSec .section01.section03 .table_wrapper__inner table.table02 th.blue.table_top_height.border_left,
+body #mainSec .section02.section03 .table_wrapper__inner table td.table_top_height.border_left,
+body #mainSec .section02.section03 .table_wrapper__inner table th.table_top_height.border_left,
+body #mainSec .section02.section03 .table_wrapper__inner table th.blue.table_top_height.border_left,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 td.table_top_height.border_left,
+body #mainSec .section02.section03 .table_wrapper__inner table.table02 th.blue.table_top_height.border_left,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table td.table_top_height.border_left,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.table_top_height.border_left,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table th.blue.table_top_height.border_left,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 td.table_top_height.border_left,
+body #mainSec .section02_sub.section03 .table_wrapper__inner table.table02 th.blue.table_top_height.border_left,
+body #mainSec .section03.section03 .table_wrapper__inner table td.table_top_height.border_left,
+body #mainSec .section03.section03 .table_wrapper__inner table th.table_top_height.border_left,
+body #mainSec .section03.section03 .table_wrapper__inner table th.blue.table_top_height.border_left,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 td.table_top_height.border_left,
+body #mainSec .section03.section03 .table_wrapper__inner table.table02 th.blue.table_top_height.border_left,
+body #mainSec .section04.section03 .table_wrapper__inner table td.table_top_height.border_left,
+body #mainSec .section04.section03 .table_wrapper__inner table th.table_top_height.border_left,
+body #mainSec .section04.section03 .table_wrapper__inner table th.blue.table_top_height.border_left,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 td.table_top_height.border_left,
+body #mainSec .section04.section03 .table_wrapper__inner table.table02 th.blue.table_top_height.border_left,
+body #mainSec .section05.section03 .table_wrapper__inner table td.table_top_height.border_left,
+body #mainSec .section05.section03 .table_wrapper__inner table th.table_top_height.border_left,
+body #mainSec .section05.section03 .table_wrapper__inner table th.blue.table_top_height.border_left,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 td.table_top_height.border_left,
+body #mainSec .section05.section03 .table_wrapper__inner table.table02 th.blue.table_top_height.border_left,
+body #mainSec .section06.section03 .table_wrapper__inner table td.table_top_height.border_left,
+body #mainSec .section06.section03 .table_wrapper__inner table th.table_top_height.border_left,
+body #mainSec .section06.section03 .table_wrapper__inner table th.blue.table_top_height.border_left,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 td.table_top_height.border_left,
+body #mainSec .section06.section03 .table_wrapper__inner table.table02 th.blue.table_top_height.border_left {
+  border-left: 1px solid #999;
+}
+body #mainSec .section01.section04 .info_area,
+body #mainSec .section02.section04 .info_area,
+body #mainSec .section02_sub.section04 .info_area,
+body #mainSec .section03.section04 .info_area,
+body #mainSec .section04.section04 .info_area,
+body #mainSec .section05.section04 .info_area,
+body #mainSec .section06.section04 .info_area {
+  width: 100%;
+  max-width: min(61.2244897959vw, 600px);
+  margin: min(2.4489795918vw, 24px) auto 0;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section04 .info_area,
+  body #mainSec .section02.section04 .info_area,
+  body #mainSec .section02_sub.section04 .info_area,
+  body #mainSec .section03.section04 .info_area,
+  body #mainSec .section04.section04 .info_area,
+  body #mainSec .section05.section04 .info_area,
+  body #mainSec .section06.section04 .info_area {
+    max-width: min(91.1458333333vw, 700px);
+    margin: min(6.25vw, 48px) auto 0;
+  }
+}
+body #mainSec .section01.section04 .info_area .info_top,
+body #mainSec .section02.section04 .info_area .info_top,
+body #mainSec .section02_sub.section04 .info_area .info_top,
+body #mainSec .section03.section04 .info_area .info_top,
+body #mainSec .section04.section04 .info_area .info_top,
+body #mainSec .section05.section04 .info_area .info_top,
+body #mainSec .section06.section04 .info_area .info_top {
+  width: 100%;
+}
+body #mainSec .section01.section04 .info_area .info_top img,
+body #mainSec .section02.section04 .info_area .info_top img,
+body #mainSec .section02_sub.section04 .info_area .info_top img,
+body #mainSec .section03.section04 .info_area .info_top img,
+body #mainSec .section04.section04 .info_area .info_top img,
+body #mainSec .section05.section04 .info_area .info_top img,
+body #mainSec .section06.section04 .info_area .info_top img {
+  width: 100%;
+  max-width: min(76.2244897959vw, 747px);
+  border-radius: min(1.0204081633vw, 10px) min(1.0204081633vw, 10px) 0 0;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section04 .info_area .info_top img,
+  body #mainSec .section02.section04 .info_area .info_top img,
+  body #mainSec .section02_sub.section04 .info_area .info_top img,
+  body #mainSec .section03.section04 .info_area .info_top img,
+  body #mainSec .section04.section04 .info_area .info_top img,
+  body #mainSec .section05.section04 .info_area .info_top img,
+  body #mainSec .section06.section04 .info_area .info_top img {
+    max-width: min(91.1458333333vw, 700px);
+    border-radius: min(1.3020833333vw, 10px) min(1.3020833333vw, 10px) 0 0;
+  }
+}
+body #mainSec .section01.section04 .info_area .info,
+body #mainSec .section02.section04 .info_area .info,
+body #mainSec .section02_sub.section04 .info_area .info,
+body #mainSec .section03.section04 .info_area .info,
+body #mainSec .section04.section04 .info_area .info,
+body #mainSec .section05.section04 .info_area .info,
+body #mainSec .section06.section04 .info_area .info {
+  background-color: var(--global-palette-white-50);
+  text-align: left;
+  padding: min(2.0408163265vw, 20px) min(3.0612244898vw, 30px);
+  border-radius: 0 0 min(1.0204081633vw, 10px) min(1.0204081633vw, 10px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section04 .info_area .info,
+  body #mainSec .section02.section04 .info_area .info,
+  body #mainSec .section02_sub.section04 .info_area .info,
+  body #mainSec .section03.section04 .info_area .info,
+  body #mainSec .section04.section04 .info_area .info,
+  body #mainSec .section05.section04 .info_area .info,
+  body #mainSec .section06.section04 .info_area .info {
+    padding: min(4.6875vw, 36px) min(3.90625vw, 30px);
+  }
+}
+body #mainSec .section01.section04 .info_area .info .info_title,
+body #mainSec .section02.section04 .info_area .info .info_title,
+body #mainSec .section02_sub.section04 .info_area .info .info_title,
+body #mainSec .section03.section04 .info_area .info .info_title,
+body #mainSec .section04.section04 .info_area .info .info_title,
+body #mainSec .section05.section04 .info_area .info .info_title,
+body #mainSec .section06.section04 .info_area .info .info_title {
+  font-size: clamp(12px, 1.6326530612vw, 16px);
+  margin-bottom: min(1.6326530612vw, 16px);
+  line-height: 1.3 !important;
+  font-family: YakuHanJP;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section04 .info_area .info .info_title,
+  body #mainSec .section02.section04 .info_area .info .info_title,
+  body #mainSec .section02_sub.section04 .info_area .info .info_title,
+  body #mainSec .section03.section04 .info_area .info .info_title,
+  body #mainSec .section04.section04 .info_area .info .info_title,
+  body #mainSec .section05.section04 .info_area .info .info_title,
+  body #mainSec .section06.section04 .info_area .info .info_title {
+    font-size: clamp(18px, 5.2083333333vw, 40px);
+    margin-bottom: min(4.1666666667vw, 32px);
+  }
+}
+body #mainSec .section01.section04 .info_area .info .info_title__sub,
+body #mainSec .section02.section04 .info_area .info .info_title__sub,
+body #mainSec .section02_sub.section04 .info_area .info .info_title__sub,
+body #mainSec .section03.section04 .info_area .info .info_title__sub,
+body #mainSec .section04.section04 .info_area .info .info_title__sub,
+body #mainSec .section05.section04 .info_area .info .info_title__sub,
+body #mainSec .section06.section04 .info_area .info .info_title__sub {
+  font-size: 13px;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section04 .info_area .info .info_title__sub,
+  body #mainSec .section02.section04 .info_area .info .info_title__sub,
+  body #mainSec .section02_sub.section04 .info_area .info .info_title__sub,
+  body #mainSec .section03.section04 .info_area .info .info_title__sub,
+  body #mainSec .section04.section04 .info_area .info .info_title__sub,
+  body #mainSec .section05.section04 .info_area .info .info_title__sub,
+  body #mainSec .section06.section04 .info_area .info .info_title__sub {
+    font-size: clamp(14px, 3.6458333333vw, 28px);
+  }
+}
+body #mainSec .section01.section04 .info_area .info.label,
+body #mainSec .section02.section04 .info_area .info.label,
+body #mainSec .section02_sub.section04 .info_area .info.label,
+body #mainSec .section03.section04 .info_area .info.label,
+body #mainSec .section04.section04 .info_area .info.label,
+body #mainSec .section05.section04 .info_area .info.label,
+body #mainSec .section06.section04 .info_area .info.label {
+  font-weight: 700;
+  display: inline-block;
+  width: min(15.306122449vw, 150px);
+}
+body #mainSec .section01.section04 .info_area .info p,
+body #mainSec .section02.section04 .info_area .info p,
+body #mainSec .section02_sub.section04 .info_area .info p,
+body #mainSec .section03.section04 .info_area .info p,
+body #mainSec .section04.section04 .info_area .info p,
+body #mainSec .section05.section04 .info_area .info p,
+body #mainSec .section06.section04 .info_area .info p {
+  font-size: 13px;
+  text-align: left;
+  color: #3a3a3a;
+  font-family: YakuHanJP;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section04 .info_area .info p,
+  body #mainSec .section02.section04 .info_area .info p,
+  body #mainSec .section02_sub.section04 .info_area .info p,
+  body #mainSec .section03.section04 .info_area .info p,
+  body #mainSec .section04.section04 .info_area .info p,
+  body #mainSec .section05.section04 .info_area .info p,
+  body #mainSec .section06.section04 .info_area .info p {
+    font-size: clamp(14px, 3.6458333333vw, 28px);
+  }
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section05,
+  body #mainSec .section02.section05,
+  body #mainSec .section02_sub.section05,
+  body #mainSec .section03.section05,
+  body #mainSec .section04.section05,
+  body #mainSec .section05.section05,
+  body #mainSec .section06.section05 {
+    padding: min(5.2083333333vw, 40px) 0;
+  }
+}
+body #mainSec .section01.section05, body #mainSec .section01.section06,
+body #mainSec .section02.section05,
+body #mainSec .section02.section06,
+body #mainSec .section02_sub.section05,
+body #mainSec .section02_sub.section06,
+body #mainSec .section03.section05,
+body #mainSec .section03.section06,
+body #mainSec .section04.section05,
+body #mainSec .section04.section06,
+body #mainSec .section05.section05,
+body #mainSec .section05.section06,
+body #mainSec .section06.section05,
+body #mainSec .section06.section06 {
+  background-color: var(--global-palette-white-50);
+}
+body #mainSec .section01.section05 .flow, body #mainSec .section01.section06 .flow,
+body #mainSec .section02.section05 .flow,
+body #mainSec .section02.section06 .flow,
+body #mainSec .section02_sub.section05 .flow,
+body #mainSec .section02_sub.section06 .flow,
+body #mainSec .section03.section05 .flow,
+body #mainSec .section03.section06 .flow,
+body #mainSec .section04.section05 .flow,
+body #mainSec .section04.section06 .flow,
+body #mainSec .section05.section05 .flow,
+body #mainSec .section05.section06 .flow,
+body #mainSec .section06.section05 .flow,
+body #mainSec .section06.section06 .flow {
+  width: 100%;
+}
+body #mainSec .section01.section05 .flow img, body #mainSec .section01.section06 .flow img,
+body #mainSec .section02.section05 .flow img,
+body #mainSec .section02.section06 .flow img,
+body #mainSec .section02_sub.section05 .flow img,
+body #mainSec .section02_sub.section06 .flow img,
+body #mainSec .section03.section05 .flow img,
+body #mainSec .section03.section06 .flow img,
+body #mainSec .section04.section05 .flow img,
+body #mainSec .section04.section06 .flow img,
+body #mainSec .section05.section05 .flow img,
+body #mainSec .section05.section06 .flow img,
+body #mainSec .section06.section05 .flow img,
+body #mainSec .section06.section06 .flow img {
+  width: 100%;
+  max-width: min(65.2040816327vw, 639px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section05 .flow img, body #mainSec .section01.section06 .flow img,
+  body #mainSec .section02.section05 .flow img,
+  body #mainSec .section02.section06 .flow img,
+  body #mainSec .section02_sub.section05 .flow img,
+  body #mainSec .section02_sub.section06 .flow img,
+  body #mainSec .section03.section05 .flow img,
+  body #mainSec .section03.section06 .flow img,
+  body #mainSec .section04.section05 .flow img,
+  body #mainSec .section04.section06 .flow img,
+  body #mainSec .section05.section05 .flow img,
+  body #mainSec .section05.section06 .flow img,
+  body #mainSec .section06.section05 .flow img,
+  body #mainSec .section06.section06 .flow img {
+    max-width: min(91.1458333333vw, 700px);
+  }
+}
+body #mainSec .section01.section06,
+body #mainSec .section02.section06,
+body #mainSec .section02_sub.section06,
+body #mainSec .section03.section06,
+body #mainSec .section04.section06,
+body #mainSec .section05.section06,
+body #mainSec .section06.section06 {
+  padding: min(3.0612244898vw, 30px) 0 min(4.0816326531vw, 40px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .section01.section06,
+  body #mainSec .section02.section06,
+  body #mainSec .section02_sub.section06,
+  body #mainSec .section03.section06,
+  body #mainSec .section04.section06,
+  body #mainSec .section05.section06,
+  body #mainSec .section06.section06 {
+    padding: min(7.8125vw, 60px) 0 min(13.0208333333vw, 100px);
+  }
+}
+body #mainSec .terms, body #mainSec .point {
+  width: 100%;
+  max-width: min(89.7959183673vw, 880px);
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 0;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms, body #mainSec .point {
+    max-width: min(91.1458333333vw, 700px);
+  }
+}
+body #mainSec .terms__other, body #mainSec .point__other {
+  max-width: min(59.1836734694vw, 580px);
+  margin-top: min(1.6326530612vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms__other, body #mainSec .point__other {
+    max-width: min(91.1458333333vw, 700px);
+    margin-top: min(4.1666666667vw, 32px);
+  }
+}
+body #mainSec .terms__last, body #mainSec .point__last {
+  max-width: min(65.306122449vw, 640px);
+  margin-top: min(1.6326530612vw, 16px);
+  padding-left: min(1.4285714286vw, 14px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms__last, body #mainSec .point__last {
+    max-width: min(91.1458333333vw, 700px);
+    margin-top: min(4.1666666667vw, 32px);
+  }
+}
+body #mainSec .terms p, body #mainSec .terms span, body #mainSec .terms li, body #mainSec .terms dl, body #mainSec .terms dt, body #mainSec .terms dd, body #mainSec .point p, body #mainSec .point span, body #mainSec .point li, body #mainSec .point dl, body #mainSec .point dt, body #mainSec .point dd {
+  font-size: clamp(8px, 1.2244897959vw, 12px);
+  color: var(--global-palette-black-alpha-600);
+  font-family: YakuHanJP;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms p, body #mainSec .terms span, body #mainSec .terms li, body #mainSec .terms dl, body #mainSec .terms dt, body #mainSec .terms dd, body #mainSec .point p, body #mainSec .point span, body #mainSec .point li, body #mainSec .point dl, body #mainSec .point dt, body #mainSec .point dd {
+    font-size: clamp(12px, 2.6041666667vw, 20px);
+  }
+}
+body #mainSec .terms p.bk, body #mainSec .terms span.bk, body #mainSec .terms li.bk, body #mainSec .terms dl.bk, body #mainSec .terms dt.bk, body #mainSec .terms dd.bk, body #mainSec .point p.bk, body #mainSec .point span.bk, body #mainSec .point li.bk, body #mainSec .point dl.bk, body #mainSec .point dt.bk, body #mainSec .point dd.bk {
+  color: var(--global-palette-black-alpha-950);
+}
+body #mainSec .terms p.default.mt, body #mainSec .terms span.default.mt, body #mainSec .terms li.default.mt, body #mainSec .terms dl.default.mt, body #mainSec .terms dt.default.mt, body #mainSec .terms dd.default.mt, body #mainSec .point p.default.mt, body #mainSec .point span.default.mt, body #mainSec .point li.default.mt, body #mainSec .point dl.default.mt, body #mainSec .point dt.default.mt, body #mainSec .point dd.default.mt {
+  margin-top: min(2.4489795918vw, 24px);
+}
+body #mainSec .terms dl, body #mainSec .point dl {
+  display: flex;
+  align-items: flex-start;
+  letter-spacing: 0.8px;
+}
+body #mainSec .terms dl + dl, body #mainSec .point dl + dl {
+  margin-top: min(0.4081632653vw, 4px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms dl + dl, body #mainSec .point dl + dl {
+    margin-top: min(1.0416666667vw, 8px);
+  }
+}
+body #mainSec .terms dl dt, body #mainSec .point dl dt {
+  min-width: min(3.6734693878vw, 36px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms dl dt, body #mainSec .point dl dt {
+    min-width: min(6.5104166667vw, 50px);
+  }
+}
+body #mainSec .terms dl dt.only, body #mainSec .point dl dt.only {
+  min-width: min(2.4489795918vw, 24px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms dl dt.only, body #mainSec .point dl dt.only {
+    min-width: min(3.90625vw, 30px);
+  }
+}
+body #mainSec .terms dl dt.single, body #mainSec .point dl dt.single {
+  min-width: min(1.8367346939vw, 18px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms dl dt.single, body #mainSec .point dl dt.single {
+    min-width: min(3.3854166667vw, 26px);
+  }
+}
+body #mainSec .terms dl dd, body #mainSec .point dl dd {
+  line-height: 1.6 !important;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms dl dd, body #mainSec .point dl dd {
+    line-height: 1.4 !important;
+  }
+}
+body #mainSec .terms dl dd.dd_wrapper, body #mainSec .point dl dd.dd_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+body #mainSec .terms dl .text_red, body #mainSec .point dl .text_red {
+  color: var(--semantics-buy-1-default);
+}
+body #mainSec .terms dl a, body #mainSec .point dl a {
+  letter-spacing: normal;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms dl a, body #mainSec .point dl a {
+    letter-spacing: -0.6px;
+  }
+}
+body #mainSec .terms li + li, body #mainSec .point li + li {
+  margin-top: min(0.2040816327vw, 2px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms li + li, body #mainSec .point li + li {
+    margin-top: min(0.5208333333vw, 4px);
+  }
+}
+body #mainSec .terms p {
+  letter-spacing: 0.8px;
+}
+body #mainSec .terms p + p {
+  margin-top: min(0.4081632653vw, 4px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .terms p + p {
+    margin-top: min(1.5625vw, 12px);
+  }
+}
+body #mainSec .point {
+  max-width: 100%;
+}
+body #mainSec .responsive-iframe {
+  margin: min(2.0408163265vw, 20px) auto min(1.6326530612vw, 16px);
+  position: relative;
+  width: 100%;
+  max-width: min(34.8979591837vw, 342px);
+  height: min(19.5918367347vw, 192px);
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .responsive-iframe {
+    max-width: min(91.1458333333vw, 700px);
+    height: 0;
+    padding-bottom: 56.25%;
+    margin: min(3.90625vw, 30px) auto min(3.3854166667vw, 26px);
+  }
+}
+body #mainSec .responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+body #mainSec p.bottom_text {
+  font-size: clamp(12px, 1.6326530612vw, 16px);
+  color: #000;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec p.bottom_text {
+    font-size: clamp(14px, 3.6458333333vw, 28px);
+    max-width: min(91.1458333333vw, 700px);
+  }
+}
+body #mainSec p.last_text {
+  font-size: clamp(8px, 1.2244897959vw, 12px);
+  color: var(--global-palette-black-alpha-600);
+  padding-top: min(1.6326530612vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec p.last_text {
+    font-size: clamp(12px, 2.34375vw, 18px);
+    letter-spacing: -0.8px;
+  }
+}
+body #mainSec .point {
+  max-width: min(65.306122449vw, 640px);
+  margin-top: min(1.6326530612vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .point {
+    max-width: min(91.1458333333vw, 700px);
+  }
+}
+body #mainSec .point p.point__title {
+  font-size: clamp(24px, 3.2653061224vw, 32px);
+  color: var(--global-palette-navy-600);
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .point p.point__title {
+    font-size: clamp(26px, 6.7708333333vw, 52px);
+    white-space: normal;
+  }
+}
+body #mainSec ul {
+  padding-left: min(1.8367346939vw, 18px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec ul {
+    padding-left: min(4.6875vw, 36px);
+  }
+}
+body #mainSec ul li {
+  font-weight: 700;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+body #mainSec ul li.nowrap {
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec ul li.nowrap {
+    white-space: normal;
+  }
+}
+body #mainSec .mt4 {
+  margin-top: min(0.4081632653vw, 4px);
+}
+body #mainSec .mt8 {
+  margin-top: min(0.8163265306vw, 8px);
+}
+body #mainSec .mt10 {
+  margin-top: min(1.0204081633vw, 10px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .mt10 {
+    margin-top: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .mt16 {
+  margin-top: min(1.6326530612vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .mt16 {
+    margin-top: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .mt20 {
+  margin-top: min(2.0408163265vw, 20px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .mt20 {
+    margin-top: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .mt40 {
+  margin-top: min(4.0816326531vw, 40px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .mt40 {
+    margin-top: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .mt54 {
+  margin-top: min(5.5102040816vw, 54px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .mt54 {
+    margin-top: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .mt60 {
+  margin-top: min(6.1224489796vw, 60px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .mt60 {
+    margin-top: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .mt26 {
+  margin-top: min(2.6530612245vw, 26px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .mt26 {
+    margin-top: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .nt_mt16 {
+  margin-top: min(1.6326530612vw, -16px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .nt_mt16 {
+    margin-top: min(1.0204081633vw, -10px);
+  }
+}
+body #mainSec .mb14 {
+  margin-bottom: min(1.4285714286vw, 14px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .mb14 {
+    margin-bottom: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .mb20 {
+  margin-bottom: min(2.0408163265vw, 20px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .mb20 {
+    margin-bottom: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .nt_ml12 {
+  margin-left: min(1.5625vw, -12px);
+}
+body #mainSec .pb30 {
+  padding-bottom: min(3.0612244898vw, 30px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .pb30 {
+    padding-bottom: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .pb80 {
+  padding-bottom: min(8.1632653061vw, 80px);
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .pb80 {
+    padding-bottom: min(1.3020833333vw, 10px);
+  }
+}
+body #mainSec .pc_only {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .pc_only {
+    display: none;
+  }
+}
+body #mainSec .sp_only {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .sp_only {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  body #mainSec .sp_mt6 {
+    margin-top: min(0.78125vw, 6px);
+  }
+  body #mainSec .sp_mt10 {
+    margin-top: min(1.3020833333vw, 10px);
+  }
+  body #mainSec .sp_mt30 {
+    margin-top: min(3.90625vw, 30px);
+  }
+  body #mainSec .sp_mt40 {
+    margin-top: min(5.2083333333vw, 40px);
+  }
+  body #mainSec .sp_mt50 {
+    margin-top: min(6.5104166667vw, 50px);
+  }
+  body #mainSec .sp_mt100 {
+    margin-top: min(13.0208333333vw, 100px);
+  }
+  body #mainSec .sp_nt_mb30 {
+    margin-bottom: min(3.90625vw, -30px);
+  }
+  body #mainSec .sp_pb80 {
+    padding-bottom: min(10.4166666667vw, 80px);
+  }
+}
+body .target {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+body .target.appear {
+  opacity: 1;
+  transform: translateY(0);
+}/*# sourceMappingURL=lp_strealestate_merit_main.css.map */

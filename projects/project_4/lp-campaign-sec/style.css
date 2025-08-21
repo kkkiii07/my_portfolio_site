@@ -1,0 +1,1182 @@
+/*
+Theme Name:lp-campaign-main
+*/
+
+@charset "UTF-8";
+
+/* reset common
+------------------------------------------------------------------------------*/
+body {
+  /* font-family: "GenJyuuGothic", "sans-serif" !important; */
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+main {
+  background-color: #002365 !important;
+  padding-top: 0;
+  background-color: #1a48a3;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  line-height: 0;
+}
+
+p,
+h1,
+h2 {
+  display: flex;
+  line-height: 0;
+}
+
+a {
+  cursor: pointer;
+  display: block;
+}
+
+.lp_wrap img {
+  vertical-align: bottom;
+}
+
+.lp_wrap ol,
+.lp_wrap ul {
+  list-style: none;
+}
+
+.lp_wrap a,
+.lp_wrap div,
+.lp_wrap span {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.lp_wrap a img {
+  border: none;
+}
+
+.lp_wrap sup,
+.lp_wrap sub {
+  font-size: 0.5em;
+}
+
+.lp_wrap {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  z-index: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .lp_wrap {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+.lp_inner {
+  position: relative;
+  z-index: 0;
+}
+
+/* .lp_fv
+------------------------------------------------------------------------------*/
+.lp_fv dl dd.lp_atte {
+  position: absolute;
+  left: 0;
+  top: calc(300 / 750 * 100vw);
+  width: calc(654 / 750 * 100vw);
+  font-size: calc(14 / 750 * 100vw);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-align: right;
+}
+
+.lp_fv dl dd.lp_atte a {
+  color: #fff;
+}
+
+@media screen and (min-width: 769px) {
+  .lp_fv dl dd.lp_atte {
+    position: absolute;
+    left: 0;
+    top: 300px;
+    width: 654px;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
+  .lp_fv dl.fv_cv dd {
+    width: 318px;
+  }
+
+  .lp_fv dl.fv_cv dd.cv_btn01 {
+    left: 46px;
+    top: 79px;
+  }
+
+  .lp_fv dl.fv_cv dd.cv_btn02 {
+    left: 386px;
+    top: 79px;
+  }
+
+  .lp_fv dl.fv_cv dd.cv_btn02::after {
+    width: 159px;
+    height: 105px;
+    top: -80px;
+    right: -28px;
+  }
+}
+
+/* slide箇所
+------------------------------------------------------------------------------*/
+.lp_point .lp_point01 .slide,
+.lp_point .lp_voice .slide {
+  position: relative;
+  z-index: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: url(https://qureo.jp/class/content/themes/lp-campaign-sec/images/point01/point01_slide_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.lp_point .lp_voice .slide {
+  background-image: none;
+  background-color: #1b48a3;
+}
+
+.lp_point .lp_point01 .swiper,
+.lp_point .lp_voice .swiper {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: calc(972 / 750 * 100vw);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.lp_point .lp_voice .swiper {
+  height: calc(795 / 750 * 100vw);
+}
+
+.lp_point .lp_point01 .swiper .swiper-slide,
+.lp_point .lp_voice .swiper .swiper-slide {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  max-width: calc(671 / 750 * 100vw);
+  margin: 0 calc(25 / 750 * 100vw);
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.lp_point .lp_voice .swiper .swiper-slide {
+  max-width: calc(567 / 750 * 100vw);
+  margin: 0 calc(25 / 750 * 100vw);
+}
+
+.lp_point01 .swiper .swiper-button-next,
+.lp_point01 .swiper .swiper-button-prev {
+  background-color: #999;
+  width: calc(61 / 750 * 100vw);
+  height: calc(61 / 750 * 100vw);
+  color: transparent;
+  position: absolute;
+  top: 45.4%;
+}
+
+.lp_point01 .swiper .swiper-button-next::after,
+.lp_point01 .swiper .swiper-button-prev::after {
+  background-image: url(https://qureo.jp/class/content/themes/lp-campaign-sec/images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: calc(21 / 750 * 100vw);
+  height: calc(34 / 750 * 100vw);
+}
+
+.lp_point01 .swiper .swiper-button-next {
+  right: 0;
+}
+
+.lp_point01 .swiper .swiper-button-next::after {
+  transform: rotate(180deg);
+}
+
+.lp_point01 .swiper .swiper-button-prev {
+  left: 0;
+}
+
+.lp_point .lp_point01 .swiper-pagination {
+  width: 100%;
+  top: calc(840 / 750 * 100vw);
+  line-height: 0.1;
+}
+
+.lp_point .lp_point01 .swiper-pagination .swiper-pagination-bullet {
+  width: calc(24 / 750 * 100vw);
+  height: calc(24 / 750 * 100vw);
+  background: #fff;
+  opacity: 1;
+  margin: 0 calc(18 / 750 * 100vw);
+}
+
+.lp_point .lp_point01 .swiper-pagination .swiper-pagination-bullet-active {
+  background: #1b48a3;
+}
+
+@media screen and (min-width: 769px) {
+  .lp_point .lp_point01 .swiper {
+    height: 972px;
+  }
+
+  .lp_point .lp_voice .swiper {
+    height: 795px;
+  }
+
+  .lp_point .lp_point01 .swiper .swiper-slide {
+    width: 671px;
+    margin: 0 25px;
+  }
+
+  .lp_point .lp_voice .swiper .swiper-slide {
+    max-width: 567px;
+    margin: 0 25px;
+  }
+
+  .lp_point01 .swiper .swiper-button-next,
+  .lp_point01 .swiper .swiper-button-prev {
+    background-color: #999999;
+    width: 61px;
+    height: 61px;
+    color: transparent;
+    position: absolute;
+  }
+
+  .lp_point01 .swiper .swiper-button-next::after,
+  .lp_point01 .swiper .swiper-button-prev::after {
+    width: 21px;
+    height: 34px;
+  }
+
+  .lp_point .lp_point01 .swiper-pagination {
+    width: 100%;
+    top: 840px;
+    line-height: 0.1;
+  }
+
+  .lp_point .lp_point01 .swiper-pagination .swiper-pagination-bullet {
+    width: 24px;
+    height: 24px;
+    margin: 0 18px;
+  }
+}
+
+/* .lp_voice
+------------------------------------------------------------------------------*/
+.lp_point .lp_voice ul.voice_list {
+  position: absolute;
+  left: calc(50 / 750 * 100vw);
+  top: calc(330 / 750 * 100vw);
+  width: calc(650 / 750 * 100vw);
+}
+
+.lp_point .lp_voice ul.voice_list li+li {
+  margin-top: calc(50 / 750 * 100vw);
+}
+
+.lp_point .lp_voice .voice_popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5001;
+  display: none;
+}
+
+.lp_point .lp_voice .voice_popup .popup_cover {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5002;
+  cursor: pointer;
+}
+
+.lp_point .lp_voice .voice_popup .popup_wrap {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: calc(52 / 750 * 100vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lp_point .lp_voice .voice_popup .popup_inner {
+  width: calc(710 / 750 * 100vw);
+  max-height: 90vh;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  z-index: 5003;
+  border-top: #2bb6e9 solid calc(4 / 750 * 100vw);
+}
+
+.lp_point .lp_voice .voice_popup .popup_inner::before {
+  content: '';
+  background: url('../img/voice_popup_cpt.png') left top / calc(254 / 750 * 100vw) auto no-repeat;
+  display: block;
+  width: calc(254 / 750 * 100vw);
+  height: calc(52 / 750 * 100vw);
+  position: absolute;
+  left: 0;
+  top: calc(-55 / 750 * 100vw);
+}
+
+.lp_point .lp_voice .voice_popup .voice_cnt {
+  box-sizing: border-box;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.lp_point .lp_voice .voice_popup dl {
+  background: #fff;
+  width: 100%;
+  padding: calc(48 / 750 * 100vw) calc(40 / 750 * 100vw) calc(45 / 750 * 100vw);
+  box-sizing: border-box;
+}
+
+.lp_point .lp_voice .voice_popup dl dt {
+  color: #2bb6e9;
+  font-size: calc(36 / 750 * 100vw);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-bottom: calc(26 / 750 * 100vw);
+}
+
+.lp_point .lp_voice .voice_popup dl dd {
+  color: #4a5c80;
+  font-size: calc(22 / 750 * 100vw);
+  line-height: 1.81;
+  letter-spacing: 0.025em;
+  font-weight: bold;
+}
+
+.lp_point .lp_voice .voice_popup dl dd span {
+  font-weight: normal;
+}
+
+.lp_point .lp_voice .voice_popup dl.voice_child {
+  background: #f4f7f9;
+  width: 100%;
+  padding: calc(48 / 750 * 100vw) calc(40 / 750 * 100vw) calc(45 / 750 * 100vw);
+  box-sizing: border-box;
+}
+
+.lp_point .lp_voice .voice_popup dl.voice_child dt {
+  color: #3fc7b0;
+}
+
+.lp_point .lp_voice .voice_popup div.popup-close {
+  position: absolute;
+  right: calc(-12 / 750 * 100vw);
+  top: calc(-38 / 750 * 100vw);
+  width: calc(80 / 750 * 100vw);
+  cursor: pointer;
+  line-height: 0.1;
+}
+
+@media screen and (min-width: 769px) {
+  .lp_point .lp_voice ul.voice_list {
+    position: absolute;
+    left: 50px;
+    top: 330px;
+    width: 650px;
+  }
+
+  .lp_point .lp_voice ul.voice_list li {
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+  }
+
+  .lp_point .lp_voice ul.voice_list li:hover {
+    opacity: 0.7;
+  }
+
+  .lp_point .lp_voice ul.voice_list li+li {
+    margin-top: 50px;
+  }
+
+  .lp_point .lp_voice .voice_popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5001;
+    display: none;
+  }
+
+  .lp_point .lp_voice .voice_popup .popup_cover {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5002;
+    cursor: pointer;
+  }
+
+  .lp_point .lp_voice .voice_popup .popup_wrap {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lp_point .lp_voice .voice_popup .popup_inner {
+    width: 710px;
+    max-height: 90vh;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    z-index: 5003;
+    border-top: #2bb6e9 solid 4px;
+  }
+
+  .lp_point .lp_voice .voice_popup .popup_inner::before {
+    content: '';
+    background: url('../img/voice_popup_cpt.png') left top / 254px auto no-repeat;
+    display: block;
+    width: 254px;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    top: -55px;
+  }
+
+  .lp_point .lp_voice .voice_popup .voice_cnt {
+    box-sizing: border-box;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: left;
+  }
+
+  .lp_point .lp_voice .voice_popup dl {
+    background: #fff;
+    width: 100%;
+    padding: 48px 40px 45px;
+    box-sizing: border-box;
+  }
+
+  .lp_point .lp_voice .voice_popup dl dt {
+    color: #2bb6e9;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    margin-bottom: 26px;
+  }
+
+  .lp_point .lp_voice .voice_popup dl dd {
+    color: #4a5c80;
+    font-size: 22px;
+    line-height: 1.81;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+  }
+
+  .lp_point .lp_voice .voice_popup dl dd span {
+    font-weight: normal;
+  }
+
+  .lp_point .lp_voice .voice_popup dl.voice_child {
+    background: #f4f7f9;
+    width: 100%;
+    padding: 48px 40px 45px;
+    box-sizing: border-box;
+  }
+
+  .lp_point .lp_voice .voice_popup dl.voice_child dt {
+    color: #3fc7b0;
+  }
+
+  .lp_point .lp_voice .voice_popup div.popup-close {
+    position: absolute;
+    right: -12px;
+    top: -38px;
+    width: 80px;
+    cursor: pointer;
+    line-height: 0.1;
+  }
+}
+
+/* ctv箇所（modalのctv含む）
+------------------------------------------------------------------------------*/
+.lp_wrap dl {
+  position: relative;
+  z-index: 0;
+}
+
+.lp_wrap dl.ctv dd {
+  width: calc(318 / 750 * 100vw);
+}
+
+.lp_wrap dl.ctv dd.cv_btn01 {
+  left: calc(46 / 750 * 100vw);
+}
+
+.lp_wrap dl.ctv dd.cv_btn02 {
+  left: calc(389 / 750 * 100vw);
+}
+
+.lp_wrap dl.ctv dd.cv_btn01,
+.lp_wrap dl.ctv dd.cv_btn02 {
+  position: absolute;
+  top: calc(79 / 750 * 100vw);
+  z-index: 1;
+}
+
+.lp_wrap .lp_point05 dl.ctv dd.cv_btn01,
+.lp_wrap .lp_point05 dl.ctv dd.cv_btn02 {
+  top: calc(225 / 750 * 100vw);
+}
+
+.lp_wrap .lp_footer dl.ctv dd.cv_btn01,
+.lp_wrap .lp_footer dl.ctv dd.cv_btn02 {
+  top: calc(210 / 750 * 100vw);
+}
+
+.lp_wrap dl.ctv dd.cv_btn02::after,
+#js-modal1 dl.ctv dd.cv_btn02::after {
+  content: "";
+  display: block;
+  background-image: url(https://qureo.jp/class/content/themes/lp-campaign-sec/images/cv_btn02_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: calc(159 / 750 * 100vw);
+  height: calc(105 / 750 * 100vw);
+  position: absolute;
+  top: calc(-80 / 750 * 100vw);
+  right: calc(-28 / 750 * 100vw);
+}
+
+.lp_wrap .lp_point05 dl.ctv dd.cv_btn02.icon_small::after,
+.lp_wrap .lp_footer dl.ctv dd.cv_btn02.icon_small::after {
+  background-image: url(https://qureo.jp/class/content/themes/lp-campaign-sec/images/cv_btn02_icon_small.png);
+  width: calc(145 / 750* 100vw);
+  height: calc(96 / 750* 100vw);
+  top: calc(-59 / 750* 100vw);
+  right: calc(-40 / 750* 100vw);
+}
+
+.lp_wrap .lp_point05 dl.ctv dd.cv_btn02::after,
+.lp_wrap .lp_footer dl.ctv dd.cv_btn02::after {
+  top: calc(-47 / 750 * 100vw);
+  right: calc(-66 / 750 * 100vw);
+}
+
+.cv_search_btn_position {
+  position: relative;
+  z-index: 0;
+}
+
+.cv_search_btn_position .cv_search_btn,
+.lp_course .cv_search_btn_position .cv_search_btn,
+.lp_lesson .cv_search_btn_position .cv_search_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: calc(527 / 750 * 100vw);
+}
+
+.lp_course .cv_search_btn_position .cv_search_btn {
+  max-width: calc(390 / 750 * 100vw);
+  top: 21%;
+}
+
+.lp_lesson .cv_search_btn_position .cv_search_btn {
+  max-width: calc(624 / 750 * 100vw);
+  top: 76.4%;
+}
+
+/* modal1箇所のみのCSS */
+#js-modal1 dl.ctv,
+#js-modal2 dl.ctv {
+  overflow: hidden;
+}
+
+#js-modal1 dl.ctv dd,
+#js-modal2 dl.ctv dd {
+  width: calc(320 / 750 * 100vw);
+}
+
+#js-modal1 dl.ctv dd.cv_btn01,
+#js-modal2 dl.ctv dd.cv_btn01 {
+  left: 0;
+}
+
+#js-modal1 dl.ctv dd.cv_btn02,
+#js-modal2 dl.ctv dd.cv_btn02 {
+  left: calc(344 / 750 * 100vw);
+}
+
+#js-modal1 dl.ctv dd.cv_btn01,
+#js-modal1 dl.ctv dd.cv_btn02,
+#js-modal2 dl.ctv dd.cv_btn01,
+#js-modal2 dl.ctv dd.cv_btn02 {
+  top: calc(210 / 750 * 100vw);
+}
+
+#js-modal1 dl.ctv dd.cv_btn02::after,
+#js-modal2 dl.ctv dd.cv_btn02::after {
+  width: calc(126 / 750 * 100vw);
+  height: calc(84 / 750 * 100vw);
+  top: calc(-56 / 750 * 100vw);
+  right: calc(2 / 750 * 100vw);
+}
+
+@media screen and (min-width: 769px) {
+  .lp_wrap dl.ctv dd {
+    width: 318px;
+  }
+
+  .lp_wrap dl.ctv dd.cv_btn01 {
+    left: 46px;
+  }
+
+  .lp_wrap dl.ctv dd.cv_btn02 {
+    left: 386px;
+  }
+
+  .lp_wrap dl.ctv dd.cv_btn01,
+  .lp_wrap dl.ctv dd.cv_btn02 {
+    top: 79px;
+  }
+
+  .lp_wrap .lp_point05 dl.ctv dd.cv_btn01,
+  .lp_wrap .lp_point05 dl.ctv dd.cv_btn02 {
+    top: 225px;
+  }
+
+  .lp_wrap .lp_footer dl.ctv dd.cv_btn01,
+  .lp_wrap .lp_footer dl.ctv dd.cv_btn02 {
+    top: 210px;
+  }
+
+  .lp_wrap dl.ctv dd.cv_btn02::after {
+    width: 159px;
+    height: 105px;
+    top: -80px;
+    right: -28px;
+  }
+
+  .lp_wrap .lp_point05 dl.ctv dd.cv_btn02::after,
+  .lp_wrap .lp_footer dl.ctv dd.cv_btn02::after {
+    top: -47px;
+    right: -66px;
+  }
+
+  .lp_wrap .lp_point05 dl.ctv dd.cv_btn02.icon_small::after,
+  .lp_wrap .lp_footer dl.ctv dd.cv_btn02.icon_small::after {
+    width: 145px;
+    height: 96px;
+    top: -59px;
+    right: -40px;
+  }
+
+  .cv_search_btn_position .cv_search_btn {
+    max-width: 527px;
+  }
+
+  .lp_course .cv_search_btn_position .cv_search_btn {
+    max-width: 390px;
+  }
+
+  .lp_lesson .cv_search_btn_position .cv_search_btn {
+    max-width: 624px;
+  }
+
+  /* modal1箇所のみのCSS */
+  #js-modal1 dl.ctv dd,
+  #js-modal2 dl.ctv dd {
+    width: 320px;
+  }
+
+  #js-modal1 dl.ctv dd.cv_btn02,
+  #js-modal2 dl.ctv dd.cv_btn02 {
+    left: 344px;
+  }
+
+  #js-modal1 dl.ctv dd.cv_btn01,
+  #js-modal1 dl.ctv dd.cv_btn02,
+  #js-modal2 dl.ctv dd.cv_btn01,
+  #js-modal2 dl.ctv dd.cv_btn02 {
+    top: 210px;
+  }
+
+  #js-modal1 dl.ctv dd.cv_btn02::after,
+  #js-modal2 dl.ctv dd.cv_btn02::after {
+    width: 126px;
+    height: 84px;
+    top: -56px;
+    right: 2px;
+  }
+}
+
+/* fixバナー
+------------------------------------------------------------------------------*/
+.lp_wrap .button_fixed {
+  width: 100%;
+  max-width: 750px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: calc(24 / 750 * 100vw) 0 calc(32 / 750 * 100vw);
+  z-index: 800;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s;
+}
+
+.lp_wrap .button_fixed.on {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lp_wrap .button_fixed .fixed_area_ctv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: calc(100% - calc(92 / 750 * 100vw));
+  margin: 0 auto;
+}
+
+.lp_wrap .button_fixed .fixed_area_ctv .fixed_area_cv_btn01,
+.lp_wrap .button_fixed .fixed_area_ctv .fixed_area_cv_btn02 {
+  width: 100%;
+  max-width: calc(318 / 750 * 100vw);
+}
+
+@media screen and (min-width: 769px) {
+  .lp_wrap .button_fixed {
+    padding: 24px 0 0;
+  }
+
+  .lp_wrap .button_fixed .fixed_area_ctv {
+    max-width: calc(100% - 92px);
+  }
+
+  .lp_wrap .button_fixed .fixed_area_ctv .fixed_area_cv_btn01,
+  .lp_wrap .button_fixed .fixed_area_ctv .fixed_area_cv_btn02 {
+    width: 100%;
+    max-width: 318px;
+  }
+}
+
+/* footer箇所
+------------------------------------------------------------------------------*/
+.lp_footer {
+  width: 100%;
+  position: relative;
+}
+
+.lp_footer::after {
+  content: "";
+  display: block;
+  background-image: url(https://qureo.jp/class/content/themes/lp-campaign-sec/images/footer/footer_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: calc(222 / 750 * 100vw);
+  height: calc(167 / 750 * 100vw);
+  position: absolute;
+  top: calc(-135 / 750 * 100vw);
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.lp_footer .lp_inner:after {
+  background: none;
+}
+
+@media screen and (min-width: 769px) {
+  .lp_footer::after {
+    max-width: 222px;
+    height: 167px;
+    top: -135px;
+  }
+}
+
+/* モーダル箇所
+------------------------------------------------------------------------------*/
+
+#js-mask {
+  background: rgba(27, 27, 27, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 900;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s ease;
+}
+
+.lp_wrap #js-modal1,
+.lp_wrap #js-modal2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  /* z-index: 1600; */
+  /*safariではモーダルのz-indexが競合してしまったためJavaScriptで
+  ボタンをクリックで強制的にそれぞれz-indexを付与するようにしています。
+  （他のボタンをクリックと同時にそのモーダルからz-index削除）*/
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s ease;
+}
+
+#js-modal1 .modal_inner1,
+#js-modal2 .modal_inner2 {
+  width: 100%;
+  max-width: calc(680 / 750 * 100vw);
+  margin: 17% auto;
+  max-height: 80%;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+#js-modal1 .modal_inner1 {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#js-modal2 .modal_inner2 {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#js-modal1>p,
+#js-modal2>p {
+  margin: 0 0 calc(20 / 750 * 100vw);
+}
+
+#js-close1,
+#js-close2 {
+  cursor: pointer;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 950;
+  width: 100%;
+  max-width: calc(680 / 750 * 100vw);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: calc(54 / 750 * 100vw);
+}
+
+#js-close1 img,
+#js-close2 img {
+  width: 100%;
+  max-width: calc(49 / 750 * 100vw);
+}
+
+#js-modal1.hidden,
+#js-modal2.hidden,
+#js-mask.hidden,
+#js-close1.hidden,
+#js-close2.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 769px) {
+
+  #js-modal1,
+  #js-modal2 {
+    max-width: 680px;
+  }
+
+  #js-modal1 .modal_inner1,
+  #js-modal2 .modal_inner2 {
+    width: 100%;
+    max-width: 680px;
+    max-height: 86%;
+    height: auto;
+  }
+
+  #js-modal1>p,
+  #js-modal2>p {
+    margin: 0 0 20px;
+  }
+
+  #js-close1,
+  #js-close2 {
+    max-width: 680px;
+    padding-top: 54px;
+  }
+
+  #js-close1 img,
+  #js-close2 img {
+    max-width: 49px;
+  }
+}
+
+/* swiper箇所
+------------------------------------------------------------------------------*/
+.lp_voice .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+/* school-area-list（アコーディオン）箇所
+------------------------------------------------------------------------------*/
+.lp_wrap .school-area-all-list {
+  width: 100%;
+  height: 100%;
+  background-image: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #1b48a3;
+}
+
+.lp_wrap .school-area-all-list::after {
+  content: "";
+  display: block;
+  background-image: url(https://qureo.jp/class/content/themes/lp-campaign-sec/images/school/school_bg.png);
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+  width: 100%;
+  max-width: 750px;
+  height: 100%;
+  position: absolute;
+  top: calc(28 / 750 * 100vw);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: var(--accordion-height, 100%);
+}
+
+.lp_wrap .school-area-all-list h2 {
+  margin: 0;
+}
+
+.lp_wrap .school-area-all-list .area_wrap {
+  width: 100%;
+  max-width: 750px;
+  background-color: transparent;
+  padding: 0 calc(55 / 750 * 100vw) calc(182 / 750 * 100vw);
+  margin: 0 auto;
+}
+
+.lp_wrap .school-area-all-list .area_wrap dl {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lp_wrap .school-area-all-list .area_wrap dl+dl {
+  margin-top: calc(12 / 750 * 100vw);
+}
+
+.lp_wrap .school-area-all-list .area_wrap dt {
+  width: 100%;
+  color: #002365;
+  font-size: calc(36 / 750 * 100vw);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: calc(2 / 750 * 100vw);
+  cursor: pointer;
+}
+
+.lp_wrap .school-area-all-list .area_wrap dt .dt_main {
+  width: 100%;
+  background-color: #fff;
+  line-height: calc(100 / 750 * 100vw);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 0 calc(66 / 750 * 100vw);
+}
+
+.lp_wrap .school-area-all-list .area_wrap dt .dt_right {
+  width: 100%;
+  background-color: #69a2ff;
+  max-width: calc(100 / 750 * 100vw);
+  height: calc(100 / 750 * 100vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: none;
+}
+
+.lp_wrap .school-area-all-list .area_wrap dt .dt_right::before {
+  content: "";
+  display: block;
+  height: calc(4 / 750 * 100vw);
+  width: calc(40 / 750 * 100vw);
+  background-color: #fff;
+  position: relative;
+  transition: none;
+}
+
+.lp_wrap .school-area-all-list .area_wrap dt .dt_right::after {
+  content: "";
+  display: block;
+  height: calc(4 / 750 * 100vw);
+  width: calc(40 / 750 * 100vw);
+  background-color: #fff;
+  transform: rotate(-90deg);
+  position: absolute;
+  transition: none;
+  transition: transform 0.5s ease;
+}
+
+.lp_wrap .school-area-all-list .area_wrap dt .dt_right.list-show::after {
+  transform: rotate(0);
+}
+
+.lp_wrap .school-area-all-list .area_wrap dd {
+  width: 100%;
+  display: none;
+  transition: none;
+  background-color: #1a48a3;
+}
+
+.lp_wrap .school-area-all-list .area_wrap dd a+a {
+  margin-top: calc(2 / 750 * 100vw);
+}
+
+.lp_wrap .school-area-all-list .area_wrap dd a {
+  width: 100%;
+  background-color: #eff1f3;
+  color: #002365;
+  font-weight: 700;
+  font-size: calc(26 / 750 * 100vw);
+  text-align: left;
+  padding: 0 0 0 calc(100 / 750 * 100vw);
+  line-height: calc(80 / 750 * 100vw);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.lp_wrap .school-area-all-list .area_wrap dd a::after {
+  content: "";
+  display: block;
+  background-image: url(https://qureo.jp/class/content/themes/lp-campaign-sec/images/school/school_arrow_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: calc(16 / 750 * 100vw);
+  height: calc(28 / 750 * 100vw);
+  position: absolute;
+  top: 50%;
+  right: calc(40 / 750 * 100vw);
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 769px) {
+  .lp_wrap .school-area-all-list::after {
+    top: 28px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap {
+    padding: 0 55px 182px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap dl+dl {
+    margin-top: 12px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap dt {
+    font-size: 36px;
+    margin-bottom: 2px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap dt .dt_main {
+    line-height: 100px;
+    padding: 0 0 0 66px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap dt .dt_right {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap dt .dt_right::before {
+    height: 4px;
+    width: 40px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap dt .dt_right::after {
+    height: 4px;
+    width: 40px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap dd a+a {
+    margin-top: 2px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap dd a {
+    font-size: 26px;
+    padding: 0 0 0 100px;
+    line-height: 80px;
+  }
+
+  .lp_wrap .school-area-all-list .area_wrap dd a::after {
+    width: 16px;
+    height: 28px;
+    right: 40px;
+  }
+}

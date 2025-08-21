@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+$base_width: 750px;
+
+// Break points
+$mq-breakpoints: (
+    'xsmall': 480px,
+    'small': 640px,
+    'medium': 750px,
+    'large': 990px,
+    'xlarge': 1290px
+);
+
+$color-bg: #84b1e0;

@@ -1,0 +1,307 @@
+@charset "UTF-8";
+body {
+  font-family: "Yu Gothic Pr6N", "游ゴシック体", "Yu Gothic", "游ゴシック", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+a {
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+p {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  width: 100%;
+}
+.main .fv {
+  width: 100%;
+}
+.main .btn_area .btn_bg {
+  height: min(18.6666666667vw, 140px);
+  background-image: url("../img/btn/btn-bg_02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.main .btn_area .btn_bg a {
+  width: 100%;
+  height: min(18.6666666667vw, 140px);
+  pointer-events: none;
+}
+.main .btn_area .btn_bg a .top, .main .btn_area .btn_bg a .bottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+}
+.main .btn_area .btn_bg a .top img, .main .btn_area .btn_bg a .bottom img {
+  width: 100%;
+  pointer-events: auto;
+}
+.main .btn_area .btn_bg a .top {
+  max-width: min(51.3333333333vw, 385px);
+  top: 0;
+  z-index: 1;
+}
+.main .btn_area .btn_bg a .bottom {
+  max-width: min(89.3333333333vw, 670px);
+  bottom: 0;
+  z-index: 0;
+}
+
+.footer {
+  width: 100%;
+}
+.footer .footer_inner {
+  position: relative;
+}
+.footer .footer_inner_link {
+  width: 100%;
+  max-width: min(45.0666666667vw, 338px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: min(3.4666666667vw, 26px);
+  left: 0;
+  right: 0;
+}
+.footer .footer_inner_link .link_flex {
+  display: flex;
+  align-items: center;
+}
+.footer .footer_inner_link .link_flex:last-of-type {
+  display: flex;
+  align-items: center;
+}
+.footer .footer_inner_link .link_flex:last-of-type::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: min(2.9333333333vw, 22px);
+  background-color: #fff;
+  margin: 0 min(2.4vw, 18px);
+}
+.footer .footer_inner_link .link_flex a {
+  width: 100%;
+  transition: 0.3s;
+  color: #fff;
+  font-size: clamp(10px, 3.2vw, 24px);
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+}
+.footer .footer_inner_link .link_flex a:hover {
+  opacity: 0.6;
+}
+
+/* -----------------------------------------------------------------
+fixボタン
+----------------------------------------------------------------- */
+.fix_btn {
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  height: min(29.3333333333vw, 220px);
+  background-color: rgba(5, 40, 86, 0.9);
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-shadow: 0px min(-0.5333333333vw, 4px) min(0.6666666667vw, 5px) 0px rgba(5, 40, 86, 0.3);
+}
+@media (min-width: 751px) {
+  .fix_btn {
+    box-shadow: 0px -4px 5px 0px rgba(5, 40, 86, 0.3);
+  }
+}
+.fix_btn .top, .fix_btn .bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18%;
+}
+.fix_btn .top img, .fix_btn .bottom img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.fix_btn .top {
+  top: 18%;
+  z-index: 1;
+  pointer-events: none;
+}
+.fix_btn .top img {
+  max-width: min(51.3333333333vw, 385px);
+}
+.fix_btn .bottom {
+  z-index: 0;
+}
+.fix_btn .bottom a {
+  width: 100%;
+  max-width: min(89.3333333333vw, 670px);
+  display: block;
+  margin: 0 auto;
+}
+
+/* -----------------------------------------------------------------
+カチカチ動くボタン
+----------------------------------------------------------------- */
+.btn_animation {
+  position: relative;
+}
+.btn_animation .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  animation: btn_animation 1s infinite;
+}
+
+@keyframes btn_animation {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(3px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(3px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+}
+/* -----------------------------------------------------------------
+キラーンと光るボタン
+----------------------------------------------------------------- */
+.btn_animation_shine {
+  position: relative;
+}
+.btn_animation_shine .btn {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18%;
+  overflow: hidden;
+}
+.btn_animation_shine .btn::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: min(24vw, -180px);
+  left: 0;
+  width: min(5.6vw, 42px);
+  height: 100%;
+  background-color: #fbfbfb;
+  animation: btn_animation_shine 2.5s ease-in-out infinite;
+}
+@media (min-width: 751px) {
+  .btn_animation_shine .btn::before {
+    width: 30px;
+  }
+}
+
+@keyframes btn_animation_shine {
+  0% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+/* -----------------------------------------------------------------
+fixボタンjs実装
+----------------------------------------------------------------- */
+.fix_btn {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+.fix_btn.on {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* -----------------------------------------------------------------
+swiper
+----------------------------------------------------------------- */
+.swiper_bg {
+  background-image: url("../img/introduction/swiper_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+.swiper_bg .swiper {
+  width: 100%;
+  max-width: min(90.1333333333vw, 676px);
+  height: min(122.2666666667vw, 917px);
+}
+.swiper_bg .swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper_bg .swiper .swiper-button-next, .swiper_bg .swiper .swiper-button-prev {
+  width: min(10.8vw, 81px);
+  height: min(10.8vw, 81px);
+  position: absolute;
+  top: 45.4%;
+}
+.swiper_bg .swiper .swiper-button-next::after, .swiper_bg .swiper .swiper-button-prev::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/introduction/swiper_btn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.swiper_bg .swiper .swiper-button-next {
+  right: 0;
+}
+.swiper_bg .swiper .swiper-button-prev {
+  left: 0;
+}
+.swiper_bg .swiper .swiper-button-prev::after {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,375 @@
+//--- sass関数 --
+@function pcVw($px) {
+  @return min($px / 1000 * 100vw, $px * 1px);
+}
+
+@function spVw($px) {
+  @return min($px / 375 * 100vw, $px * 1px);
+}
+
+@function middleVw($px) {
+  @return min($px / 750 * 100vw, $px * 1px);
+}
+
+//--- mixin ---
+@mixin sp {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
+
+//--- 共通 ---
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+.wrapper {
+  background-color: #abbee9;
+}
+
+.main {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  display: flex;
+}
+
+a {
+  transition: .3s;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.content-width {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fv {
+
+  & .slide_area {
+    width: 100%;
+    position: relative;
+
+    &__inner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+/* swiper箇所
+------------------------------------------------------------------------------*/
+.fv .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+/* accordion箇所
+------------------------------------------------------------------------------*/
+.access {
+
+  & .accordion_area {
+    background-image: url(../images/access/access_accordion_bg.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    max-width: 750px;
+    background-color: #fff;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f4fd;
+      border-radius: middleVw(15);
+      width: 100%;
+      max-width: middleVw(670);
+      margin: 0 auto;
+      padding: middleVw(40) 0;
+
+      & img {
+        width: 100%;
+        max-width: middleVw(590);
+      }
+
+      & button {
+
+        & img {
+          width: 100%;
+          max-width: middleVw(195);
+        }
+      }
+
+      & .open-btn {
+        display: block;
+        padding-top: middleVw(20);
+
+        &.hide {
+          display: none;
+        }
+      }
+
+      & .close-btn {
+        display: none;
+      }
+
+      & .accordion {
+        display: none;
+      }
+    }
+  }
+}
+
+/* common箇所
+------------------------------------------------------------------------------*/
+.pb40 {
+  padding-bottom: middleVw(40);
+}
+
+/* ctv箇所
+------------------------------------------------------------------------------*/
+.ctv {
+  position: relative;
+
+  &__wrapper {
+    position: absolute;
+    top: middleVw(48);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.about_posi {
+      top: middleVw(156);
+    }
+
+    &.section03_posi {
+      top: middleVw(130);
+    }
+
+    & img {
+      width: 100%;
+      max-width: middleVw(670);
+    }
+
+    &.fv_only::after {
+      content: "";
+      display: block;
+      background-image: url(../images/btn_title.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      width: 100%;
+      max-width: min(calc(444 / 750 * 100vw), 444px);
+      height: min(calc(47 / 750 * 100vw), 47px);
+      position: absolute;
+      top: -19%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+/* ctvアニメーション箇所
+------------------------------------------------------------------------------*/
+.ctv {
+
+  & .btn-animation {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: 300ms;
+    border-radius: middleVw(60);
+    z-index: 0;
+
+    &.fv_shadow {
+      box-shadow: 0px 0px middleVw(20) middleVw(16) rgba(170, 189, 234, 0.7);
+    }
+
+    &.other_shadow {
+      box-shadow: 0px 0px middleVw(20) middleVw(16) rgba(28, 44, 168, 0.8);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      top: min(calc(120 / 750 * 100vw), -120px);
+      left: 0;
+      width: middleVw(50);
+      height: 100%;
+      background-color: #fff;
+      transition: 300ms;
+      animation: shinyshiny 3s ease-in-out infinite;
+    }
+  }
+}
+
+@-webkit-keyframes shinyshiny {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+
+/* fixバナー
+------------------------------------------------------------------------------*/
+.main {
+
+  & .button_fixed {
+    width: 100%;
+    max-width: 750px;
+    position: fixed;
+    bottom: 0;
+    z-index: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+
+    &.on {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    & .fixed_area_ctv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 750px;
+      margin: 0 auto;
+
+      & a {
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+
+/* footer
+------------------------------------------------------------------------------*/
+
+.footer {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #3442ae;
+
+  &__inner {
+    width: 100%;
+    max-width: middleVw(670);
+    margin: 0 auto;
+    padding: middleVw(80) 0;
+
+    & .logo {
+
+      & img {
+        width: 100%;
+        max-width: middleVw(673);
+      }
+    }
+
+    & .contact-info,
+    & .footer-nav__list {
+      font-family: "Noto Sans JP", serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      color: #fff;
+      font-size: clamp(12px, calc(26 / 750 * 100vw), 26px);
+      padding: middleVw(40) 0 middleVw(80);
+      text-align: left;
+      line-height: 1.4;
+      letter-spacing: 1px;
+
+      & .address {
+        padding: middleVw(16) 0;
+      }
+
+      & .phone {
+
+        & a {
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    & .footer-nav {
+
+      & ul {
+
+        &.footer-nav__list {
+          display: flex;
+          padding: 0;
+
+          &+.footer-nav__list {
+            padding-top: middleVw(20);
+          }
+
+          & li {
+            &::before {
+              content: "●";
+              display: inline-block;
+              color: #aabdea;
+              font-size: clamp(12px, calc(16 / 750 * 100vw), 16px);
+              transform: translateY(-11%);
+            }
+
+            &.footer-nav__item {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

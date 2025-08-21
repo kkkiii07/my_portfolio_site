@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- 以下画像を先に読み込ませる -->
+  <link rel="preload" href="img/fv_dot_bg.jpg" as="image">
+  <link rel="preload" href="img/fv_round_decoration.png" as="image">
+  <link rel="preload" href="img/fv_round_decoration_sp.png" as="image">
+  <link rel="preload" href="img/fv_flag_decoration_left.png" as="image">
+  <link rel="preload" href="img/fv_flag_decoration_left_sp.png" as="image">
+  <link rel="preload" href="img/fv_flag_decoration_right.png" as="image">
+  <link rel="preload" href="img/fv_flag_decoration_right_sp.png" as="image">
+  <link rel="preload" href="img/border_bg.png" as="image">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__main">
+        <picture>
+          <source srcset="img/fv.png" media="(min-width: 751px)">
+          <source srcset="img/fv_sp.png" media="(max-width: 750px)">
+          <img src="img/fv.png" alt="サンドラッグ創業67周年感謝祭 夏 サンエックスキャラクターズコラボキャンペーン">
+        </picture>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container present_bg">
+      <div class="flag_position">
+        <div class="content-width">
+          <div class="present">
+            <div class="present__banner">
+              <img src="img/present-banner.png" alt="最大20,000円分のサンドラッググループ専用QUOカードPayやサンエックスキャラクターグッズ等 抽選で総勢10,000名様にプレゼント！！">
+            </div>
+            <div class="present__btn-container">
+              <div class="present__btn is-01"><a href="#receipt"><img src="img/present_btn_01.png" alt="レシート応募キャンペーン"></a></div>
+              <div class="present__btn is-02"><a href="#follow"><img src="img/present_btn_02.png" alt="Xフォロー&リポストキャンペーン"></a></div>
+              <div class="present__btn is-03"><a href="#file"><img src="img/present_btn_03.png" alt="9月大安の日+9/15（月）敬老の日限定！オリジナルクリアファイルプレゼント！"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__bg">
+      <div class="content-width pt64 sp_pt54">
+        <div id="receipt" class="sec01">
+          <div><img src="img/sec01_01.png" alt="レシート応募キャンペーン"></div>
+          <div><img src="img/sec01_02.png" alt="店内ほぼ全品が対象＊1サンドラッググループで1会計1,500円（税込）または3,000円（税込）以上のレシートで応募できます 対象商品を含むご購入で当選チャンス5倍！"></div>
+
+          <!-- btn_area -->
+          <div class="btn_area">
+            <div><img src="img/sec01_03.png" alt="＊1 免税会計、調剤、POSAカード、青果・精肉・鮮魚・惣菜・パンテナント、タバコは除く＊2 サンドラッグ、ドラッグトップス、ダイレックス、ドラッグストアmac、及び関連ECサイト（サンドラッグOnline Store、楽天市場、auPAYマーケット、Yahoo!ショッピング、Amazon、JRE-MALL、サンドラッグe-shop JAL-MALL、サンドラッグe-shop ANA-MALL、サンドラッグe-shop dショッピング）が対象です。"></div>
+            <div class="btn_area__btn is-01">
+              <a href="#products">
+                <picture>
+                  <source srcset="img/sec01_btn_01.png" media="(min-width: 751px)">
+                  <source srcset="img/sec01_btn_01_sp.png" media="(max-width: 750px)">
+                  <img src="img/sec01_btn_01.png" alt="対象商品はこちら">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sec02">
+          <div><img src="img/sec02_01.png" alt="応募期間：2025年7月1日（火）～9月30日（火）"></div>
+          <div><img src="img/sec02_02.png" alt="第1弾 応募期間（レシート有効期間）2025年7月1日（火）～8月17日（日）第2弾 応募期間（レシート有効期間）2025年8月1日（火）～8月17日（日）"></div>
+          <div><img src="img/sec02_03.png" alt="抽選で抽選で10,000名様にプレゼント！！"></div>
+        </div>
+
+        <div id="period" class="sec03">
+          <div class="sec03__unit-container">
+            <input id="btn04" type="radio" name="tab_switch_sec03">
+            <label id="btn04-label" class="sec03__label" for="btn04"><img src="img/sec03_btn_01.png" alt="第1弾"></label>
+            <input id="btn05" type="radio" name="tab_switch_sec03" checked>
+            <label id="btn05-label" class="sec03__label" for="btn05"><img src="img/sec03_btn_02.png" alt="第2弾"></label>
+            <div id="btn04-content" class="sec03__unit">
+              <div><img src="img/sec03_01_01.png" alt="応募期間（レシート有効期間）2025年7月1日（火）～8月17日（日）応募締切：8月20日（水）まで ※8/18～9/30に発行されたレシートでは第1弾の応募をすることはできません。"></div>
+              <div><img src="img/sec03_01_02.png" alt="1会計3,000円（税込）以上のレシートで応募3,000円コース"></div>
+              <div><img src="img/sec03_01_03.png" alt="A.サンドラッググループ専用QUOカードPay＊3 20,000円分 100名様"></div>
+              <div><img src="img/sec03_01_04.png" alt="B.サンエックスキャラクターズマルチグリルポッド（オリジナルデザイン）30名様"></div>
+              <div><img src="img/sec03_01_05.png" alt="1会計1,500円（税込）以上のレシートで応募1,500円コース"></div>
+              <div><img src="img/sec03_01_06.png" alt="A.サンドラッググループ専用QUOカードPay＊3 10,000円分 50名様"></div>
+              <div><img src="img/sec03_01_07.png" alt="B.サンエックスキャラクターズ保冷マルシェバッグ 50名様"></div>
+
+              <!-- btn_area -->
+              <div class="btn_area">
+                <div><img src="img/sec03_01_08.png" alt=""></div>
+                <div class="btn_area__btn is-02">
+                  <a href="https://sundrug-67campaign.cp.msgs.jp/n/form/kmob/rzYV5Ne7DeA2zc77fbWRV">
+                    <picture>
+                      <source srcset="img/sec03_into_btn_01.png" media="(min-width: 751px)">
+                      <source srcset="img/sec03_into_btn_01_sp.png" media="(max-width: 750px)">
+                      <img src="img/sec03_into_btn_01.png" alt="サンドラッグ ドラッグトップス・ダイレックス・サンドラッグ関連ECでご購入の方はこちら">
+                    </picture>
+                  </a>
+                </div>
+                <div class="btn_area__btn is-03">
+                  <a href="https://cpn.tsite.jp/detail/qt910034637001">
+                    <picture>
+                      <source srcset="img/sec03_into_btn_02.png" media="(min-width: 751px)">
+                      <source srcset="img/sec03_into_btn_02_sp.png" media="(max-width: 750px)">
+                      <img src="img/sec03_into_btn_02.png" alt="ドラッグストアmacでご購入の方はこちら">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div><img src="img/sec03_01_09.png" alt=""></div>
+            </div>
+            <div id="btn05-content" class="sec03__unit">
+              <div><img src="img/sec03_02_01.png" alt="応募期間（レシート有効期間）8月18日（月）〜9月30日（火）応募締切：10月3日（金）まで※7/1～8/17に発行されたレシートでは第2弾の応募をすることはできません。"></div>
+              <div><img src="img/sec03_02_02.png" alt="1会計3,000円（税込）以上のレシートで応募3,000円コース"></div>
+              <div><img src="img/sec03_02_03.png" alt="A.サンドラッググループ専用QUOカードPay＊3 20,000円分 100名様"></div>
+              <div><img src="img/sec03_02_04.png" alt="B.サンエックスキャラクターズぬいぐるみセット 30名様"></div>
+              <div><img src="img/sec03_02_05.png" alt="1会計1,500円（税込）以上のレシートで応募 1,500円コース"></div>
+              <div><img src="img/sec03_02_06.png" alt="A.サンドラッググループ専用QUOカードPay＊3 10,000円分 50名様"></div>
+              <div><img src="img/sec03_02_07.png" alt="B.サンエックスキャラクターズステンレスタンブラー（オリジナルデザイン）50名様"></div>
+
+              <!-- btn_area -->
+              <div class="btn_area">
+                <div><img src="img/sec03_02_08.png" alt=""></div>
+                <div class="btn_area__btn is-02">
+                  <a href="https://sundrug-67campaign.cp.msgs.jp/n/form/kmob/2BTNLch7GP6ucDwEXJ9Ya">
+                    <picture>
+                      <source srcset="img/sec03_into_btn_01.png" media="(min-width: 751px)">
+                      <source srcset="img/sec03_into_btn_01_sp.png" media="(max-width: 750px)">
+                      <img src="img/sec03_into_btn_01.png" alt="サンドラッグ ドラッグトップス・ダイレックス・サンドラッグ関連ECでご購入の方はこちら">
+                    </picture>
+                  </a>
+                </div>
+                <div class="btn_area__btn is-03">
+                  <a href="https://cpn.tsite.jp/detail/qt910034637003">
+                    <picture>
+                      <source srcset="img/sec03_into_btn_02.png" media="(min-width: 751px)">
+                      <source srcset="img/sec03_into_btn_02_sp.png" media="(max-width: 750px)">
+                      <img src="img/sec03_into_btn_02.png" alt="ドラッグストアmacでご購入の方はこちら">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div><img src="img/sec03_02_09.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec04">
+          <div><img src="img/sec04_01.png" alt="Wチャンス サンドラッググループ専用QUOカードPay＊3 500円分が9,540名様に当たる！"></div>
+          <div><img src="img/sec04_02.png" alt="＊3 サンドラッググループ専用 QUOカードPayはサンドラッグ、ドラッグトップス、 ドラッグストアmac、ダイレックスのみでご利用頂けます。その他のQUOカードPay加盟店ではご利用できません。※QUOカードPayのデザインは変更になる可能性があります。※QUOカードPayをスマホ画面に表示した際の券面イメージ画像です。※QUOカードPayには発行日より3年間の有効期限がございますのでご注意ください。※QUOカードPayは、スマートフォンの画面にバーコードを表示させて利用する前払式支払手段です。スマートフォン以外の携帯電話およびタブレットではご利用できません。"></div>
+        </div>
+        <div class="sec05">
+          <div><img src="img/sec05_01.png" alt="応募方法"></div>
+          <div><img src="img/sec05_02.png" alt="STEP1「下記応募フォームをクリック」※フォームは下記2つに分かれますのでご注意ください。①サンドラッグ・ドラッグトップス・ダイレックス・サンドラッグ関連ECでご購入の方②ドラッグストアmacでご購入の方"></div>
+          <div><img src="img/sec05_03.png" alt="STEP2「レシートに記載の「日付」を選択し、「レシートナンバー」 を入力」※レシート内の日付印字の下に記載してある4桁-2桁-4桁の番号です"></div>
+          <div><img src="img/sec05_04.png" alt="STEP3「ほしい景品を選んで応募!」"></div>
+          <div><img src="img/sec05_05.png" alt="【応募について】・期間中であればおひとり様何度でもご応募いただけます。・レシートの合算はできません。1枚のレシートで1回限りのご応募になります。・レシートの発行及びECでのご注文は応募期間内(レシート有効期間)のものに限り有効となります。・免税会計、調剤、POSAカード、青果・精肉・鮮魚・惣菜・パンテナント、タバコは除きます。・サンドラッグ、ドラッグトップス、ダイレックス、サンドラッグ関連ECでご購入の方はサンドラッグポイントカード番号(会員番号)なしでもご応募いただけます。・レシートは応募期間内に発行されたものに限り有効となります。・ドラッグストアmacでご購入の方は応募の際に、Yahoo!Japan IDにV会員番号を紐づける、『Vポイント利用手続き』が必要になります。事前にご登録の上、ご参加ください。"></div>
+          <div><img src="img/sec05_06.png" alt="【対象金額について】値引きクーポン券、ポイント利用の対象額は適用前の金額となります。①対象商品で使える値引きクーポン券をご利用の場合②お買い物金額合計金額から値引きされるクーポン券をご利用の場合③サンドラッグ・楽天ポイントをご利用の場合(例)値引きクーポン券、ポイント利用の際の対象金額は下記のようになります。※対象商品クーポン例：ご購入時に対象商品○○円引きクーポンやO%オフクーポン、 対象商品複数個購入で○○円引き等※お買い物金額全体に対するクーポン例:お買い物金額から○○円引きクーポンや0%オフクーポン等※クーポン券以外での値引き、店舗全体で商品の値引き、広告等で値引きがされている場合に関しては、値引き後が対象金額です。※キャンペーンのご応募に関してはページ下部の応募規約をよくお読みいただき、同意の上ご応募ください。"></div>
+        </div>
+        <div id="products" class="sec06">
+          <div><img src="img/sec06_01.png" alt="「対象商品」1会計1,500円（税込）または3,000円（税込）以上のレシートで応募。さらに対象商品を含むご購入で当選チャンス5倍！当選チャンス5倍の商品はこちら！※店舗によっては、一部取り扱いのない商品もございます。"></div>
+          <div class="sec06__unit-container">
+            <input id="btn01" type="radio" name="tab_switch_sec06">
+            <label id="btn01-label" class="sec06__label" for="btn01"><img src="img/sec06_btn_01.png" alt="ヘルスケア"></label>
+            <input id="btn02" type="radio" name="tab_switch_sec06" checked>
+            <label id="btn02-label" class="sec06__label" for="btn02"><img src="img/sec06_btn_02.png" alt="ホームケア"></label>
+            <input id="btn03" type="radio" name="tab_switch_sec06">
+            <label id="btn03-label" class="sec06__label" for="btn03"><img src="img/sec06_btn_03.png" alt="ビューティケア"></label>
+            <div id="btn01-content" class="sec06__unit">
+              <div><img src="img/sec06_unit_01_01.png" alt=""></div>
+              <div><img src="img/sec06_unit_01_02.png" alt=""></div>
+            </div>
+            <div id="btn02-content" class="sec06__unit">
+              <div><img src="img/sec06_unit_02_01.png" alt=""></div>
+              <div><img src="img/sec06_unit_02_02.png" alt=""></div>
+            </div>
+            <div id="btn03-content" class="sec06__unit">
+              <div><img src="img/sec06_unit_03_01.png" alt=""></div>
+              <div><img src="img/sec06_unit_03_02.png" alt=""></div>
+              <div><img src="img/sec06_unit_03_03.png" alt=""></div>
+            </div>
+          </div>
+          <div><img src="img/sec06_02.png" alt=""></div>
+        </div>
+        <div id="follow" class="sec07 pt64 sp_pt54">
+          <div><img src="img/sec07_01.png" alt="Xフォロー&リポストキャンペーン"></div>
+          <div><img src="img/sec07_02.png" alt="サンドラッグ公式アカウントをフォロー&amp;リポストしてくれた方にサンドラッググループ専用QUOカードPay＊41,000円分が各期間3名様 合計12名様に当たります。"></div>
+          <div><img src="img/sec07_03.png" alt="第1回7月1日（火）～7月7日（月）第2回7月25日（金）～7月31日（木）第3回8月18日（月）～8月24日（日）第4回9月2日（火）～9月8日（月）"></div>
+          <div><img src="img/sec07_04.png" alt="＊4 サンドラッググループ専用 QUOカードPayはサンドラッグ、ドラッグトップス、 ドラッグストアmac、ダイレックスのみでご利用頂けます。その他のQUOカードPay加盟店ではご利用できません。※QUOカードPayのデザインは変更になる可能性があります。※QUOカードPayをスマホ画面に表示した際の券面イメージ画像です。※QUOカードPayには発行日より3年間の有効期限がございますのでご注意ください。※QUOカードPayは、スマートフォンの画面にバーコードを表示させて利用する前払式支払手段です。スマートフォン以外の携帯電話およびタブレットではご利用できません。"></div>
+        </div>
+        <div id="file" class="sec08 pt16">
+          <div><img src="img/sec08_01.png" alt="9月大安の日+9/15（月）敬老の日限定！お買い物でクリアファイルがもらえるキャンペーン"></div>
+          <div><img src="img/sec08_02.png" alt="「数量限定」配布日ごと先着1会計3,500円（税込）以上ご購入でサンドラッグオリジナルデザインの「A4クリアファイル」をどちらか1枚プレゼント！配布日の予定数がなくなり次第終了となります。ドラッグストアmac・ダイレックスは配布対象外です。※1会計7,000円（税込）以上の購入でもクリアファイルの配布は1枚です。※ 免税会計、調剤、POSAカード、青果・精肉・鮮魚・惣菜・パンテナント、タバコは除く"></div>
+
+          <!-- btn_area -->
+          <div class="btn_area">
+            <div><img src="img/sec08_03.png" alt=""></div>
+            <div class="btn_area__btn is-04">
+              <a href="https://sundrug-online.com/blogs/campain_other/67kannsyasai_clearfile_present">
+                <picture>
+                  <source srcset="img/sec08_btn_01.png" media="(min-width: 751px)">
+                  <source srcset="img/sec08_btn_01_sp.png" media="(max-width: 750px)">
+                  <img src="img/sec08_btn_01.png" alt="対象店舗はこちら">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sec09">
+          <div><img src="img/sec09_01.png" alt="「第1弾」配布日：9/2（火）9/8（月） 9/14（日）"></div>
+          <div><img src="img/sec09_02.png" alt="「第2弾」配布日：9/15（月）9/20（土）9/25（木）"></div>
+          <div><img src="img/sec09_03.png" alt="9月 大安吉日+敬老の日（配布日）"></div>
+        </div>
+
+        <!-- 応募規約 -->
+        <div class="sec10 pt64 sp_pt54">
+          <div class="sec10__inner">
+            <p><img src="img/sec10_01.png" alt="キャンペーン規約"></p>
+            <div class="sec10__text">
+              <div class="sec10__text__inner">
+                <div class="rule">
+                  <div class="rule-text">
+                    <div class="rule-text__unity mt20">
+                      <p>株式会社サンドラッグ(以下、当社といいます)が主催する「サンドラッグ創業67周年感謝祭～夏～キャンペーン(以下、「本キャンペーン」といいます)」に応募される前に本規約をよくお読みになり、ご同意いただける場合に限りご応募ください。応募された場合、ご同意いただいたものとみなします。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【キャンペーン名称】</p>
+                      <p>サンドラッグ創業67周年感謝祭～夏～キャンペーン</p>
+                    </div>
+                    <div class="rule-text__unity mt20">
+                      <p class="rule-text__title">【キャンペーン概要】</p>
+                      <p>キャンペーン期間中に、1会計税込1,500円以上※のお買い物をしてくださった方を対象としたプレゼントキャンペーンです。</p>
+                      <p class="fsz20">※免税会計、調剤、POSAカード、青果・精肉・鮮魚・惣菜・パンテナント、タバコは合計金額から除きます。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【応募期間（レシート及びEC注文番号有効期間）】</p>
+                      <p>■第一弾：2025年7月1日(火)～2025年8月17日(日)23:59</p>
+                      <p>■第二弾：2025年8月18日(月)～2025年9月30日(火)23:59</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【応募締切】</p>
+                      <p>■第一弾：2025年8月20日(水)23:59</p>
+                      <p>■第二弾：2025年10月3日(金)23:59</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【賞品】</p>
+                      <p class="rule-text__title">■第一弾</p>
+                      <p>〈1会計税込3,000円コース〉</p>
+                      <p>・サンドラッググループ専用QUOカードPay20,000円分　抽選で100名様</p>
+                      <p>・サンエックスキャラクターズ　マルチグリルポッド（オリジナルデザイン）　抽選で30名様</p>
+                      <p>〈1会計税込1,500円コース〉</p>
+                      <p>・サンドラッググループ専用QUOカードPay10,000円分　抽選で50名様</p>
+                      <p>・サンエックスキャラクターズ　保冷マルシェバッグ　抽選で50名様</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">■第二弾</p>
+                      <p>〈1会計税込3,000円コース〉</p>
+                      <p>・サンドラッググループ専用QUOカードPay20,000円分　抽選で100名様</p>
+                      <p>・サンエックスキャラクターズ　ぬいぐるみセット　抽選で30名様</p>
+                      <p>〈1会計税込1,500円コース〉</p>
+                      <p>・サンドラッググループ専用QUOカードPay10,000円分　抽選で50名様</p>
+                      <p>・サンエックスキャラクターズ　ステンレスタンブラー　抽選で50名様</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">■Wチャンス</p>
+                      <p>サンドラッググループ専用QUOカードPay500円分　抽選で9,540名様</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【対象店舗】</p>
+                      <p>サンドラッグ、ドラッグトップス、ダイレックス、ドラッグストアmac、及び関連ECサイト</p>
+                      <p class="fsz20">※一部対象外店舗があります。</p>
+                      <p class="fsz20">※ECサイトは、サンドラッグOnline Store、楽天市場、auPAYマーケット、Yahoo!ショッピング、Amazon、JRE-MALL、サンドラッグe-shop JAL-MALL、サンドラッグe-shop ANA-MALL、サンドラッグe-shop dショッピングが対象です。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【応募資格】</p>
+                      <p>・本規約にご同意いただける方</p>
+                      <p class="fsz20">※未成年の方は、本規約内容および応募されることについて法定代理人の事前のご同意がない場合はご応募いただけません。応募された場合は、法定代理人のご同意があったものとみなします。</p>
+                      <p>・連絡先および賞品の送付先が国内の方</p>
+                      <p>・日本国内在住の方</p>
+                      <p class="fsz20">※当社および本キャンペーンの関係者は応募できません。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【応募方法】</p>
+                      <p>第一弾は2025年8月20日(水)23:59までに、第二弾は2025年10月3日(金)23:59までにWEB応募フォームより、1会計税込1,500円以上または税込3,000円以上のお買い物をしたレシートの日付、レシートNo.（ECでのお買い物の場合は、購入日、注文番号）と必要事項を入力してご応募ください。</p>
+                      <p>応募に必要なレシートは、第一弾は2025年7月1日(火)～2025年8月17日(日)、第二弾は2025年8月18日(月)～2025年9月30日(火)23:59に発行されたものに限り有効となります。</p>
+                      <p class="fsz20">※さらに対象商品を含むご購入で当選チャンス5倍。（店舗によっては、一部取扱いのない商品がございます）</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p>応募にはお買物をしたレシートないしはECでの注文番号が必要になりますので、お手元にお取り置きください。</p>
+                      <p class="fsz20">※セミセルフレジの「レシート不要ボタン」を押されますと、レシートが発行されません。本キャンペーンにご応募いただく際は、購入レシートに記載の「購入日時」「レシートナンバー」の入力が必要になりますので、必ずレシートをお受け取りください。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">《応募に関する注意点》</p>
+                      <p class="fsz20">※応募期間中、お一人様何回でもご応募いただけます。</p>
+                      <p class="fsz20">※ご応募1回あたり、受付けは1口限りとなります。</p>
+                      <p class="fsz20">※割引の適用を受けて支払いをされた場合も、合計販売価格(割引適用前の金額)が1,500円(税込)以上であれば、ご応募いただけます。</p>
+                      <p class="fsz20">※免税会計、調剤、POSAカード、青果・精肉・鮮魚・惣菜・パンテナント、タバコのご購入は本キャンペーンの対象外となります。これらを差し引いた合計金額が1,500円(税込)に満たない場合、ご応募は無効となります。</p>
+                      <p class="fsz20">※配送料、手数料等は本キャンペーンの対象外です。これらを差し引いた合計金額が1,500円(税込)に満たない場合、ご応募は無効となります。</p>
+                      <p class="fsz20">※商品のご購入代金と、ご応募、お問い合わせ時にかかる通信料等は応募者様のご負担となります。</p>
+                      <p class="fsz20">※フィーチャーフォン（ガラケー）ではご応募いただけません。</p>
+                      <p class="fsz20">※すべての条件を満たさないご応募は無効となります。あらかじめご了承ください。</p>
+                      <p class="fsz20">※ご応募で使用された購買証明は賞品の進呈が完了するまでお手元にお取り置きください。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【抽選】</p>
+                      <p>・応募締め切り後、第一弾は2025年8月下旬頃、第二弾は2025年10月上旬頃に厳正な抽選を行い、当選者を決定いたします。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【当選・賞品進呈】</p>
+                      <p class="rule-text__title">ーサンドラッグ、ドラッグトップス、ダイレックス及び関連ECサイトでご購入された方</p>
+                      <p>・当選された方には、第一弾は2025年10月上旬までに、第二弾は2025年11月中旬までに、メールにて当選のご連絡と賞品に関するご案内をいたします。<span class="mail_text">sundrug-67campaign@customer-info.com</span>からのメールが受け取れるよう、受信設定してください。</p>
+                      <p>・賞品の発送に関しては、第一弾は2025年10月中旬頃、第2弾は2025年11月下旬頃に順次発送いたします。</p>
+                      <p class="fsz20">※賞品発送に関しては第一弾・第二弾それぞれ下記となります。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">■第一弾</p>
+                      <p>・サンエックスキャラクターズ　マルチグリルポッド（オリジナルデザイン）</p>
+                      <p>・サンエックスキャラクターズ保冷マルシェバッグ</p>
+                      <p class="rule-text__title">■第二弾</p>
+                      <p>・サンエックスキャラクターズ　ぬいぐるみセット</p>
+                      <p>・サンエックスキャラクターズ　ステンレスタンブラー</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p>・サンドラッググループ専用QUOカードPayに当選された方はメールでの取得URLの通知をもって、賞品進呈の完了となります。メールの再送信等は一切いたしかねますので、お送りしたメールのお取り扱いには十分ご注意ください。</p>
+                      <p class="fsz20">※第一弾は2025年9月上旬頃、第二弾は2025年10月中旬頃にご連絡させて頂きます。</p>
+                      <p class="fsz20">※賞品の進呈はお一人様1回限りとなります。</p>
+                      <p class="fsz20">※諸事情により賞品の発送が遅れる場合がございます。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">ードラッグストアmacでご購入された方</p>
+                      <p>当選者の発表は、賞品の発送をもって代えさせていただきます。</p>
+                      <p>発送は第一弾：2025年10月上旬までに、第二弾： 2025年11月中旬までに発送を予定しております。</p>
+                      <p class="fsz20">※諸事情により遅れる場合がございます。</p>
+                      <p class="fsz20">※電話やメールでの当選結果のご質問にはお答えできませんので、ご了承ください。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【注意事項】</p>
+                      <p class="fsz20">※当社は、当社の都合により、本キャンペーンを変更・中止・終了する場合があります。</p>
+                      <p class="fsz20">※当社は、以下の場合には、インターネットの利用その他の適切な方法により、事前に変更の内容並びにその効力発生時期を周知することで、本規約を変更することができるものとします。</p>
+                      <p>ー本規約の変更が、応募者様の一般の利益に適合するとき。</p>
+                      <p>ー本規約の変更が、変更前の規約の目的に反せず、かつ、変更の必要性、変更後の内容の相当性、その他の変更に係る事情に照らして合理的なものであるとき。</p>
+                      <p class="fsz20">※本規約に定めのない事項については、当社の判断により決定します。</p>
+                      <p class="fsz20">※応募者様は、本キャンペーンの運用について事務局の運用方針に従うものとし、一切異議申立てを行わないものとします。</p>
+                      <p class="fsz20">※本キャンペーン事務局が不正と判断した場合には、ご応募を無効といたします。</p>
+                      <p class="fsz20">※ご応募の取り消しは承れません。</p>
+                      <p class="fsz20">※本キャンペーンに当選された方は、同時期に実施されている当社キャンペーンには当選できない場合があります。</p>
+                      <p class="fsz20">※同じ購買証明で他キャンペーンにも応募された場合、すべてのご応募を無効とさせていただきます。</p>
+                      <p class="fsz20">※本キャンペーンでは、賞品発送等に関して、事務局もしくは配送業者からご連絡させていただく場合があります。</p>
+                      <p class="fsz20">※賞品の配送日時・配送方法・配送業者はご指定いただけません。</p>
+                      <p class="fsz20">※ご応募時にご登録いただいたメールアドレス以外への配信、当選通知後にご登録いただいた住所以外への配送は承れません。また、ご登録住所の変更も承れません。転居等により住所変更があった場合、ご自身の責任において転送サービス等をご手配ください。</p>
+                      <p class="fsz20">※賞品配送中に、応募者様の責めに帰すべき事由によらず、賞品の紛失・破損等の問題が生じた場合には、当社において対応させていただきます。</p>
+                      <p class="fsz20">※置き配等の受取りサービスのご利用により生じた、賞品到着後の紛失破損等につきまして、当社は一切の責任を負いません。</p>
+                      <p class="fsz20">※本キャンペーン応募の前提となるインターネット接続、端末利用方法等に関するお問い合わせにはお答えいたしかねます。ご自身の責任と費用においてご準備ください。</p>
+                      <p class="fsz20">※当選者の権利を第三者に譲渡することはできません(事務局で当選者の名義変更を承ることもできません)。また、換金および他の賞品との交換も承れません。</p>
+                      <p class="fsz20">※ネットオークション等での賞品の転売は固くお断りいたします。</p>
+                      <p class="fsz20">※本キャンペーンサイトに掲載されているすべての写真、社名ロゴ、画像、映像、文章、音楽等のコンテンツに関する著作権・商標権・意匠権等の知的財産権は、運営者又は運営者が使用許諾を受けた正当な権利者に帰属します。なお本サイト上のコンテンツ等の利用については、運営者が許可した場合以外、複製・転用・転載・電磁的加工・送信・頒布・譲渡・貸与・二次的使用・その他これらに類するすべての行為も含め、一切禁止いたします。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【禁止事項】</p>
+                      <p>本キャンペーンへのご応募に際し、以下の行為を禁止します。<br>当社は、以下に該当する行為を行ったと判断した応募者様の応募資格、当選資格を無効とすることができるものといたします。</p>
+                      <p>(1)本規約に違反する行為</p>
+                      <p>(2)法令・条例に違反する行為、公序良俗に反する行為、又はそのおそれのある行為</p>
+                      <p>(3)犯罪行為又は不正行為に結びつく行為</p>
+                      <p>(4)当社・他人の著作権その他の知的財産権や肖像権、プライバシー権その他の権利又は利益を侵害する行為、又はそのおそれのある行為</p>
+                      <p>(5)当社・他人の名誉・信用を傷付け、信頼を毀損する行為</p>
+                      <p>(6)当社・他人に不利益又は損害を与える行為</p>
+                      <p>(7)当社・他人を誹謗中傷する行為</p>
+                      <p>(8)他人の個人情報を開示する行為</p>
+                      <p>(9)他人の名義、その他会社等の組織名を名乗ること等による、なりすまし行為</p>
+                      <p>(10)本キャンペーンを利用した営業行為、営利目的又はその準備を目的とした行為</p>
+                      <p>(11)本キャンペーンを利用した政治活動、選挙活動、宗教活動</p>
+                      <p>(12)本キャンペーンの運営を妨げる行為</p>
+                      <p>(13)その他当社が本キャンペーンの趣旨に照らして不適切と判断する行為</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【免責事項】</p>
+                      <p>・本キャンペーンへのご応募は、応募者様自らの判断と責任において行うものとし、ご応募に際して応募者様に何らかの損害が生じた場合、当社の故意または重過失に起因するものを除いて当社はその責任を一切負いません。また、当社に故意または重大な過失がある場合も、当社の賠償義務は、直接、通常かつ現実に生じた損害に限られます。</p>
+                      <p>・当社は、以下事由により本キャンペーンの一部またはすべてを変更・中断あるいは中止または終了した場合に生じた損害について、一切の責任を負いません。</p>
+                      <p class="indent">1.火災、停電又は通信環境の悪化等の非常事態が発生した場合</p>
+                      <p class="indent">2.地震、噴火、洪水、津波等の天災地変、感染症の蔓延 、暴動、労働争議、官公署の命令等による場合</p>
+                      <p class="indent">3.その他、本キャンペーンの開催、継続が困難であると当社が判断した場合</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【個人情報の取り扱い】</p>
+                      <p>・ご提供いただいた個人情報は、賞品送付および賞品送付に必要な諸連絡、並びにお問い合わせへの適切なご回答のため、また、個人を特定しない統計情報として商品開発、サービス向上のために利用させていただきます。その他の目的には一切利用いたしません。キャンペーン終了後、一定期間をおいて適切な方法により廃棄いたします。</p>
+                      <p>・個人情報をご本人のご同意なく業務委託先以外の第三者に開示・提供することはありません(法令により開示・提供を求められた場合を除きます)。</p>
+                      <p>本サイトでは、応募者様によりよいサービスを提供するため、cookie（クッキー）を使用することがあります。cookie（クッキー）は個人を特定できるものではなく、応募者さまのプライバシーを侵害することはありません。</p>
+                      <p class="fsz20">※cookie（クッキー）とは、webサイトを閲覧した際、サーバーからお客さまのブラウザに送信され、応募者が使用しているコンピュータに蓄積される情報です。</p>
+                      <p>・その他、個人情報のお取り扱いに関しては、当社ホームページのプライバシーポリシー<br>（ <a href="https://www.sundrug.co.jp/privacypolicy" class="mail_text inline">https://www.sundrug.co.jp/privacypolicy</a> ）<br>をご覧ください。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【Xフォロー&amp;リポストキャンペーンについて】</p>
+                      <p>・キャンペーン終了時までに、Xのアカウントを削除されている場合や、公式Xアカウント（@sundrugofficial）のフォローを解除すると対象外になります。</p>
+                      <p>・厳正なる抽選を実施させていただきます。抽選方法の詳細につきましては回答いたしかねますので、予めご了承ください。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【9月大安の日＋9/15敬老の日限定！お買い物でクリアファイルがもらえるキャンペーンについて】</p>
+                      <p>・1会計3500円（税込）以上ご購入でサンドラッグオリジナルデザインの『サンエックスキャラクターズA4クリアファイル』をどちらか1枚プレゼント。</p>
+                      <p>・第一弾配布日9月2日（火）、9月8日（月）、9月14日（日）でデザイン2種類のうちどちらか1枚を配布。第二弾配布日9月15日（月）、9月20日（土）、9月25日（木）でデザイン2種類のうちどちらか1枚を配布。</p>
+                      <p>・ドラッグストアmac・ダイレックスは配布対象外です。</p>
+                      <p>・1会計7,000円（税込）以上の購入でもクリアファイルの配布は1枚です。</p>
+                      <p>・クリアファイルは配布日毎、先着順となりますので、各店在庫がなくなり次第終了となります。</p>
+                      <p>・クリアファイルのデザインは異なる場合がございます。</p>
+                      <p>・免税会計、調剤、POSAカード、青果・精肉・鮮魚・惣菜・パンテナント、タバコは除く</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【サンドラッグ専用QUOカード Payについて】</p>
+                      <p>・「QUOカードPay」はスマートフォンで使えるデジタルギフトです。</p>
+                      <p>・「QUOカードPay」には発行日より3年間の有効期限がございますのでご注意ください。</p>
+                      <p>・「QUOカードPay」は、スマートフォンの画面にバーコードを表示させて利用する前払式支払手段です。スマートフォン以外の携帯電話およびタブレットではご利用できません。</p>
+                      <p class="fsz20">※事前の通知なく賞品の内容・仕様・デザインに変更が生じる場合がございます。あらかじめご了承ください。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p>・利用店舗</p>
+                      <p>サンドラッググループ専用QUOカードPayはサンドラッグ、ドラッグトップス、ドラッグストアmac、ダイレックスのみでご利用いただけます。その他のQUOカードPay加盟店ではご利用できません。また、サンドラッグララガーデン川口店、サンドラッグアルカキット錦糸町店は、QUOカードPayが使用できません。ご了承ください。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p>・利用方法</p>
+                      <p>お送りしたバリューコードのURLを紛失された場合などに、バリューコードのURLを再発行することは出来ません。残高がゼロになるまで、ブックマークやメールの保存などバリューコードのURLにアクセス出来るようにしてください。</p>
+                      <p>・アプリにバリューコードを保存した場合は、バリューコードのURLは不要になります。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p>その他</p>
+                      <p>・「QUOカードPay」は、カードタイプのQUOカードとは異なるサービスです。カードタイプのQUOカード加盟店ではご利用できない場合があるほか、カードタイプのQUOカードの残高を移行、チャージすることはできません。</p>
+                      <p>・本キャンペーンは株式会社サンドラッグにより実施されています。本キャンペーンについてのお問い合わせは株式会社クオカードではお受け出来ません。</p>
+                      <p>・「QUOカードPay」もしくは「クオ・カード ペイ」およびそれらのロゴは株式会社クオカードの登録商標です。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【準拠法・管轄裁判所】</p>
+                      <p>本キャンペーンおよび本規約に関する事項には日本法が適用されます。本キャンペーンに関する紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所といたします。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【推奨環境】</p>
+                      <p>本キャンペーンでは、以下の環境でご参加いただくことを推奨しています。</p>
+                      <p>《パソコン》OS・ブラウザ</p>
+                      <p>Google Chrome（最新版）</p>
+                      <p>Microsoft Edge（最新版）</p>
+                      <p>Firefox（最新版）</p>
+                      <p>Safari（最新版）</p>
+                      <p>《スマートフォン》OS・ブラウザ</p>
+                      <p>●Android</p>
+                      <p>OS：Android 11</p>
+                      <p>ブラウザ：Google Chrome（最新版）</p>
+                      <p>●iPhone</p>
+                      <p>OS：iOS15</p>
+                      <p>ブラウザ：Safari</p>
+                      <p class="fsz20">※推奨環境下のご利用でも、OSとブラウザの組み合わせ、ブラウザの設定状況等によっては画面が正常に表示されない、動作しない等の事象が発生する場合があります。</p>
+                      <p class="fsz20">※OSのバージョンアップ方法等につきましては、各端末メーカー又は携帯電話会社へお問い合わせください。</p>
+                    </div>
+                    <div class="rule-text__unity">
+                      <p class="rule-text__title">【お問い合わせ】</p>
+                      <p>サンドラッグ創業67周年感謝祭～夏～事務局</p>
+                      <p>TEL：0120-981-743</p>
+                      <p>開設期間：2025年7月1日(火)～2025年11月28日(金) </p>
+                      <p class="fsz20">※土日・祝日を除く</p>
+                      <p>受付時間：平日10:00～17:00</p>
+                      <p class="fsz20">※お問い合わせへのご返答にお時間を頂戴する場合もございます。予めご了承ください。</p>
+                      <p class="fsz20">※賞品の仕様、性能等の詳細に関するお問い合わせは受け付けておりません。メーカー、販売元等に直接お問い合わせください。</p>
+                      <p class="fsz20">※応募状況や当選確率等に関するお問い合わせは受け付けておりません。</p>
+                      <p class="fsz20">※応募受付に関する個別確認にはご対応いたしかねます。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer pt64 sp_pt54">
+          <div><img src="img/footer_01.png" alt="「サンドラッグ創業67周年感謝祭～夏～キャンペーン事務局」TEL.0120-981-743 開設期間：2025年7月1日（火）～2025年11月28日（金）※土日・祝日を除く 受付時間：平日10：00～17：00※回答に数日かかる場合がございます。 なお、内容によっては、お答えできない場合もありますので、あらかじめご了承ください。"></div>
+        </div>
+        <div class="copyright">
+          <div><img src="img/copyright.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>

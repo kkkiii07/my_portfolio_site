@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+@use "sass:map";
+@use 'sass:math';
+
+@forward 'variable';
+@forward 'function';
+@use 'variable' as v;
+@use 'function'as f;
+
+// media query
+// @example
+// @include global.mq(small, max, true ) {} ~639px
+// @include global.mq(small, min, false ) {} ~640px
+// @include global.mq_scope(480px, 990px) {}
+
+@mixin mq($breakpoint: small, $rule: min, $subtranction: false) {
+  $breakpoint: map.get(v.$mq-breakpoints, $breakpoint); 
+  @if $rule == max and $subtranction {
+    $breakpoint: $breakpoint - 1;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content
+  }
+};
+
+@mixin mq-scope($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content
+  }
+};
+
+// font-size
+@mixin font-size($size) {
+  font-size: math.div($size, 16px) * 1rem;
+}
+
+// responsive font size
+// @example
+// 14px @320px ~ 28px @990px
+// @inclede global.resFont(14px, 28px) {}
+@mixin resFont($min, $max, $vwMin: 375px, $vwMax: 750px) {
+  @include font-size($min);
+  font-size: f.x-calc-font( $min, $max, $vwMin, $vwMax );
+  @media screen and (min-width: $vwMax) {
+    @include font-size($max);
+  }
+}
+
+//responsive font property 
+// @example
+// @include global.font-resProperty($font, 40px, normal, 50);
+@mixin font-resProperty($font-size, $line-height, $font-weight: false, $letter-spacing: false) {
+  @if $line-height != 0 {
+    line-height: math.div($line-height, $font-size);
+  } @else {
+    line-height: normal;
+  }
+  @if $font-weight {
+    font-weight: $font-weight;
+  }
+  @if $letter-spacing {
+    letter-spacing: math.div($letter-spacing, 1000) + em;
+  }
+}
+
+// img display:block
+@mixin imgBlock() {
+  display: block;
+  width: 100%;
+}

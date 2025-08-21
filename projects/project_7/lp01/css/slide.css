@@ -1,0 +1,90 @@
+ .swiper {
+     width: 100%;
+     max-width: min(calc(848 / 1100 * 100vw), 848px);
+     height: 100%;
+     padding-top: min(calc(40 / 1100 * 100vw), 40px);
+ }
+
+ @media screen and (max-width: 767px) {
+     .swiper {
+         max-width: 100%;
+         padding-top: min(calc(40 / 750 * 100vw), 40px);
+     }
+ }
+
+ .swiper-slide {
+     text-align: center;
+     background: #fdffd8;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: min(calc(100 / 1100 * 100vw), 100px);
+ }
+ 
+ @media screen and (max-width: 767px) {
+     .swiper-slide {
+         padding-bottom: min(calc(100 / 750 * 100vw), 100px);
+     }
+ }
+
+ .swiper-slide img {
+     display: block;
+     width: 100%;
+     max-width: min(calc(638 / 1100 * 100vw), 638px);
+     height: 100%;
+     object-fit: cover;
+ }
+
+ @media screen and (max-width: 767px) {
+     .swiper-slide img {
+         max-width: min(calc(541 / 750 * 100vw), 541px);
+     }
+ }
+
+ /* スクロールバー全体を中央に配置 */
+ .swiper-scrollbar {
+     width: min(calc(330 / 1100 * 100vw), 330px) !important;
+     left: 50% !important;
+     transform: translateX(-50%);
+     bottom: min(calc(36 / 1100 * 100vw), 36px) !important;
+     background: #e1e1e1;
+     border-radius: min(calc(12 / 1100 * 100vw), 12px);
+     height: min(calc(25 / 1100 * 100vw), 25px) !important;
+     overflow: hidden !important;
+ }
+ 
+ @media screen and (max-width: 767px) {
+     .swiper-scrollbar {
+         width: min(calc(330 / 750 * 100vw), 330px) !important;
+         bottom: min(calc(36 / 750 * 100vw), 36px) !important;
+         border-radius: min(calc(12 / 750 * 100vw), 12px);
+         height: min(calc(25 / 750 * 100vw), 25px) !important;
+     }
+ }
+
+ /* スクロールバーのつまみ（ドラッグ部分） */
+ .swiper-scrollbar-drag {
+     background: #434343;
+     /* つまみの色 */
+     border-radius: min(calc(12 / 1100 * 100vw), 12px);
+ }
+ 
+ @media screen and (max-width: 767px) {
+     .swiper-scrollbar-drag {
+         border-radius: min(calc(12 / 750 * 100vw), 12px);
+     }
+ }
+
+ .swiper-button-next,
+ .swiper-button-prev {
+     color: #434343;
+     font-weight: bold;
+ }
+
+ @media (max-width: 767px) {
+
+     .swiper-button-next,
+     .swiper-button-prev {
+         display: none;
+     }
+ }

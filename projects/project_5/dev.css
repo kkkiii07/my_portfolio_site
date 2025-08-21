@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Roboto-font;
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Roboto-Regular.ttf') format('truetype');
+  unicode-range: U+0021-007E;
+}
+
+@font-face {
+  font-family: Roboto-font;
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Roboto-Bold.ttf') format('truetype');
+  unicode-range: U+0021-007E;
+}
+
+@font-face {
+  font-family: NotoSansJP-font;
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/NotoSansJP-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: NotoSansJP-font;
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/NotoSansJP-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'font-icon';
+  src: url('fonts/font-icon.ttf') format('truetype'),
+    url('fonts/font-icon.woff') format('woff'),
+    url('fonts/font-icon.woff2') format('woff2'),
+    url('fonts/font-icon.svg#font-icon') format('svg');
+}
+
+@font-face {
+  font-family: 'font-logo-icon';
+  src: url('fonts/font-logo-icon.ttf') format('truetype'),
+    url('fonts/font-logo-icon.woff') format('woff'),
+    url('fonts/font-logo-icon.woff2') format('woff2'),
+    url('fonts/font-logo-icon.svg#font-icon') format('svg');
+}
