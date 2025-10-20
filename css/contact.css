@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+/* =========================
+	For Mobile and ALL
+============================ */
+
+/*
+  お問い合わせ
+-----------------*/
+
+.hero_ex {
+  background-image: url(../images/main_contact.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero_ex .hero_ex_name {
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+  font-size: 48px;
+  padding-top: 35%;
+}
+
+.hero_ex .hero_ex_name h2 {
+  font-family: 'Secular One', sans-serif;
+  font-size: 32px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 40px #150E0E;
+}
+
+.hero_ex .hero_ex_name h3 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 0 0 20px #150E0E;
+  letter-spacing: 1px;
+}
+
+.main_ex h2 {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 40px auto 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+/*.main_ex header {
+  margin-bottom: 56px;
+}*/
+
+.main_ex ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 4%;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 20px auto 40px;
+}
+
+.main_ex li + li {
+  margin-top: 10px;
+}
+
+.main_ex .ul_p {
+  text-align: right;
+  margin-top: 30px;
+}
+
+form table {
+  /* border: 1px solid #000; */
+  margin: 20px auto 40px;
+  border-spacing: 8px 24px;
+}
+
+form th,
+form td {
+  display: block;
+  text-align: left;
+  font-weight: normal;
+}
+
+form td {
+  border: 1px solid #e8e8e8;
+  padding: 8px;
+}
+
+input::placeholder {
+  opacity: .5;
+}
+
+/* input[type="text"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+	width: 100%;
+} */
+
+textarea {
+	width: 100%;
+	resize: none;
+}
+
+
+article h3 {
+  font-weight: normal;
+  position: relative;
+}
+
+article h3::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid rgb(34, 26, 26);
+}
+
+.bt_ex_all {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 72px;
+}
+
+/* .bt_ex {
+  display: block;
+  width: 100%;
+  max-width: 232px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  padding: 8px 0;
+  position: relative;
+  color: rgb(34, 26, 26);
+  border: 1px solid rgb(34, 26, 26);
+  text-align: center;
+  margin: 0 auto 32px;
+}
+
+.bt_ex::after {
+  content: '';
+  display: block;
+  border-right: 1px solid rgb(34, 26, 26);
+  border-bottom: 1px solid rgb(34, 26, 26);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  bottom: 0;
+  right: 0;
+  margin: -7px;
+}
+
+.bt_ex:hover {
+  color: #fff;
+  background-color: rgb(34, 26, 26);
+  transition: .5s;
+} */
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 264px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  color: rgb(34, 26, 26);
+  padding: 16px;
+  margin: 0 auto 32px;
+  position: relative;
+  transition: 0.2s;
+  text-align: center;
+  border: 1px solid rgb(34, 26, 26);
+}
+
+button::after {
+  display: block;
+  content: "";
+  position: absolute;
+  border-right: 1px solid rgb(34, 26, 26);
+  border-bottom: 1px solid rgb(34, 26, 26);
+  top: 12px;
+  right: 0;
+  left: 12px;
+  bottom: 0;
+  margin: -6px;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translate(6px,6px) translateZ(0);
+  background-color: rgb(34, 26, 26);
+  color: #fff;
+}
+
+button:hover::after {
+  transform: translate(-6px,-6px) translateZ(0);
+}
+
+button[type="submit"]:hover {
+  color: #fff;
+}
+
+button, input, select, textarea {
+  width: 100%;
+}
+button, input, select, textarea {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+	For Tablet and PC
+============================ */
+
+@media (min-width: 600px) {
+
+  .hero_ex {
+    background-position: center;
+    height: 100%;
+    height: 500px;
+    margin-top: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+	
+  .hero_ex .hero_ex_name {
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 100px;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+
+  .hero_ex .hero_ex_name h2  {
+    font-size: 40px;
+  }
+  
+  .hero_ex .hero_ex_name h3  {
+    font-size: 1.2rem;
+  }
+
+  .main_ex h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 100px auto 48px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .main_ex p {
+    font-size: 16px;
+  }
+
+  .main_ex ul {
+    padding-left: 4%;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px auto 88px;
+  }
+  
+  .main_ex li + li {
+    margin-top: 10px;
+  }
+  
+  .main_ex .ul_p {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  form table {
+    width: 100%;
+    margin: 20px 0 40px;
+    border-spacing: 8px 48px;
+  }
+
+  form th,
+  form td {
+    display: table-cell;
+}
+
+form td {
+    margin-right: auto;
+}
+
+  article .bt_ex_all {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto 128px;
+}
+
+  article .bt_ex_all button + button {
+    margin-left: 40px;
+
+}
+
+.for_pc {
+  display: block;
+}
+
+
+
+}
